@@ -27,6 +27,7 @@ def botcmd(*args, **kwargs):
     else:
         return lambda func: decorate(func, **kwargs)
 
+
 class XmppBot(sleekxmpp.ClientXMPP):
 
     def __init__(self, config_path):
@@ -60,7 +61,7 @@ class XmppBot(sleekxmpp.ClientXMPP):
             if getattr(value, '_command', False):
                 name = getattr(value, '_command_name').lower()
                 self.log.info('Registered command: %s' % name)
-                self.commands[name]=value
+                self.commands[name] = value
 
     def get_cmd(self, text):
         cmd = text.split(' ', 1)[0].lower()
@@ -115,10 +116,10 @@ class XmppBot(sleekxmpp.ClientXMPP):
                         self.send_message(msg, txt)
 
     def send_message(self, msg, txt):
-        msgreply=msg.reply(txt)
-        formated=self.format_message(txt)
+        msgreply = msg.reply(txt)
+        formated = self.format_message(txt)
         if formated:
-            msgreply["html"]["body"]=formated
+            msgreply["html"]["body"] = formated
         msgreply.send()
 
     def run(self):
