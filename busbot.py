@@ -30,8 +30,7 @@ class BusBot(XmppBot):
         linea = words[1] if len(words) > 1 else None
         alias = words[2] if len(words) > 2 else None
         if not r or len(r) == 0:
-            msg.reply(
-                "Actualmente no hay datos para la parada " + words[0]).send()
+            reply = "Actualmente no hay datos para la parada " + words[0]
             if not alias and linea and not linea.isdigit():
                 alias = linea
         else:
