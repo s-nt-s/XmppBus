@@ -2,3 +2,4 @@ config.yml
 *.pyc
 *.db
 avatar.png
+nohup.out
