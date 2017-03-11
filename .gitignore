@@ -1,0 +1,4 @@
+config.yml
+*.pyc
+*.db
+avatar.png
