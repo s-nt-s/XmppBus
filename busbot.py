@@ -6,6 +6,7 @@ from datos import tiempos
 from datos import pt
 import db
 import yaml
+import os
 import textwrap
 
 
@@ -73,5 +74,7 @@ class BusBot(XmppBot):
         return r
 
 if __name__ == '__main__':
+    path=os.path.dirname(os.path.realpath(__file__))
+    os.chdir(path)
     xmpp = BusBot("config.yml")
     xmpp.run()
