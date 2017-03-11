@@ -75,7 +75,7 @@ def pt(info):
         if i["segundos"] == 999999:
             m = "+20"
         else:
-            m = str(i["segundos"] / 60)
+            m = str(int(round(i["segundos"] / 60.0)))
         i["t"] = m
         lt = max(len(str(m)), lt)
         ll = max(len(i["linea"]), ll)
