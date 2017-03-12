@@ -37,6 +37,16 @@ def get_alias(user):
     con.close()
     return r
 
+def rem_alias(user, alias):
+    args = [user] + alias
+    con = sqlite3.connect(database)
+    c = con.cursor()
+    c.execute(
+        "delete from alias where user=? and alias in (%s)" % ','.join('?'*len(alias)) , args)
+    c.close()
+    con.commit()
+    con.close()
+    
 if __name__ == "__main__":
     con = sqlite3.connect(database)
     c = con.cursor()

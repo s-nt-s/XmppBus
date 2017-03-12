@@ -70,7 +70,16 @@ class BusBot(XmppBot):
         r = "Estos son tus marcadores:"
         for i in alias:
             r = (r + "\n" + i[0] + ": " + i[1])
+        r = r + "\nSi quieres eliminar alguno, escribe borrar seguido del nombre del marcador"
         return r
+
+    @botcmd(name="borrar")
+    def borrar_marcador(self, user, txt):
+        args=txt.split(' ')[1:]
+        if len(args)==0:
+            return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
+        db.rem_alias(user, args)
+        return "¡Marcadores borrados!"
 
 if __name__ == '__main__':
     path = os.path.dirname(os.path.realpath(__file__))
