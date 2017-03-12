@@ -16,10 +16,10 @@ class BusBot(XmppBot):
         return "<span style='font-family: monospace'>" + txt.replace("\n", "<br/>") + "</span>"
 
     def parse_message(self, user, txt):
-        words = txt.split(" ")
-        if not words[0].isdigit():
-            return db.get(user, words[0].lower())
-        return txt
+        word1 = txt.split(" ")[0]
+        if word1.isdigit():
+            return txt
+        return db.get(user, txt.lower()) #word1.lower())
 
     def reply_message(self, user, txt):
         reply = None
@@ -27,17 +27,19 @@ class BusBot(XmppBot):
         words = txt.split(" ")
 
         r = tiempos([words[0]])
+
         linea = words[1] if len(words) > 1 else None
-        alias = words[2] if len(words) > 2 else None
+        alias = " ".join(words[2:]) if len(words) > 2 else None
+
         if not r or len(r) == 0:
             reply = "Actualmente no hay datos para la parada " + words[0]
-            if not alias and linea and not linea.isdigit():
-                alias = linea
+            if linea and not linea.isdigit():
+                alias = " ".join(words[1:])
         else:
-            if not alias and linea:
+            if linea:
                 buses = [i["linea"] for i in r]
                 if linea not in buses:
-                    alias = linea
+                    alias = " ".join(words[1:])
                     linea = None
             if linea:
                 r = [i for i in r if i["linea"] == linea]
@@ -45,7 +47,8 @@ class BusBot(XmppBot):
             reply = pt(r)
 
         if alias:
-            txt = " ".join(words[:-1])
+            index = 2 if linea else 1
+            txt = " ".join(words[0:index])
             db.set(user, alias.lower(), txt)
         db.set(user, ".", txt)
 
@@ -70,7 +73,7 @@ class BusBot(XmppBot):
         r = "Estos son tus marcadores:"
         for i in alias:
             r = (r + "\n" + i[0] + ": " + i[1])
-        r = r + "\nSi quieres eliminar alguno, escribe borrar seguido del nombre del marcador"
+        r = r + "\nSi quieres eliminar alguno, escribe borrar seguido del nombre del marcador."
         return r
 
     @botcmd(name="borrar")
