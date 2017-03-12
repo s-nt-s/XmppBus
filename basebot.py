@@ -86,16 +86,17 @@ class XmppBot(sleekxmpp.ClientXMPP):
             except IOError:
                 logging.debug('Could not load avatar')
             if avatar_data:
+                mtype = 'image/' + os.path.splitext(self.config['avatar'])[1]
                 avatar_id = self['xep_0084'].generate_id(avatar_data)
                 info = {
                     'id': avatar_id,
-                    'type': 'image/png',
+                    'type': mtype,
                     'bytes': len(avatar_data)
                 }
                 self['xep_0084'].publish_avatar(avatar_data)
                 self['xep_0084'].publish_avatar_metadata(items=[info])
                 self['xep_0153'].set_avatar(
-                    avatar=avatar_data, mtype='image/png')
+                    avatar=avatar_data, mtype=mtype)
 
     def message(self, msg):
         if msg['type'] in ('chat', 'normal') and msg['body'] and msg['from']:
