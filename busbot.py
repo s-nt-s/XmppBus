@@ -78,10 +78,10 @@ class BusBot(XmppBot):
 
     @botcmd(name="borrar")
     def borrar_marcador(self, user, txt):
-        args=txt.split(' ')[1:]
-        if len(args)==0:
+        alias=" ".join(txt.split(' ')[1:]).lower()
+        if len(alias)==0:
             return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
-        db.rem_alias(user, args)
+        db.rem_alias(user, alias)
         return "¡Marcadores borrados!"
 
 if __name__ == '__main__':

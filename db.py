@@ -38,11 +38,11 @@ def get_alias(user):
     return r
 
 def rem_alias(user, alias):
-    args = [user] + alias
+    #args = [user] + alias
     con = sqlite3.connect(database)
     c = con.cursor()
-    c.execute(
-        "delete from alias where user=? and alias in (%s)" % ','.join('?'*len(alias)) , args)
+    c.execute("delete from alias where user=? and alias=?" , (user, alias))
+    #c.execute("delete from alias where user=? and alias in (%s)" % ','.join('?'*len(alias)) , args)
     c.close()
     con.commit()
     con.close()
