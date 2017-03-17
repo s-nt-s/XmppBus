@@ -18,7 +18,6 @@ url2 = "http://api.interurbanos.welbits.com/v1/stop/"
 
 to_int = ["segundos", "distancia"]
 
-
 def get_json(url):
     response = requests.get(url)
     if response.status_code != 200:
