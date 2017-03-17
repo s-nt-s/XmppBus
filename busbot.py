@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from xmppbot import botcmd, XmppBot
-from datos import tiempos, paradas
+from datos import tiempos
 from datos import pt
 import db
 import yaml
@@ -24,7 +24,7 @@ class BusBot(XmppBot):
     def format_message(self, txt):
         return "<span style='font-family: monospace'>" + txt.replace("\n", "<br/>") + "</span>"
 
-    @botcmd(regex=re.compile(r"(hola|\?$)"), rg_mode="search")
+    @botcmd(regex=re.compile(r"(hola|\?$)", re.IGNORECASE), rg_mode="search")
     def hola(self, user, txt, args):
         return textwrap.dedent('''
         ¡Hola!
@@ -94,7 +94,7 @@ class BusBot(XmppBot):
     @botcmd(name="paradas")
     def reply_paradas(self, user, txt, args):
         l=args[0]
-        s= 2 if args[-1]=="-" else 1
+        s= 2 if args[-1]=="+" else 1
         txt="data/txt/" + l.upper() + "_-_" + str(s) + ".txt"
         if not os.path.isfile(txt):
             return "No se encuentran las paradas de la línea "+l
@@ -102,7 +102,9 @@ class BusBot(XmppBot):
             data=myfile.read().rstrip()
             reply = "Itinerario (aproximado) de la línea "+l+":\n" + data
         if s == 1:
-            reply = reply + ("\nPara ver el sentido contrario escribe: paradas %s -" % l)
+            reply = reply + ("\n\nPara ver el sentido contrario escribe: paradas %s +" % l)
+        reply = reply + "\n\nAntes de desplazarte, consulta los datos de la parada a la que pretendes ir para confirmar que tu bus pasa por ahí."
+        reply = reply + "\nPor ejemplo: "+data.strip().split(" ")[0]+" "+l
         return reply
 
     @botcmd(name="#")
