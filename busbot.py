@@ -95,7 +95,7 @@ class BusBot(XmppBot):
     def reply_paradas(self, user, txt, args):
         l=args[0]
         s= 2 if args[-1]=="+" else 1
-        txt="data/txt/" + l.upper() + "_-_" + str(s) + ".txt"
+        txt="data/txt/" + str(s) + "/" + l.upper() + ".txt"
         if not os.path.isfile(txt):
             return "No se encuentran las paradas de la línea "+l
         with open(txt, 'r') as myfile:

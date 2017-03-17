@@ -5,6 +5,7 @@ import sys
 import re
 import glob
 import csv
+import os
 
 
 if sys.version_info < (3, 0):
@@ -90,7 +91,11 @@ def sentidos(paradas):
     st=[]
     for row in paradas:
         if row[HEAD_SENTIDO] not in st:
-            st.append(row[HEAD_SENTIDO])
+            s=row[HEAD_SENTIDO]
+            st.append(s)
+            d="txt/" + s
+            if not os.path.exists(d):
+                os.makedirs(d)
     return st
 
 def title(s):
@@ -147,7 +152,7 @@ def itinerario(cod, linea, sentido, obj):
 
     msg = "%" + str(lt) + "s %s"
 
-    ruta="txt/"+cod.upper()+"_-_"+sentido.upper()+".txt"
+    ruta="txt/" + sentido.upper() + "/" + cod.upper() + ".txt"
     with open(ruta, "wb") as f:
             
         for l in linea_filter:
