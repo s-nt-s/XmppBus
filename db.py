@@ -30,7 +30,7 @@ def get_alias(user):
     con = sqlite3.connect(database)
     c = con.cursor()
     c.execute(
-        "select alias, cmd from alias where user=? and alias!='.'", (user,))
+        "select alias, cmd from alias where user=? and alias not like '.%'", (user,))
     r = c.fetchall()
     c.close()
     con.commit()
