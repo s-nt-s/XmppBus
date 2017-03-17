@@ -1,0 +1,41 @@
+06002 c/ Princesa 89, Madrid
+ 1332 Avda Puerta de Hierro 4400, Madrid
+11089 Rtda Cruz Roja Española 1, Rozas de Madrid, Las
+ 1334 Avda Puerta de Hierro 6, Madrid
+ 1338 Avda Puerta de Hierro 5600, Madrid
+06022 Avda Padre Huidobro 12500, Madrid
+06026 Ctra de la Coruña 15100, Rozas de Madrid, Las
+06027 Ctra de la Coruña 1, Rozas de Madrid, Las
+06028 Ctra de la Coruña 1, Rozas de Madrid, Las
+06136 Avda España 16, Rozas de Madrid, Las
+06137 Avda España 16, Rozas de Madrid, Las
+09334 Avda España 38, Rozas de Madrid, Las
+06208 Avda España 111, Rozas de Madrid, Las
+06238 c/ Comunidad Castilla-La Mancha 1, Rozas de Madrid, Las
+06145 Avda Iglesia 2, Rozas de Madrid, Las
+13035 Custa de San Francisco 14, Rozas de Madrid, Las
+06103 Ctra Vía Servicio Carretera de A Coruña 23, Rozas de Madrid, Las
+06104 c/ Vía de Servicio de las Rozas 1, Rozas de Madrid, Las
+06105 Ctra Vía Servicio Carretera de A Coruña N, Rozas de Madrid, Las
+06106 c/ Vía de Servicio de las Rozas N Sn, Rozas de Madrid, Las
+06107 Avda Los Bomberos 2, Rozas de Madrid, Las
+09808 c/ Vía de Servicio de las Rozas 1, Rozas de Madrid, Las
+06108 c/ Vía de Servicio de las Rozas 1, Rozas de Madrid, Las
+06109 c/ Vía de Servicio de las Rozas 1, Rozas de Madrid, Las
+09804 c/ Vía de Servicio de las Rozas 1, Rozas de Madrid, Las
+18518 c/ San José Obrero 14, Rozas de Madrid, Las
+18519 c/ Martín Iriarte 26, Rozas de Madrid, Las
+18520 c/ Martín Iriarte 45, Rozas de Madrid, Las
+06117 Cmno del Garzo 7, Rozas de Madrid, Las
+06118 c/ Enrique Granados 17, Rozas de Madrid, Las
+06119 Pº Los Alemanes 35, Rozas de Madrid, Las
+06120 Pl Ferrocarril 2, Rozas de Madrid, Las
+06121 c/ Pilar 16, Rozas de Madrid, Las
+12014 Avda Peñascales 22, Rozas de Madrid, Las
+06123 Avda Peñascales 38, Rozas de Madrid, Las
+12953 Avda Los Rubios 4, Rozas de Madrid, Las
+11514 Avda Los Rubios 14, Rozas de Madrid, Las
+18265 c/ Zamora 11, Rozas de Madrid, Las
+19351 c/ Zamora 5, Rozas de Madrid, Las
+18268 c/ Castilla 46, Rozas de Madrid, Las
+12012 c/ San José del Pedrosillo 61, Rozas de Madrid, Las

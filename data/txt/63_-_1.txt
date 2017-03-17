@@ -1,0 +1,27 @@
+5089 Avda Felipe Ii 1
+2154 c/ Narváez 30
+2156 c/ Narváez 64
+ 814 Avda Menéndez Pelayo 45
+ 816 Avda Menéndez Pelayo 63
+2213 Pº Fernán Núñez N
+2130 Avda Mediterráneo 2
+2128 Avda Mediterráneo 26
+2126 Pl Conde de Casal 8
+2603 Avda Mediterráneo 50
+2605 c/ El Bosco 14
+2606 c/ El Bosco 14
+2607 c/ El Bosco 20
+2608 c/ El Bosco 22
+4341 c/ El Bosco 22
+3353 Avda Mediterráneo 5700
+5150 c/ Provisional Politécnica de Vallecas Uno 4
+2612 Avda Mediterráneo N
+1041 Avda Santa Eugenia
+4787 c/ Fuentespina 2A
+1042 c/ Fuentespina 2B
+1043 c/ Fuentespina 16
+1044 Avda Santa Eugenia
+1045 Avda Santa Eugenia 47
+1038 Avda Santa Eugenia 29
+2619 Avda Santa Eugenia 15B
+1039 Avda Santa Eugenia 1A

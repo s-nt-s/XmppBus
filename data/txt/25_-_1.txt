@@ -1,0 +1,31 @@
+5738 c/ Arrieta 1
+4333 c/ San Quintín 10
+ 599 Custa de San Vicente 12
+ 601 Custa de San Vicente 26
+ 603 Custa de San Vicente 40
+4070 Gta de San Vicente 1
+ 606 Pº Virgen del Puerto
+ 608 Pº Virgen del Puerto
+4660 Gta del Puente de Segovia 1
+ 612 Pº Ermita del Santo 20
+ 614 Pº Ermita del Santo 46
+ 616 Pº Ermita del Santo 39
+4744 Pº Ermita del Santo
+4746 Pº Ermita del Santo
+4748 Pº Ermita del Santo 78
+ 618 c/ Gallur 2
+ 619 c/ Gallur 20
+ 620 c/ Gallur 431
+ 621 c/ Duquesa de Parcent 18
+ 623 c/ Duquesa de Parcent 54
+ 625 c/ Duquesa de Parcent 116
+5178 c/ Camarena 8
+ 629 c/ Camarena 105
+ 631 c/ Illescas
+ 633 c/ Illescas 54
+5180 c/ Illescas 105
+ 635 c/ Illescas 53
+5181 c/ Seseña 81
+5182 c/ Seseña 31
+5185 c/ Seseña
+5175 Ctra del Zoo N

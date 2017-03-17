@@ -1,0 +1,36 @@
+1728 Avda Pío Xii 83
+2151 Avda Burgos 5
+2149 Pl Duque de Pastrana 6
+2147 Pº Habana 179
+2145 Pº Habana 165
+2143 Pº Habana 145
+2141 Pº Habana 109
+2139 Pº Habana 142
+2137 Pº Habana 74D
+2135 Pº Habana 33
+  96 Avda Concha Espina 2
+  41 Pº Castellana 95
+  46 Pl Pablo Ruiz Picasso 1
+  48 Pº Castellana 112
+  49 Pº Castellana 67
+  51 Pº Castellana
+  53 Pº Castellana
+4337 Pl Doctor Marañón
+  57 Pº Castellana 41
+  59 Pº Castellana 22
+  61 Pº Castellana 23
+  63 Pº Castellana 1
+5626 Pº Recoletos 37
+  68 Pº Recoletos 25
+  73 Pº Recoletos 3
+  76 Pº Prado 2
+  77 Pl Cánovas del Castillo 5
+  79 Pº Prado 22
+  81 Pº Prado 48
+1401 Avda Ciudad de Barcelona 2B
+2046 Pº Reina Cristina 2
+2048 Pº Reina Cristina 22
+2130 Avda Mediterráneo 2
+2128 Avda Mediterráneo 26
+2126 Pl Conde de Casal 8
+2124 Pl Conde de Casal 5

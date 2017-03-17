@@ -1,0 +1,37 @@
+3729 Pl Cibeles 3
+5137 c/ Gran Vía 16
+ 166 c/ San Alberto 5
+ 168 c/ Gran Vía 56
+ 170 c/ Gran Vía 74
+1750 c/ Princesa 2
+ 172 c/ Princesa
+ 736 c/ Princesa 56
+ 738 c/ Princesa 74
+3688 c/ Princesa 96
+4021 c/ Isaac Peral 8
+ 803 Pº San Francisco de Sales 2
+2392 Pº San Francisco de Sales 42
+2394 c/ General Ibáñez de Ibero 1
+1666 Avda Doctor Federico Rubio Y Galí 16
+1670 Avda Doctor Federico Rubio Y Galí 56
+1672 Avda Pablo Iglesias
+1674 Avda Pablo Iglesias 92
+1577 c/ Francos Rodríguez 98
+1643 Avda Santo Ángel de la Guarda 17
+1645 Avda Santo Ángel de la Guarda
+1647 c/ Alcalde Martín de Alzaga 23
+1649 c/ Alcalde Martín de Alzaga 3
+1653 c/ Antonio Machado 12
+1655 c/ Antonio Machado 24
+1657 c/ Antonio Machado 38
+1516 c/ César Manrique 5
+1514 c/ César Manrique
+1624 c/ Fermín Caballero 105
+1622 c/ Fermín Caballero 91
+1620 c/ Fermín Caballero 19
+1361 c/ Isla de Arosa 20
+1595 Avda Ventisquero de la Condesa 2
+1564 c/ Cerro Minguete 10
+4735 c/ Cerro Minguete 88
+5207 c/ Valle de Pinares Llanos 25
+5223 c/ Valle de Pinares Llanos 1

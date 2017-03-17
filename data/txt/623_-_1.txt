@@ -1,0 +1,36 @@
+06002 c/ Princesa 89, Madrid
+ 1332 Avda Puerta de Hierro 4400, Madrid
+11089 Rtda Cruz Roja Española 1, Rozas de Madrid, Las
+ 1334 Avda Puerta de Hierro 6, Madrid
+12304 Ctra de las Rozas-Majadahonda 3, Rozas de Madrid, Las
+ 1338 Avda Puerta de Hierro 5600, Madrid
+06022 Avda Padre Huidobro 12500, Madrid
+06026 Ctra de la Coruña 15100, Rozas de Madrid, Las
+06027 Ctra de la Coruña 1, Rozas de Madrid, Las
+06028 Ctra de la Coruña 1, Rozas de Madrid, Las
+06098 c/ Vía de Servicio de las Rozas 17, Rozas de Madrid, Las
+13036 Avda Coruña 38, Rozas de Madrid, Las
+06133 Avda Doctor Toledo 23, Rozas de Madrid, Las
+11088 Avda Constitución 8, Rozas de Madrid, Las
+09411 Ctra del Escorial 5, Rozas de Madrid, Las
+06210 Crtra del Escorial Km. 2,200 1, Rozas de Madrid, Las
+10469 Ctra M-509 (Villanueva del Pardillo) 3500, Majadahonda
+06180 Avda Los Castillos 1, Villanueva de la Cañada
+10586 Avda Castillos 8, Villanueva de la Cañada
+06181 c/ Castillo de Antequera 26, Villanueva de la Cañada
+10588 c/ Castillo de Antequera 48, Villanueva de la Cañada
+10590 c/ Castillo de Antequera 80, Villanueva de la Cañada
+06182 c/ Castillo de Antequera 88, Villanueva de la Cañada
+06183 c/ Castillo de Antequera 104, Villanueva de la Cañada
+11150 c/ Castillo de Ponferrada 2, Villanueva de la Cañada
+06184 c/ Valle del Roncal 1, Villanueva de la Cañada
+19290 c/ Valle del Roncal 10, Villanueva de la Cañada
+06185 c/ Valle del Roncal N 40Bis, Villanueva de la Cañada
+09006 c/ Valle del Roncal 47, Villanueva de la Cañada
+06186 c/ Valle de la Orotava 1, Villanueva de la Cañada
+06187 c/ Piedras Vivas 25, Villanueva de la Cañada
+09082 c/ Valle de Esteribar 3, Villanueva de la Cañada
+06188 c/ Valle del Roncal, Villanueva de la Cañada
+10592 c/ Castillo de Ponferrada 14, Villanueva de la Cañada
+10593 c/ Castillo de Ponferrada 34, Villanueva de la Cañada
+09005 c/ Castillo de Sigüenza 1, Villanueva de la Cañada

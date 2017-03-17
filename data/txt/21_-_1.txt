@@ -1,0 +1,35 @@
+4232 Pº Pintor Rosales 60
+4233 c/ Marqués de Urquijo 43
+1217 c/ Marqués de Urquijo 21
+1219 c/ Alberto Aguilera 39
+1222 c/ Alberto Aguilera 23
+1223 c/ Alberto Aguilera 1
+2967 c/ Carranza 3
+1227 c/ Sagasta 16
+1229 c/ Génova 4
+5627 c/ Génova 30
+ 670 c/ Goya 2
+ 672 c/ Goya 16
+ 674 c/ Goya 34
+ 676 c/ Goya 68
+ 678 c/ Alcalá 102
+ 680 c/ Alcalá 118
+ 682 c/ Alcalá 148
+ 685 c/ Alcalá 170
+ 686 c/ Alcalá 194
+1233 Avda Los Toreros 79
+1234 c/ Roberto Domingo
+1236 Avda Donostiarra 10
+2477 Avda Donostiarra 26
+1238 c/ Virgen de Lluc 6
+1240 c/ Virgen de Lluc 32
+4520 c/ Virgen de Lluc 58
+1241 c/ Virgen del Sagrario 22
+1242 c/ Virgen del Sagrario 32
+1243 c/ Juan Pérez Zúñiga 1
+3659 c/ Fernández Caro 16
+3660 c/ Fernández Caro 38
+ 231 c/ Arturo Soria 90G
+5153 c/ Arturo Soria 100
+ 229 c/ Arturo Soria 110A
+5040 c/ José María Cavero 18

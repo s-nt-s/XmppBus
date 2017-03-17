@@ -1,0 +1,62 @@
+10410 c/ Plazuela N, La Acebeda
+18193 Ctra de la Acebeda 3300, La Acebeda
+10409 c/ Real 39, Horcajo de la Sierra
+12880 Ctra de M-136 (Horcajo-Aoslos) 2800, Horcajo de la Sierra
+10407 Ctra M-141 22, Horcajo de la Sierra
+10404 Trva de San Mateo 5, Madarcos
+12564 c/ Carretera 21, Piñuecar
+10402 Pl Sierra 1, Piñuecar
+10389 Avda Madrid 13, Buitrago del Lozoya
+11293 Avda Madrid 16B, Buitrago del Lozoya
+12548 Ctra M-126 (Manjirón) 2, Buitrago del Lozoya
+18198 Avda Villar 45, Puentes Viejas
+10400 Avda Villar 25, Puentes Viejas
+18196 Avda Villar 3, Puentes Viejas
+10399 Ctra de M-135 Lozoyuela Km 3400, Puentes Viejas
+18201 Ctra M-135 (Manjirón-Lozoyuela) 35, Lozoyuela-Navas-Sieteiglesias
+15996 Ctra M-135 (Manjirón-Lozoyuela) 3, Lozoyuela-Navas-Sieteiglesias
+12019 c/ Prados Quemados 13, Lozoyuela-Navas-Sieteiglesias
+11045 Avda Madrid 171, Lozoyuela-Navas-Sieteiglesias
+10348 Avda Madrid 85, Lozoyuela-Navas-Sieteiglesias
+11735 Avda Madrid 5, Lozoyuela-Navas-Sieteiglesias
+10397 c/ Real 9, Lozoyuela-Navas-Sieteiglesias
+10411 Ctra M-138 24, El Berrueco
+11201 Ctra del Berrueco-La Cabrera Km 1800, El Berrueco
+15942 Avda Cabrera 81, La Cabrera
+10037 Avda Cabrera 69, La Cabrera
+10345 Avda Cabrera 23, La Cabrera
+10666 Avda Cabrera 5, La Cabrera
+11542 Ctra Antigua N-I (Madrid-Burgos) 8, Cabanillas de la Sierra
+10342 c/ Real 57, Cabanillas de la Sierra
+11524 c/ Real 19, Cabanillas de la Sierra
+11295 Ctra Irún 52000, Venturada
+10341 Ctra Irún 7, Venturada
+16450 Avia A-1 Km 47000, Pedrezuela
+10336 Pº Ermita 21, Pedrezuela
+12781 c/ Eras 54, Pedrezuela
+12442 c/ San Roque 40, Pedrezuela
+16713 c/ Eras N, Pedrezuela
+09142 c/ Eras 29, Pedrezuela
+09143 Pº Ermita 30, Pedrezuela
+10333 c/ Rosaleda 51, El Molar
+12690 c/ Fuente 23, El Molar
+09649 Pl Mayor 10, El Molar
+09648 Avda España 73I, El Molar
+09834 Polg Las Cabezas 4, San Agustin de Guadalix
+18362 Avda Madrid 32, San Agustin de Guadalix
+06705 c/ Félix Sanz 31, San Agustin de Guadalix
+12098 Avda Madrid 5, San Agustin de Guadalix
+11185 Avia A-1 31500, San Agustin de Guadalix
+10041 Ctra Nacional I 30500, Colmenar Viejo
+06719 Ctra A-1 N 27.9, San Sebastian de Los Reyes
+06720 Ctra N-I Burgos, San Sebastian de Los Reyes
+06723 Ctra N-I (Burgos) 23400, San Sebastian de Los Reyes
+16438 Ctra N-I (Burgos) 19900, San Sebastian de Los Reyes
+17025 Pº Europa 11, San Sebastian de Los Reyes
+10019 Pº Europa 7, San Sebastian de Los Reyes
+12422 Pº Europa 1, San Sebastian de Los Reyes
+06751 Pº Europa 26, San Sebastian de Los Reyes
+15191 Pº Europa 26, San Sebastian de Los Reyes
+06752 Bulv de Salvador Allende 19, Alcobendas
+10550 Pº Castellana 296, Madrid
+17470 Avda Asturias 2, Madrid

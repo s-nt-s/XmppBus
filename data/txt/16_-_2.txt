@@ -1,0 +1,29 @@
+1728 Avda Pío Xii 83
+ 118 Avda Pío Xii 77
+ 116 Avda Pío Xii 49
+ 114 Avda Pío Xii 23
+ 111 Avda Pío Xii 1
+4831 c/ Príncipe de Vergara 285
+ 440 c/ Príncipe de Vergara 273
+4850 c/ Príncipe de Vergara 253
+ 514 c/ Príncipe de Vergara 227
+ 516 c/ Príncipe de Vergara 215
+ 415 c/ Príncipe de Vergara 203
+ 417 Avda Doctor Arce 31
+ 536 Avda Doctor Arce 11
+ 443 c/ Serrano 141
+ 444 c/ Serrano 127
+ 445 c/ Serrano 113
+ 446 c/ Serrano 95
+ 447 c/ Serrano 77
+ 537 c/ General Oraa 1
+ 530 Pº General Martínez Campos 51
+1893 Pº General Martínez Campos 35
+ 528 Pº General Martínez Campos 23
+1895 Pº General Martínez Campos 3
+ 526 c/ Eloy Gonzalo 35
+ 538 c/ Eloy Gonzalo 3
+ 540 c/ Fernando El Católico 2
+ 541 c/ Fernando El Católico 16
+ 542 c/ Fernando El Católico 52
+ 543 c/ Fernando El Católico 84

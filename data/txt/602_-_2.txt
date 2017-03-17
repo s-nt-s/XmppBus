@@ -1,0 +1,23 @@
+06324 Ctra del El Pardo A Colmenar 16
+06325 Ctra del El Pardo A Colmenar Viejo 2B
+06326 Pº El Pardo 53
+06327 Pº El Pardo 20
+06328 c/ Rosa Sabater 1
+06329 Avda Guardia 2
+06330 Avda Guardia 11
+06331 Ctra de El Pardo 4800
+06332 Ctra de El Pardo 43
+06333 Ctra de El Pardo 1600
+06334 Ctra de El Pardo 600
+ 1347 Avda Cardenal Herrera Oria 425
+ 1351 Avda Cardenal Herrera Oria 397
+ 1353 Avda Cardenal Herrera Oria 361
+ 1354 Avda Cardenal Herrera Oria 315
+ 1664 Gta de Mariano Salvador Maella 1
+ 1786 Avda Monforte de Lemos 163
+ 1366 Avda Monforte de Lemos 115B
+ 1368 Avda Monforte de Lemos 101
+ 1737 Avda Monforte de Lemos 75
+ 1735 Avda Monforte de Lemos 19
+ 1733 Avda Monforte de Lemos 8
+ 1602 c/ Pedro Rico 4

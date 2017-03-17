@@ -1,0 +1,37 @@
+2420 c/ Tortosa 4
+2421 c/ Áncora 3
+1976 c/ Martín Soler 4
+1186 c/ Batalla del Salado 26
+1187 c/ Batalla del Salado 50
+1188 c/ Miguel Arredondo 1
+1170 Pº Delicias 150
+1935 c/ Marcelo Usera 4
+2423 c/ Marcelo Usera 46
+2424 c/ Marcelo Usera 76
+2426 c/ Marcelo Usera 114
+2428 c/ Marcelo Usera 148
+2430 c/ Marcelo Usera 170
+2432 c/ Évora 22
+2434 Avda Abrantes 5
+2436 Avda Abrantes 14
+2438 Avda Abrantes 24
+2439 c/ Carrero Juan Ramón 14
+2441 Avda Abrantes 68
+2443 Avda Abrantes 104
+2446 c/ Besolla 9
+2448 c/ Carcastillo
+2450 c/ Belzunegui 20
+2452 c/ Belzunegui 66
+2453 Avda Los Poblados 83
+2456 c/ Antonia Rodríguez Sacristán 37
+2458 c/ Antonia Rodríguez Sacristán 11
+2460 Avda Los Poblados
+2462 Avda Los Poblados 84
+ 379 c/ Eugenia de Montijo 104
+ 377 c/ Eugenia de Montijo 114
+4019 Avda Carabanchel Alto 42
+1158 Avda Carabanchel Alto 62
+1159 c/ Alfredo Aleix 20
+1160 c/ Alfredo Aleix 52
+1161 c/ Piqueñas 28
+1162 Cmno de las Cruces 25

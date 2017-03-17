@@ -1,0 +1,39 @@
+5454 c/ Colegiata 17
+ 545 c/ Toledo 54
+ 547 c/ Toledo 82
+2589 c/ Toledo 108
+ 594 c/ Toledo 118
+ 914 c/ Toledo 140
+ 916 c/ Toledo 180
+ 329 c/ General Ricardos 8
+5624 c/ General Ricardos 28
+4239 c/ General Ricardos 52
+5560 c/ General Ricardos 78
+3032 c/ General Ricardos 102
+ 337 c/ General Ricardos 140
+4078 c/ General Ricardos 164
+4670 c/ General Ricardos 182
+ 341 c/ General Ricardos 208
+ 343 c/ General Ricardos 220
+4846 Pº Muñoz Grandes 30
+ 590 Pº Muñoz Grandes 62
+1151 c/ Guabairo 34
+1152 Avda Nuestra Señora de Fátima
+1154 Avda Nuestra Señora de Fátima 94
+1156 Avda Nuestra Señora de Fátima 104
+ 379 c/ Eugenia de Montijo 104
+ 377 c/ Eugenia de Montijo 114
+4019 Avda Carabanchel Alto 42
+1158 Avda Carabanchel Alto 62
+1159 c/ Alfredo Aleix 20
+1160 c/ Alfredo Aleix 52
+1161 c/ Piqueñas 28
+3632 c/ Universidad de Alcalá de Henares 2
+ 640 c/ Pinar de San José 15
+3860 Avda Peseta 50C
+ 562 Avda Peseta
+1169 Avda Peseta
+4090 Avda Peseta 101
+4091 Avda Peseta 107
+4093 c/ Real 1
+4084 c/ Real 1

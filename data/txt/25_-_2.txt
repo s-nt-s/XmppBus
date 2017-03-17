@@ -1,0 +1,32 @@
+5175 Ctra del Zoo N
+5184 c/ Seseña 2A
+5183 c/ Seseña 34
+ 638 c/ Seseña 42
+ 636 c/ Illescas 18
+3191 c/ Illescas
+ 634 c/ Illescas 54
+ 632 c/ Illescas 64
+ 630 c/ Camarena 105
+5179 c/ Camarena 8
+ 626 c/ Duquesa de Parcent
+ 624 c/ Duquesa de Parcent
+ 622 c/ Duquesa de Parcent 18
+ 639 Avda Nuestra Señora de Valvanera 181
+5506 c/ Vía Carpetana 105
+ 560 c/ Vía Carpetana 81
+ 558 c/ Vía Carpetana 57
+4749 Pº Ermita del Santo
+4747 Pº Ermita del Santo
+4745 Pº Ermita del Santo
+ 554 Pº Ermita del Santo
+ 617 Pº Ermita del Santo 39
+ 615 Pº Ermita del Santo 19
+ 613 Pº Ermita del Santo 1
+4213 Pº Ermita del Santo 2
+ 609 Pº Virgen del Puerto
+ 607 Pº Virgen del Puerto 1
+ 604 Custa de San Vicente 40
+ 602 Custa de San Vicente 3
+ 600 Custa de San Vicente 4
+4128 c/ San Quintín 4
+5738 c/ Arrieta 1

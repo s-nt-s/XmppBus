@@ -1,0 +1,34 @@
+ 488 Pl Los Santos de la Humosa
+2892 c/ Valdetorres de Jarama 1
+ 486 c/ Valdetorres de Jarama 2
+ 484 c/ Valdetorres de Jarama 10
+ 482 c/ Valdetorres de Jarama 14
+ 489 c/ Arequipa 8
+ 490 c/ Arequipa 13
+ 478 c/ Los Emigrantes 7
+ 476 c/ Los Emigrantes 1
+ 474 c/ Mota del Cuervo 1C
+ 472 c/ Mota del Cuervo 70
+ 470 c/ Pedroñeras 1C
+ 468 Pl Andrés Jaúregui 1
+ 466 c/ Silvano 105
+4081 c/ Silvano 97
+ 398 c/ Silvano 77
+ 396 c/ Silvano 71
+ 394 c/ Silvano 63
+ 392 c/ Silvano 53
+ 390 c/ Moscatelar 31
+ 388 c/ Moscatelar 11
+ 386 c/ Ulises 17
+ 384 c/ Ulises 3
+ 464 c/ José Silva 16
+ 409 Avda Ramón Y Cajal 107
+ 462 Avda Ramón Y Cajal 81
+ 411 Avda Ramón Y Cajal 67
+ 460 Avda Ramón Y Cajal 35
+ 458 Avda Ramón Y Cajal 17
+ 413 Avda Ramón Y Cajal 1
+ 456 Avda Concha Espina 51
+ 454 Avda Concha Espina 5
+4179 Avda Concha Espina 6
+  45 Pl Lima

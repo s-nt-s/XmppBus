@@ -1,0 +1,51 @@
+18713 c/ Guadalajara N, Arroyo de las Fraguas
+18717 c/ Enmedio N Sn, Tamajón
+18125 c/ Zarzuela 2, Valdeolmos-Alalpardo
+18714 Ctra de Veguillas 0, Cogolludo
+18720 Ctra de Guadalajara N Sn, Retiendas
+18718 Ctra de Humanes N Sn, Cogolludo
+18724 Ctra de Puebla del Vallés N, La Mierla
+18727 Ctra de Guadalajara N, La Mierla
+18729 c/ Real N Sn, Puebla de Beleña
+19079 Ctra Cm-1001 Km 0, Matarrubia
+18730 Ctra de Torrelaguna N Sn, Casa de Uceda
+18732 Ctra de Guadalajara N Sn, El Cubillo de Uceda
+18735 Ctra de Valdenuño N Sn, Viñuelas
+18736 Ctra de Valdenuño-Viñuelas N Sn, Valdenuño Fernández
+18738 c/ El Calvario N Sn, Valdenuño Fernández
+18740 Ctra de Mesones-Valdenuño N Sn, El Casar
+18758 c/ Juan Carlos I, El Casar
+18744 Ctra Cm111 2, El Casar
+12335 Ctra de M-123 11700, Ribatejada
+10050 Ctra de M-123 N 9.700, Ribatejada
+06749 Ctra N-I Burgos Km S/N, San Sebastian de Los Reyes
+19179 Ctra de Algete-Casar de Talamanca 8300, Valdeolmos-Alalpardo
+06750 Ctra N-I (Burgos) 20400, San Sebastian de Los Reyes
+19177 Ctra de Algete-Casar de Talamanca 7700, Valdeolmos-Alalpardo
+16438 Ctra N-I (Burgos) 19900, San Sebastian de Los Reyes
+09541 Pl Nacional 1, Valdeolmos-Alalpardo
+17025 Pº Europa 11, San Sebastian de Los Reyes
+10024 Ctra de Algete-Casar de Talamanca 5700, Valdeolmos-Alalpardo
+10019 Pº Europa 7, San Sebastian de Los Reyes
+10023 c/ José Antonio (Alalpardo) 19, Valdeolmos-Alalpardo
+12422 Pº Europa 1, San Sebastian de Los Reyes
+09542 Avda Paz 22, Valdeolmos-Alalpardo
+06743 Pl Constitución 5, Algete
+17238 Pº Europa 26, San Sebastian de Los Reyes
+06744 c/ Mayor 50, Algete
+06751 Pº Europa 26, San Sebastian de Los Reyes
+06745 Ctra de Algete N 2.700, Algete
+15191 Pº Europa 26, San Sebastian de Los Reyes
+06752 Bulv de Salvador Allende 19, Alcobendas
+06746 Ctra de Algete N 3.500, Algete
+06747 Ctra Algete Km 21.600, San Sebastian de Los Reyes
+10228 Ctra Algete N 22.400, San Sebastian de Los Reyes
+06863 Ctra A-1 (Vía de Servicio) N 14.200, Alcobendas
+06864 Ctra de Irún N 13.000, Alcobendas
+06865 Avda Santo Domingo de la Calzada 1, Madrid
+50000 Avda Burgos 135, Madrid
+ 3602 Avda Burgos 10100, Madrid
+18074 Pº Castellana 195A, Madrid
+ 3265 Avda Burgos 87, Madrid
+10550 Pº Castellana 296, Madrid
+17472 Avda Asturias 2, Madrid

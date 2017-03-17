@@ -1,0 +1,37 @@
+5705 Avda Ciudad de Barcelona 2B
+1402 Avda Ciudad de Barcelona 6
+1404 Avda Ciudad de Barcelona 134B
+1406 Avda Ciudad de Barcelona 144
+1408 Avda Ciudad de Barcelona 182
+1410 Avda Ciudad de Barcelona 208
+2058 Avda Ciudad de Barcelona 224
+1001 Avda Albufera 38
+1003 Avda Albufera 76
+1005 Avda Albufera 102
+1007 Avda Albufera 145
+1009 Avda Albufera 179
+2514 c/ Pío Felipe 32
+2516 c/ Pío Felipe
+2518 c/ Benjamín Palencia 20
+5055 c/ Benjamín Palencia
+2520 c/ Malgrat de Mar 2
+2522 Avda Pablo Neruda 2E
+2524 c/ Los Andaluces 2
+2526 c/ Los Andaluces 16
+4102 Avda Rafael Alberti 7
+2528 c/ San Claudio
+2530 c/ Los Andaluces 9
+2532 Avda Rafael Alberti 16
+1017 Avda Albufera 272
+1019 Avda Albufera 300
+4680 Avda Albufera 319
+1023 Avda Albufera 308
+4682 Ctra de Vicálvaro A Vallecas 3
+1027 Avda Democracia 1
+5163 c/ Sierra de Guadalupe 11
+4368 c/ Sierra Gador 68
+4696 c/ Los Montes de Barbanza 12
+4684 c/ Congosto 10
+4686 c/ Congosto 28
+4697 c/ Congosto 66
+3663 c/ Congosto

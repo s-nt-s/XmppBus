@@ -1,0 +1,32 @@
+ 912 c/ Duque de Rivas 3
+ 545 c/ Toledo 54
+ 547 c/ Toledo 82
+2589 c/ Toledo 108
+ 594 c/ Toledo 118
+ 914 c/ Toledo 140
+ 916 c/ Toledo 180
+ 918 c/ Antonio López 4
+ 920 c/ Antonio López 46
+ 922 c/ Antonio López 88
+ 924 c/ Antonio López 134A
+ 926 c/ Antonio López 150
+ 928 c/ Antonio López 164
+ 930 c/ Antonio López 198
+ 932 c/ Antonio López 232G
+ 934 c/ Antonio López 250
+ 936 c/ González Feíto 5B
+3192 c/ González Feíto
+5124 Cmno de Perales 48D
+ 937 c/ San Mario 10
+ 939 c/ San Mario
+ 941 c/ Estafeta 22
+ 943 c/ Estafeta 35
+2839 c/ Antequera 14
+4865 Avda Los Rosales 13
+4867 Avda Los Rosales 20
+5638 Avda Los Rosales 36
+1800 Ctra de Villaverde A Vallecas 33
+1798 Ctra de Villaverde A Vallecas 46L
+3199 c/ Alianza 43
+5371 c/ Alianza 23
+4869 Avda Orovilla 53

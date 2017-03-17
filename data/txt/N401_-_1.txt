@@ -1,0 +1,27 @@
+13019 Pl Emperador Carlos V 6, Madrid
+ 5718 Avda Córdoba 2, Madrid
+ 1132 Avda Córdoba 49, Madrid
+ 1135 Avda Andalucía 9, Madrid
+ 1172 Avda Andalucía 38, Madrid
+16729 c/ Santiago Amón 4, Madrid
+12981 c/ Río Tinto N, Getafe
+12388 c/ Río Guadalquivir 13, Getafe
+18461 c/ Río Guadalquivir 19, Getafe
+12855 c/ Sierra Nevada 13, Pinto
+12887 c/ Sierra Nevada 5, Pinto
+18462 Pº Artes 15, Pinto
+15532 Pº Artes 15, Pinto
+12382 Avda Europa 21, Pinto
+12379 Avda Europa 1, Pinto
+16454 c/ Cataluña 9, Pinto
+08049 Avda Isabel La Católica 25, Pinto
+08048 Avda Isabel La Católica 1, Pinto
+06347 Pl Jaime Meric 4, Pinto
+11136 c/ Cañada Real de Toledo 8, Pinto
+08052 c/ Cañada Real de Toledo 23, Pinto
+10877 Ctra de Andalucía (N-Iv) 24300, Pinto
+07989 Avda Andalucía 202, Valdemoro
+07993 c/ San Vicente de Paúl 10, Valdemoro
+07994 c/ San Vicente de Paúl 31, Valdemoro
+07995 c/ Negritas 30, Valdemoro
+07997 c/ Río Manzanares 23, Valdemoro

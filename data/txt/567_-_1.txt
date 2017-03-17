@@ -1,0 +1,76 @@
+08903 Avda Villaviciosa 1, Villaviciosa de Odon
+10572 Avda Príncipe de Asturias 10, Villaviciosa de Odon
+10570 Avda Príncipe de Asturias 62, Villaviciosa de Odon
+10568 Avda Príncipe de Asturias 74, Villaviciosa de Odon
+08917 Avda Príncipe de Asturias 56, Villaviciosa de Odon
+08913 Avda Príncipe de Asturias 90, Villaviciosa de Odon
+10566 Avda Príncipe de Asturias 100, Villaviciosa de Odon
+11352 Avda Príncipe de Asturias 126, Villaviciosa de Odon
+13299 Avda Príncipe de Asturias 138, Villaviciosa de Odon
+09919 Ctra M-501 (San Martín de Valdeiglesias) 9300, Villaviciosa de Odon
+09921 Ctra M-511 (Villaviciosa-Boadilla) Km 7.100, Villaviciosa de Odon
+09922 Ctra M-511 (Villaviciosa-Boadilla) Km 11.150, Villaviciosa de Odon
+09916 Ctra M-511 (Villaviciosa-Boadilla), Villaviciosa de Odon
+17172 Ctra de Boadilla-Villaviciosa 1, Boadilla del Monte
+09915 Ctra de Boadilla-Villaviciosa 1, Boadilla del Monte
+15568 Ctra de Boadilla-Majadahonda 4, Boadilla del Monte
+15065 Ctra de Boadilla-Majadahonda 40, Boadilla del Monte
+12076 Ctra de Boadilla-Majadahonda 4000, Boadilla del Monte
+08892 Avda Valdepastores 4, Boadilla del Monte
+12077 Ctra de Boadilla-Majadahonda 2700, Boadilla del Monte
+08890 Avda Valdepastores 5, Boadilla del Monte
+08888 Avda Valdepastores 14, Boadilla del Monte
+17869 c/ Comunidad Canaria 1, Boadilla del Monte
+08886 Avda Lomas 14, Boadilla del Monte
+08884 Avda Lomas 22, Boadilla del Monte
+08883 Avda Lomas 32, Boadilla del Monte
+08881 c/ Valle del Tormes 2, Boadilla del Monte
+08877 c/ Valle del Tormes 30, Boadilla del Monte
+08875 Avda Monte Segovia 136, Boadilla del Monte
+08873 Avda Monte Segovia 13, Boadilla del Monte
+08868 Avda Monte Olivar 12, Boadilla del Monte
+08866 Avda Monte Olivar 38, Boadilla del Monte
+08863 Avda Monte Olivar 48, Boadilla del Monte
+08861 Avda Monte Olivar 76, Boadilla del Monte
+08857 c/ Río Guadarrama 1, Boadilla del Monte
+08855 c/ Río Guadarrama 1, Boadilla del Monte
+08850 c/ Río Tajo 114, Boadilla del Monte
+08849 c/ Río Tajo 69, Boadilla del Monte
+08847 c/ Río Tajo 59, Boadilla del Monte
+08845 c/ Río Tajo 56, Boadilla del Monte
+08840 c/ Río Tajo 39, Boadilla del Monte
+08843 c/ Río Tajo 27, Boadilla del Monte
+08833 c/ Río Duero 29, Boadilla del Monte
+08831 c/ Río Algodor 4, Boadilla del Monte
+08829 c/ Vallefranco 4, Boadilla del Monte
+08823 c/ Vallefranco 26, Boadilla del Monte
+08821 c/ Vallefranco 38, Boadilla del Monte
+08819 c/ Vallefranco 52, Boadilla del Monte
+08817 c/ Vallefranco 66, Boadilla del Monte
+08813 c/ Playa de Castrourdiales 1, Boadilla del Monte
+08809 c/ Playa de Altea 23, Boadilla del Monte
+08807 c/ Playa de la Concha 15, Boadilla del Monte
+08805 c/ Playa de la Concha 2, Boadilla del Monte
+08803 c/ Playa de la Concha 2, Boadilla del Monte
+08800 Ctra M-516 (Boadilla) 98, Majadahonda
+08798 Cmno Finca Virgen de Lourdes 2, Majadahonda
+11418 c/ Fresa 1, Majadahonda
+11386 c/ Fresa 14, Majadahonda
+17684 c/ Manuel de Falla 35, Majadahonda
+17924 c/ Joaquín Rodrigo 1, Majadahonda
+17683 Avda Oliva 67, Majadahonda
+17725 Avda Oliva 63, Majadahonda
+18855 c/ Velázquez 71, Majadahonda
+13042 c/ Velázquez 37, Majadahonda
+12017 c/ Moreras 13, Majadahonda
+08791 Ctra de Pozuelo de Alarcón 3900, Majadahonda
+17840 Ctra Pozuelo 38, Majadahonda
+08793 Ctra de Pozuelo de Alarcón 43, Majadahonda
+18073 Ctra de Pozuelo de Alarcón 1, Majadahonda
+12271 Avda España 45, Majadahonda
+09410 Avda España 5500, Majadahonda
+06251 c/ Doctor Calero 56, Majadahonda
+06252 Ctra M-509 (Plantío) 2, Majadahonda
+06253 Ctra M-509 (Plantío) 6, Majadahonda
+06254 Ctra M-509 (Plantío) 40, Majadahonda
+13003 c/ Norias 175, Majadahonda

@@ -1,0 +1,20 @@
+5550 c/ Valle de Oro 1
+2471 Avda Oporto 49
+5662 c/ Montemor 2
+2438 Avda Abrantes 24
+2439 c/ Carrero Juan Ramón 14
+2441 Avda Abrantes 68
+2443 Avda Abrantes 104
+2446 c/ Besolla 9
+2448 c/ Carcastillo
+5328 c/ Padre Amigó 18
+3043 c/ María Odiaga 4
+3044 c/ María Odiaga 20
+3045 c/ María Odiaga 40
+4857 c/ María Odiaga
+4858 Pl Los Navarros 1
+2456 c/ Antonia Rodríguez Sacristán 37
+3048 c/ Guayaba 2
+3050 c/ Aguacate 56
+4181 c/ Aguacate 64
+5099 c/ Aguacate

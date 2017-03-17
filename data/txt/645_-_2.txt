@@ -1,0 +1,31 @@
+18912 Acces Estación Autobuses N, Cebreros
+19091 Ctra-V502 N, Cebreros
+19094 Av Constitución N Sn, El Hoyo de Pinares
+19092 Pl Castilla Leon N Sn, El Hoyo de Pinares
+19093 Av Constitución N Sn, El Hoyo de Pinares
+18773 c/ San Guillermo 15, Valdemaqueda
+11473 Trva Dos de Mayo 122, Valdemaqueda
+10142 Pl España 6, Valdemaqueda
+11474 c/ Umbría 1A, Valdemaqueda
+11475 Ctra de M-537 (Robledo) 12, Valdemaqueda
+11476 Ctra M-537 (Valdemaqueda) 3, Robledo de Chavela
+10143 Pº Los Álamos 11, Robledo de Chavela
+11477 Pº Antigua 40, Robledo de Chavela
+11947 Ctra M-521 (Fresnedillas) 8, Robledo de Chavela
+11478 Extrr Finca Montealegre N, Robledo de Chavela
+12600 Ctra M-521 (Fresnedillas) 57, Robledo de Chavela
+16197 Ctra de Robledo de Chavela 57, Fresnedillas de la Oliva
+09331 c/ Real 64, Fresnedillas de la Oliva
+12515 Ctra de Navalagamella 18, Fresnedillas de la Oliva
+12517 Ctra de Navalagamella 79, Fresnedillas de la Oliva
+09956 Avda Constitución 35A, Navalagamella
+09874 Ctra Cerro Alarcón 11, Valdemorillo
+18137 Cmno Robledo de Chavela 24, Valdemorillo
+18140 c/ Eras Cerradas 9, Valdemorillo
+18886 c/ Eras Cerradas 33, Valdemorillo
+12950 c/ San Juan N, Valdemorillo
+06198 Ctra M-509 (Majadahonda-Valdemorillo) 1, Villanueva del Pardillo
+15348 Avda Madrid 15, Villanueva del Pardillo
+06199 Avda Madrid 14, Villanueva del Pardillo
+06164 c/ Comunidad de Madrid 41, Rozas de Madrid, Las
+06002 c/ Princesa 89, Madrid

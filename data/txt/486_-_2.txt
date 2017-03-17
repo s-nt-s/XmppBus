@@ -1,0 +1,42 @@
+09066 c/ Juan Negrín 1, Leganes
+07882 c/ Federica Montseny 25, Leganes
+09525 c/ Federica Montseny 11, Leganes
+08213 c/ Camino de Polvoranca 20, Leganes
+07870 Avda Los Pinos 2, Leganes
+07866 Avda Orellana 2A, Leganes
+07868 Avda Fuenlabrada 123, Leganes
+07874 c/ Pizarro 2A, Leganes
+07878 c/ Santa Teresa 6, Leganes
+07908 Avda Universidad 33, Leganes
+10575 c/ Río Duero 15, Leganes
+07912 c/ Río Duero 44, Leganes
+07887 c/ Río Guadalquivir 11, Leganes
+07911 c/ Río Manzanares 29, Leganes
+07913 Ctra de la Fortuna 2A, Leganes
+12574 c/ Palmera 2, Leganes
+12575 c/ Palmera 31, Leganes
+19411 Avda Pueblo Saharaui N, Leganes
+18304 Avda Juan Xxiii 15, Leganes
+18302 Avda Juan Xxiii 1, Leganes
+17808 c/ Praga 2, Leganes
+17806 c/ Anita Martínez 6, Leganes
+17804 Ctra de la Fortuna 2E, Leganes
+15530 c/ Álava N, Leganes
+08032 Avda Libertad 76, Leganes
+08033 c/ San José 44, Leganes
+16610 c/ Santo Domingo 8, Leganes
+08035 c/ San Bernardo 4, Leganes
+07588 Ctra del Barrio de la Fortuna 21, Madrid
+07587 Avda Peseta 6, Madrid
+ 4265 Ctra del Barrio de la Fortuna 1, Madrid
+ 3818 c/ Joaquín Turina 47, Madrid
+  358 c/ Joaquín Turina 68, Madrid
+  356 c/ Joaquín Turina 37, Madrid
+  378 c/ Eugenia de Montijo 89, Madrid
+ 1157 Avda Nuestra Señora de Fátima 104, Madrid
+ 1153 Avda Nuestra Señora de Fátima 69, Madrid
+  589 Avda Nuestra Señora de Fátima 33, Madrid
+07605 c/ Oca 101, Madrid
+ 3716 c/ Oca 71, Madrid
+ 2548 c/ Oca 17, Madrid
+ 5601 Gta del Valle de Oro 13, Madrid

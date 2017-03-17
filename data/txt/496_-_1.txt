@@ -1,0 +1,43 @@
+12632 Cmno del Molino 5, Fuenlabrada
+12630 Cmno del Molino 3, Fuenlabrada
+07730 c/ Portugal 37, Fuenlabrada
+19157 c/ Luis Sauquillo 58, Fuenlabrada
+07746 c/ Panaderas 2, Fuenlabrada
+07743 c/ Comunidad de Madrid 5, Fuenlabrada
+07742 c/ Comunidad de Madrid 3, Fuenlabrada
+10513 c/ Teide 4, Fuenlabrada
+10515 c/ Turquía 1, Fuenlabrada
+10521 c/ Turquía 18, Fuenlabrada
+10518 c/ Portugal 13, Fuenlabrada
+08154 Avda Industria 400, Humanes de Madrid
+08156 Avda Industria 700, Humanes de Madrid
+08158 Avda Industria 62, Humanes de Madrid
+08160 Avda Industria 1700, Humanes de Madrid
+08162 Avda Industria 77, Humanes de Madrid
+08164 Avda Industria 99, Humanes de Madrid
+08166 Avda Fuenlabrada 37, Moraleja de Enmedio
+12055 Avda Fuenlabrada 26, Moraleja de Enmedio
+09317 Avda Fuenlabrada 4300, Moraleja de Enmedio
+09319 Avda Fuenlabrada 3, Moraleja de Enmedio
+08168 Pl Constitución 3, Moraleja de Enmedio
+10520 Avda Arroyomolinos 2, Moraleja de Enmedio
+08169 Ctra M-413 (Arroyomolinos) 5300, Moraleja de Enmedio
+10510 Ctra M-413 (Arroyomolinos) 7000, Moraleja de Enmedio
+10508 Ctra M-413 (Arroyomolinos) 7800, Moraleja de Enmedio
+10506 Ctra M-413 (Arroyomolinos) 8400, Moraleja de Enmedio
+10504 Ctra M-413 (Arroyomolinos-Fuenlabrada) 9800, Arroyomolinos
+12645 c/ Rosalía de Castro 36, Arroyomolinos
+12646 c/ Rosalía de Castro 92, Arroyomolinos
+12531 c/ Somosierra 15, Arroyomolinos
+16631 Pl Los Almendros 4, Arroyomolinos
+11260 Pl Los Galayos 2, Arroyomolinos
+16712 c/ Batres 14, Arroyomolinos
+15519 Ctra M-413 Arroyomolinos-Fuenlabrada 4, Arroyomolinos
+12648 c/ Castilla-León 5, Arroyomolinos
+17793 c/ Castilla-León 14, Arroyomolinos
+16212 c/ Río Tajo 37, Arroyomolinos
+17535 c/ Bélgica N, Arroyomolinos
+15331 c/ Puerto de Somosierra, Arroyomolinos
+15328 c/ Puerto de Navacerrada, Arroyomolinos
+15327 c/ Puerto de Navacerrada, Arroyomolinos
+15325 c/ Puerto de Navacerrada, Arroyomolinos

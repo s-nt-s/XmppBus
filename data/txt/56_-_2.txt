@@ -1,0 +1,17 @@
+1000 c/ Monte Ulia N
+1411 Avda Ciudad de Barcelona 93
+3720 c/ Doctor Esquerdo 217
+1436 c/ Doctor Esquerdo 187
+4717 c/ Doctor Esquerdo 177
+1434 c/ Doctor Esquerdo 173
+1432 c/ Doctor Esquerdo 149
+4715 c/ Doctor Esquerdo 119
+4713 c/ Doctor Esquerdo 95
+1257 c/ Doctor Esquerdo 81
+5822 c/ Doctor Esquerdo 57
+ 151 c/ Doctor Esquerdo 49
+ 149 c/ Los Fundadores 1
+1428 c/ Doctor Esquerdo 1
+ 782 c/ Francisco Silvela 4
+ 784 c/ Francisco Silvela 34
+2224 c/ Conde de Peñalver 65

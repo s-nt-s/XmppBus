@@ -1,0 +1,35 @@
+4837 Avda Entrevías 140
+4657 c/ Villacarrillo 2
+4658 c/ Villacarrillo 19T
+1094 c/ Cazorla 35
+1095 c/ Pedroches 31
+1096 c/ Mancha
+1097 c/ Mancha 1
+1099 c/ Vizconde de Arlessón 45
+1100 c/ Vizconde de Arlessón 1
+1101 c/ Carlos Martín Álvarez 81
+1102 c/ Carlos Martín Álvarez 45
+1103 c/ Javier de Miguel 12
+1105 c/ Javier de Miguel 38
+1107 c/ Payaso Fofó 9
+1109 c/ Payaso Fofó 3
+1007 Avda Albufera 145
+1009 Avda Albufera 179
+1011 Avda Albufera 220
+1013 Avda Albufera 246
+1015 Avda Albufera 254
+1017 Avda Albufera 272
+1019 Avda Albufera 300
+4680 Avda Albufera 319
+1023 Avda Albufera 308
+4682 Ctra de Vicálvaro A Vallecas 3
+1027 Avda Democracia 1
+5163 c/ Sierra de Guadalupe 11
+4368 c/ Sierra Gador 68
+4696 c/ Los Montes de Barbanza 12
+3339 c/ Puerto de Porzuna 6
+3340 c/ Puerto de Porzuna 28
+4071 c/ Cabeza Mesada
+5777 c/ Valderrebollo 26
+5878 c/ Granja de San Ildefonso 15
+5879 c/ Granja de San Ildefonso 15

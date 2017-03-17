@@ -1,0 +1,24 @@
+5706 Avda Ciudad de Barcelona 2B
+1402 Avda Ciudad de Barcelona 6
+1404 Avda Ciudad de Barcelona 134B
+1406 Avda Ciudad de Barcelona 144
+1408 Avda Ciudad de Barcelona 182
+1410 Avda Ciudad de Barcelona 208
+2058 Avda Ciudad de Barcelona 224
+2059 Avda Monte Igueldo 10
+2091 c/ Martínez de la Riva 18
+2184 c/ Martínez de la Riva 58
+2186 c/ Sierra Molina
+2188 c/ Sierra Molina 24
+2190 c/ Alfredo Castro Camba 38
+2192 c/ Mejorana 16
+5436 c/ Mejorana 54
+2194 c/ Lagartera 166
+1096 c/ Mancha
+2196 Avda Entrevías 52
+2198 Avda Entrevías 80
+2200 Avda Entrevías 100
+2202 Avda Entrevías 130
+2204 c/ Los Vecinos del Pozo 12
+2205 c/ Cabo Machichaco 2
+2206 c/ Los Andaluces del Pozo 12

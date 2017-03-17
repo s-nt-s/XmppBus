@@ -1,0 +1,30 @@
+3811 c/ Doctor Esquerdo 3
+ 148 c/ Jardín de San Federico 17
+ 150 c/ Doctor Esquerdo 42
+1256 c/ Doctor Esquerdo 48
+ 199 c/ Ibiza 43
+2157 c/ Narváez 53
+ 156 c/ O'Donnell 31
+ 158 c/ O'Donnell 9
+ 161 Pl Independencia 3
+  69 Pl Cibeles 1
+5135 c/ Gran Vía 2
+5137 c/ Gran Vía 16
+ 166 c/ San Alberto 5
+ 168 c/ Gran Vía 56
+ 170 c/ Gran Vía 74
+1750 c/ Princesa 2
+ 172 c/ Princesa
+ 175 c/ Los Mártires de Alcalá 4
+ 176 c/ Blasco de Garay 6
+ 177 c/ Blasco de Garay 40
+4477 c/ Fernández de Los Ríos 43
+4478 c/ Vallehermoso 56
+4479 c/ Vallehermoso 90
+ 180 c/ Vallehermoso 112
+ 181 c/ Juan Vigón 23
+ 182 c/ Juan Vigón 9
+ 183 c/ General Ampudia 3
+ 184 c/ General Ampudia 18
+ 185 Avda Reina Victoria 57
+ 186 c/ Guzmán El Bueno 139

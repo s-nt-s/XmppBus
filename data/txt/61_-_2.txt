@@ -1,0 +1,25 @@
+3937 c/ Doce de Octubre 8
+2214 c/ Narváez 69
+2157 c/ Narváez 53
+2155 c/ Narváez 29
+2215 Avda Felipe Ii 3
+2217 c/ Conde de Peñalver 6
+2219 c/ Conde de Peñalver 24
+2221 c/ Conde de Peñalver 48
+4358 c/ Conde de Peñalver 78
+1429 c/ Diego de León 67
+2595 c/ Diego de León 41
+3641 c/ Diego de León 25
+2598 c/ Diego de León 13
+2600 c/ Diego de León 3
+ 537 c/ General Oraa 1
+ 530 Pº General Martínez Campos 51
+1893 Pº General Martínez Campos 35
+ 528 Pº General Martínez Campos 23
+1895 Pº General Martínez Campos 3
+ 526 c/ Eloy Gonzalo 35
+ 538 c/ Eloy Gonzalo 3
+ 540 c/ Fernando El Católico 2
+ 541 c/ Fernando El Católico 16
+ 542 c/ Fernando El Católico 52
+ 543 c/ Fernando El Católico 84

@@ -1,0 +1,30 @@
+5841 c/ Virgen de Los Peligros 1
+2002 c/ Alcalá 32
+  90 c/ Alcalá 44
+  72 Pº Recoletos 2
+  65 Pº Recoletos 22
+  66 Pº Castellana 2
+  62 Pº Castellana 20
+  60 Pº Castellana 38
+ 530 Pº General Martínez Campos 51
+1893 Pº General Martínez Campos 35
+ 528 Pº General Martínez Campos 23
+1895 Pº General Martínez Campos 3
+1896 c/ Alonso Cano 18
+1898 c/ Alonso Cano 48
+1900 c/ Alonso Cano 76
+1902 c/ Alonso Cano
+3380 c/ General Moscardó 12
+1904 c/ General Moscardó 20
+1906 c/ General Moscardó 32
+1909 c/ General Varela 10
+1910 c/ General Varela 22
+1912 c/ General Yagüe 5
+4828 Pº Castellana 150
+  35 Pº Castellana 170
+  33 c/ Carlos Maurras 1
+  29 Pº Castellana 214
+  30 c/ Mateo Inurria 1
+1914 c/ Enrique Larreta 12
+1915 c/ Agustín de Foxá 28
+1917 c/ Agustín de Foxa

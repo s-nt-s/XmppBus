@@ -1,0 +1,36 @@
+07693 c/ Galicia 27A, Fuenlabrada
+07695 c/ Galicia 25, Fuenlabrada
+07696 c/ Galicia 15, Fuenlabrada
+07699 c/ Galicia 1, Fuenlabrada
+07702 c/ Móstoles 68, Fuenlabrada
+07705 Avda Europa 2, Fuenlabrada
+07716 c/ Móstoles 35, Fuenlabrada
+07730 c/ Portugal 37, Fuenlabrada
+07732 c/ Portugal 31, Fuenlabrada
+07731 c/ Portugal 44, Fuenlabrada
+07725 c/ Francia 33, Fuenlabrada
+07719 c/ Móstoles 21, Fuenlabrada
+07781 c/ Leganés 2, Fuenlabrada
+07771 c/ Leganés 36, Fuenlabrada
+07764 c/ Leganés 46, Fuenlabrada
+07755 c/ Leganés 60, Fuenlabrada
+07863 Avda Fuenlabrada 123, Leganes
+07868 Avda Fuenlabrada 123, Leganes
+07889 Avda Fuenlabrada 101, Leganes
+07893 Avda Fuenlabrada 75, Leganes
+07901 Avda Fuenlabrada 27A, Leganes
+07916 Avda Fuenlabrada 3, Leganes
+09510 Avda Mancha 36, Leganes
+08206 Crta. Carabanchel 2, Leganes
+15333 Ctra Carabanchel 28, Leganes
+08200 Avda Carabanchel Alto 154, Madrid
+16166 Avda Carabanchel Alto 53, Madrid
+07547 Avda Carabanchel Alto 134, Madrid
+07572 Avda Carabanchel Alto 96A, Madrid
+07570 Avda Carabanchel Alto 62, Madrid
+ 4020 Avda Carabanchel Alto 42, Madrid
+  378 c/ Eugenia de Montijo 89, Madrid
+  667 Avda Los Poblados 82, Madrid
+  663 Avda Los Poblados 57, Madrid
+  661 Avda Los Poblados 51, Madrid
+08380 c/ Valmojado 293, Madrid

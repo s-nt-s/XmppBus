@@ -1,0 +1,22 @@
+2419 c/ Princesa 92
+2418 Avda Juan de Herrera 2
+2416 Avda Juan de Herrera 6
+2414 c/ Martín Fierro 1
+4295 Avda Séneca 16
+2412 Avda Valladolid 83
+2410 c/ Loeches 1
+2408 Avda Valladolid 45
+2406 Avda Valladolid 19
+ 861 Pº Florida 59
+ 859 Pº Florida 41
+ 857 Pº Florida 3
+ 604 Custa de San Vicente 40
+ 602 Custa de San Vicente 3
+ 600 Custa de San Vicente 4
+ 855 Pl España 4
+ 171 c/ Gran Vía 71
+ 169 c/ Gran Vía 47
+ 167 c/ Gran Vía 29
+5138 c/ Gran Vía 11
+ 164 c/ Gran Vía 3
+3698 c/ Alcalá 29

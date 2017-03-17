@@ -1,0 +1,24 @@
+ 543 c/ Fernando El Católico 84
+ 520 c/ Fernández de Los Ríos 93
+ 521 c/ Fernández de Los Ríos 65
+ 522 c/ Fernández de Los Ríos 35
+ 523 c/ Fernández de Los Ríos 3
+ 524 c/ Cardenal Cisneros 63
+ 525 c/ Eloy Gonzalo 36
+ 527 Pº General Martínez Campos 20
+1894 Pº General Martínez Campos 40
+ 529 Pº General Martínez Campos 46
+2602 c/ General Oraa
+2601 c/ Los Hermanos Bécquer 1
+2599 c/ Diego de León 18
+3738 c/ Diego de León 36
+2597 c/ Diego de León 50
+3739 c/ Diego de León 62
+5452 c/ Conde de Peñalver
+2222 c/ Conde de Peñalver 51
+2220 c/ Conde de Peñalver 25
+2218 c/ Conde de Peñalver 7
+2216 c/ Narváez 4
+2154 c/ Narváez 30
+2156 c/ Narváez 64
+3937 c/ Doce de Octubre 8

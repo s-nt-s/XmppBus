@@ -1,0 +1,47 @@
+15334 Ctra Fuenlabrada 6, Leganes
+07864 Avda Doctor Fleming N, Leganes
+07891 Avda Doctor Fleming 22, Leganes
+07895 Avda Museo 4, Leganes
+07937 c/ Lugo 4, Leganes
+18325 c/ Julio Palacios 2, Leganes
+18327 c/ Julio Palacios 20, Leganes
+08353 c/ Torres Quevedo 5, Leganes
+09521 c/ Rey Pastor 16, Leganes
+07948 Avda Europa 3, Leganes
+07949 Avda Europa 17, Leganes
+07978 Avda Alemania 10A, Leganes
+07980 Avda Alemania 21, Leganes
+07982 Avda Bélgica 71, Leganes
+09077 Avda Rey Juan Carlos I 112, Leganes
+09079 Avda Gran Bretaña 1, Leganes
+09513 Avda Bélgica 1, Leganes
+07973 Avda Portugal 12, Leganes
+07971 Avda Portugal 2, Leganes
+09075 Avda Francia 10, Leganes
+07969 Avda Europa 63, Leganes
+07959 c/ Somontano 3, Leganes
+07957 c/ Monegros 36, Leganes
+07955 c/ Monegros 40B, Leganes
+07953 c/ Rioja 133, Leganes
+07951 c/ Rioja 88, Leganes
+07927 c/ Rioja 93, Leganes
+07932 c/ Rioja 43, Leganes
+07926 c/ Rioja 7, Leganes
+07933 c/ Sagra 1, Leganes
+09511 c/ Monegros 8, Leganes
+08206 Crta. Carabanchel 2, Leganes
+15333 Ctra Carabanchel 28, Leganes
+08200 Avda Carabanchel Alto 154, Madrid
+16166 Avda Carabanchel Alto 53, Madrid
+07547 Avda Carabanchel Alto 134, Madrid
+07572 Avda Carabanchel Alto 96A, Madrid
+07570 Avda Carabanchel Alto 62, Madrid
+ 4020 Avda Carabanchel Alto 42, Madrid
+  378 c/ Eugenia de Montijo 89, Madrid
+ 1157 Avda Nuestra Señora de Fátima 104, Madrid
+ 1153 Avda Nuestra Señora de Fátima 69, Madrid
+  589 Avda Nuestra Señora de Fátima 33, Madrid
+07605 c/ Oca 101, Madrid
+ 3716 c/ Oca 71, Madrid
+ 2548 c/ Oca 17, Madrid
+50003 c/ Oca 7, Madrid

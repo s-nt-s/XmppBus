@@ -1,0 +1,40 @@
+5033 c/ Tren de Arganda 10
+1829 Bulv de Indalecio Prieto 16
+1827 Bulv de Indalecio Prieto 26
+5027 Bulv de Indalecio Prieto
+5031 Bulv de Indalecio Prieto 48A
+5029 c/ Copérnico 1
+3496 Bulv de José Prat
+4374 c/ Hacienda de Pavones 261
+2001 c/ Valdebernardo 23
+2000 c/ Encomienda de Palacios
+1998 c/ Encomienda de Palacios
+ 849 c/ Encomienda de Palacios 189
+ 850 c/ Encomienda de Palacios 53
+ 844 c/ Encomienda de Palacios 1
+1993 c/ Arroyo Fontarrón 83
+1991 c/ Arroyo Fontarrón 55
+1989 c/ Arroyo Fontarrón 1
+ 835 Avda Moratalaz 97
+5473 Avda Moratalaz 45B
+1988 Pl Corregidor Alonso de Aguilar 6
+1987 c/ Sierra Elvira 39
+4596 c/ Sierra Elvira 29
+1983 Avda Peña Prieta 65
+1981 Avda Peña Prieta 19
+1979 Avda Peña Prieta
+2057 Avda Ciudad de Barcelona 107
+1411 Avda Ciudad de Barcelona 93
+1978 Avda Ciudad de Barcelona 81A
+1970 c/ Méndez Álvaro 75
+1968 c/ Méndez Álvaro 55
+1971 c/ Méndez Álvaro 35
+5144 c/ Méndez Álvaro 11
+1973 c/ Áncora 45
+2421 c/ Áncora 3
+1976 c/ Martín Soler 4
+1186 c/ Batalla del Salado 26
+1187 c/ Batalla del Salado 50
+1188 c/ Miguel Arredondo 1
+1170 Pº Delicias 150
+5128 Pl Legazpi 3

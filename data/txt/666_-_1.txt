@@ -1,0 +1,19 @@
+10185 c/ Cañada Nueva 19, San Lorenzo de El Escorial
+10187 Avda Constitución 20, El Escorial
+11526 Avda Constitución 58, El Escorial
+12163 Ctra de Valdemorillo, El Escorial
+12639 Ctra M-533 (Zarzalejo) 2, El Escorial
+11533 Ctra M-533 (Zarzalejo) 8, El Escorial
+15598 Avda Estación 2, Zarzalejo
+12159 Avda Estación 58, Zarzalejo
+15600 Avda Estación 102, Zarzalejo
+18211 Avda Estación 136, Zarzalejo
+16299 Avda Cruz Verde 14, Zarzalejo
+18558 Avda Cruz Verde 31, Zarzalejo
+10222 Ctra Hoya 2, Santa Maria de la Alameda
+19446 Ctra de Ventolera Finca Cruce Carretera Ávila 38900, Santa Maria de la Alameda
+18208 Ctra M-505 (De Las Rozas de Madrid A Ávila) 48, Santa Maria de la Alameda
+99926 Avda Anicero Marinas Sn S/N, Navas del Marqués, Las
+19088 c/ Gracia 6, Navas del Marqués, Las
+19089 c/ San Juan 1, Navas del Marqués, Las
+19087 Pl Villa 1, Navas del Marqués, Las

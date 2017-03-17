@@ -1,0 +1,37 @@
+4566 Pº Los Artilleros 35
+1076 c/ Calahorra 8
+1077 c/ Calahorra 112
+1835 c/ Calahorra 128
+1062 Cmno Viejo de Vicálvaro 7
+5033 c/ Tren de Arganda 10
+1829 Bulv de Indalecio Prieto 16
+1827 Bulv de Indalecio Prieto 26
+1825 Bulv de José Prat 26
+1823 Bulv de José Prat
+1821 Avda Democracia 19
+5751 Avda Democracia 5
+1027 Avda Democracia 1
+4694 c/ San Jaime 31
+4704 c/ San Jaime 54
+1814 c/ San Jaime 19
+5759 c/ San Jaime 4
+5327 Cmno de las Hormigueras 168
+1810 Cmno de las Hormigueras 155
+1808 Cmno de las Hormigueras 143
+1806 Cmno de las Hormigueras 123
+5037 Cmno del Pozo del Tío Raimundo
+1804 Cmno del Pozo del Tío Raimundo
+4805 c/ Eje 7 1
+4806 c/ Eje 1-10
+4808 c/ Eje 1-13 1
+1800 Ctra de Villaverde A Vallecas 33
+1798 Ctra de Villaverde A Vallecas 46L
+4833 Ctra de Villaverde A Vallecas 17
+1796 Ctra de Villaverde A Vallecas 11
+1794 Ctra de Villaverde A Vallecas 10
+1790 c/ Alcocer 8
+1788 c/ Alcocer 26
+1191 c/ Alcocer
+1193 Ctra de Carabanchel A Villaverde 109
+1195 c/ Doctor Pérez Domínguez 11
+5339 c/ Doctor Martín Arévalo 4

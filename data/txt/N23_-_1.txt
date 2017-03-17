@@ -1,0 +1,39 @@
+  73 Pº Recoletos 3
+  65 Pº Recoletos 22
+1232 c/ Génova 29
+1230 c/ Génova 3
+1865 c/ Santa Engracia 4
+1868 c/ Santa Engracia
+1869 c/ Santa Engracia 58
+1397 c/ Santa Engracia 112
+1398 c/ Santa Engracia 126
+1420 c/ Santa Engracia 160
+1568 c/ Bravo Murillo 122
+1571 c/ Bravo Murillo 192
+4083 c/ Bravo Murillo 238
+2651 c/ Rosa de Silva 1
+1533 c/ Bravo Murillo 360
+5014 Avda Asturias 2
+5016 Avda Asturias 24
+5018 Avda Asturias 40
+5020 Avda Asturias 66
+5212 c/ Ginzo de Limia 2A
+5213 c/ Ginzo de Limia 22
+1544 c/ Ginzo de Limia 58A
+1546 c/ Ginzo de Limia 60
+1636 c/ Valencia de Don Juan 2
+5382 c/ Valencia de Don Juan 8
+1637 c/ Valencia de Don Juan
+3293 c/ Alfredo Marquerie 6
+3294 c/ Nuria 28
+3571 c/ Nuria 50
+1753 c/ Maso 9
+1762 c/ Costa Brava 31
+3623 c/ Monasterio de las Huelgas 5
+2864 Avda Monasterio de Silos 23
+2968 Avda Monasterio de Silos 39A
+2970 Avda Monasterio de Silos 47B
+1021 Avda Monasterio de Silos 38J
+1022 Avda Monasterio de Silos 71
+1025 Avda Monasterio de Silos 80B
+3983 Avda Monasterio de Silos 84

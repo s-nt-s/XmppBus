@@ -1,0 +1,42 @@
+07914 Avda Los Pinos 18, Leganes
+13034 Cmno de Acedinos 1, Leganes
+07870 Avda Los Pinos 2, Leganes
+15364 c/ Bastidor 1, Leganes
+11916 c/ Carlos Sáinz 23, Leganes
+07866 Avda Orellana 2A, Leganes
+11917 c/ Carlos Sáinz 57, Leganes
+07863 Avda Fuenlabrada 123, Leganes
+07868 Avda Fuenlabrada 123, Leganes
+07874 c/ Pizarro 2A, Leganes
+07878 c/ Santa Teresa 6, Leganes
+07908 Avda Universidad 33, Leganes
+07904 Avda Universidad 23, Leganes
+07901 Avda Fuenlabrada 27A, Leganes
+07916 Avda Fuenlabrada 3, Leganes
+07924 Avda Rey Juan Carlos I 12A, Leganes
+07543 Avda Rey Juan Carlos I 32, Leganes
+07548 Avda Rey Juan Carlos I 68, Leganes
+07984 Avda Rey Juan Carlos I 76, Leganes
+11919 Avda Rey Juan Carlos I 100, Leganes
+09079 Avda Gran Bretaña 1, Leganes
+12824 Avda Gran Bretaña N, Leganes
+09077 Avda Rey Juan Carlos I 112, Leganes
+12826 c/ Roncal N, Leganes
+16090 Pque Avda Rey Juan Carlos I, Leganes
+12827 c/ Clara Janés N, Leganes
+12828 Avda Reina Sofía 30, Leganes
+11910 Avda María Moliner 33, Leganes
+11912 Avda Carmen Martín Gaite 65, Leganes
+11911 Avda Carmen Martín Gaite 27, Leganes
+11913 Avda Carmen Martín Gaite 15, Leganes
+11905 Avda María Guerrero 6, Leganes
+08206 Crta. Carabanchel 2, Leganes
+17800 Ctra Pl Elíptica 500, Leganes
+07616 c/ Vía Lusitana 55, Madrid
+ 3182 c/ Vía Lusitana 132, Madrid
+ 3184 Avda Los Poblados 95, Madrid
+ 2453 Avda Los Poblados 92, Madrid
+  667 Avda Los Poblados 82, Madrid
+  663 Avda Los Poblados 57, Madrid
+  661 Avda Los Poblados 51, Madrid
+08380 c/ Valmojado 293, Madrid

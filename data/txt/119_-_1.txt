@@ -1,0 +1,28 @@
+2308 Pº Santa María de la Cabeza 4
+2309 c/ Marqués de la Valdavia 1
+  84 Rda Atocha 32
+ 320 Rda Valencia 14
+ 322 Pº Acacias 2
+ 324 Pº Acacias 20
+ 326 Pº Acacias 32
+4669 Pº Acacias 40
+ 327 Pº Acacias 60
+ 329 c/ General Ricardos 8
+5624 c/ General Ricardos 28
+4239 c/ General Ricardos 52
+5560 c/ General Ricardos 78
+3032 c/ General Ricardos 102
+3156 c/ Blasa Pérez 4
+3158 c/ Tercio 14
+3160 c/ Ervigio 7
+3565 c/ Fragata
+3163 c/ Zaida 28
+3165 c/ Arroyo de las Pavas 6
+2553 Avda Nuestra Señora de Valvanera 120
+2554 c/ Alhambra 89
+2262 c/ Alhambra 58
+3167 c/ Concejal Francisco José Jiménez Martín
+3169 c/ Concejal Francisco José Jiménez Martín
+4533 c/ Concejal Francisco José Jiménez Martín 5
+4535 c/ Concejal Francisco José Jiménez Martín
+4512 c/ Pablo Sarasate

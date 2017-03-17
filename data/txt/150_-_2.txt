@@ -1,0 +1,45 @@
+5407 Avda Manoteras 34
+5658 Avda Manoteras 20E
+5659 Avda Manoteras 40
+3648 Cmno de la Fuente de la Mora 6
+5660 Cmno de la Fuente de la Mora 9
+ 139 c/ Arturo Soria 337
+ 137 c/ Arturo Soria 329
+ 135 c/ Arturo Soria 315
+ 133 c/ Arturo Soria 310
+ 131 Avda San Luis 158
+ 129 Avda San Luis 166
+ 127 Avda San Luis
+ 125 Avda Burgos
+ 124 c/ Bambú 33
+ 123 c/ Bambú 4
+ 120 Avda Pío Xii 92
+ 118 Avda Pío Xii 77
+ 116 Avda Pío Xii 49
+ 114 Avda Pío Xii 23
+ 535 Pl Perú 1
+ 109 Avda Alfonso Xiii 202
+ 107 c/ Fray Bernardino Sahagún 7
+ 105 c/ Fray Bernardino Sahagún
+ 103 c/ Padre Damián 39
+ 101 c/ Padre Damián 31
+  99 c/ Padre Damián 21
+  97 c/ Padre Damián 3
+  96 Avda Concha Espina 2
+4179 Avda Concha Espina 6
+  41 Pº Castellana 95
+  46 Pl Pablo Ruiz Picasso 1
+  48 Pº Castellana 112
+  49 Pº Castellana 67
+  51 Pº Castellana
+  53 Pº Castellana
+4337 Pl Doctor Marañón
+  57 Pº Castellana 41
+  59 Pº Castellana 22
+  61 Pº Castellana 23
+  63 Pº Castellana 1
+5626 Pº Recoletos 37
+  68 Pº Recoletos 25
+  73 Pº Recoletos 3
+5841 c/ Virgen de Los Peligros 1
+2004 c/ Cedaceros 11

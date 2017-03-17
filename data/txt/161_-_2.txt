@@ -1,0 +1,29 @@
+3575 c/ Golondrina 104
+4578 c/ Golondrina 71
+4580 c/ Golondrina 31A
+4582 c/ Golondrina
+4584 c/ Golondrina 17
+4789 c/ Golondrina 11
+4790 c/ Golondrina 1
+4793 Ctra de Húmera 75
+3440 Ctra de Húmera
+3442 c/ Araquil 5
+3443 c/ Ana Teresa 18
+   6 c/ Blanca de Castilla 6
+3467 c/ Salle 12B
+   7 Avda Valdemarín 101
+   8 Avda Valdemarín 83
+3463 Avda Valdemarín 71A
+3461 Avda Valdemarín 55
+3459 c/ Darío Aparicio 43
+3457 c/ Darío Aparicio 33
+3455 c/ Darío Aparicio 23
+3453 c/ Darío Aparicio 5
+4772 c/ Argentona 4A
+3450 Ctra de Castilla 900
+3428 Ctra de Castilla 1600
+3426 Ctra de Castilla 3900
+4198 Avda Séneca 16
+3448 Avda Séneca
+3449 Avda Séneca 2
+5596 Avda Arco de la Victoria 2

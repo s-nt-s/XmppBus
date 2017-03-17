@@ -1,0 +1,25 @@
+5705 Avda Ciudad de Barcelona 2B
+1402 Avda Ciudad de Barcelona 6
+1404 Avda Ciudad de Barcelona 134B
+1406 Avda Ciudad de Barcelona 144
+1408 Avda Ciudad de Barcelona 182
+1410 Avda Ciudad de Barcelona 208
+2058 Avda Ciudad de Barcelona 224
+1001 Avda Albufera 38
+1003 Avda Albufera 76
+2561 c/ Sierra de Cadi 2
+2563 c/ Carlos Martín Álvarez 2
+2565 c/ Carlos Martín Álvarez 38
+5667 c/ Martínez de la Riva 119B
+2569 c/ García Miranda 15
+4597 Avda Pablo Neruda 97
+4598 Avda Parque de Palomeras Bajas 16
+2575 Avda Parque de Palomeras Bajas 18
+2576 Avda Parque de Palomeras Bajas 23I
+2109 Avda Parque de Palomeras Bajas 30
+2577 Avda Buenos Aires 99
+2088 Avda Pablo Neruda 71
+2582 Avda Pablo Neruda 55A
+2584 Avda Pablo Neruda 47
+2586 Avda Pablo Neruda
+4088 c/ Santillana del Mar 20

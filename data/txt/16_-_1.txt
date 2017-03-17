@@ -1,0 +1,30 @@
+ 543 c/ Fernando El Católico 84
+ 520 c/ Fernández de Los Ríos 93
+ 521 c/ Fernández de Los Ríos 65
+ 522 c/ Fernández de Los Ríos 35
+ 523 c/ Fernández de Los Ríos 3
+ 524 c/ Cardenal Cisneros 63
+ 525 c/ Eloy Gonzalo 36
+ 527 Pº General Martínez Campos 20
+1894 Pº General Martínez Campos 40
+ 529 Pº General Martínez Campos 46
+  58 Pº Castellana 52
+ 532 c/ María de Molina 18
+ 534 c/ López de Hoyos 30
+ 430 c/ Velázquez 136
+ 431 c/ Velázquez 144
+ 432 c/ Velázquez 150
+ 418 Avda Doctor Arce 12
+ 416 Avda Doctor Arce 24
+ 414 c/ Príncipe de Vergara 204
+ 517 c/ Príncipe de Vergara 210
+ 515 c/ Príncipe de Vergara 248
+4849 c/ Príncipe de Vergara 256
+ 439 c/ Príncipe de Vergara 268
+4832 c/ Príncipe de Vergara 278
+ 112 Avda Pío Xii 2
+ 115 Avda Pío Xii
+ 117 Avda Pío Xii 18B
+ 119 Avda Pío Xii 46
+3629 Avda Pío Xii 92
+1728 Avda Pío Xii 83

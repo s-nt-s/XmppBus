@@ -1,0 +1,63 @@
+08053 c/ Valdemoro 20, Pinto
+18647 c/ Real 92, Parla
+08041 c/ Salvador Dalí 2, Pinto
+08043 Avda España 28, Pinto
+08046 c/ Alfaro 2, Pinto
+15776 Pl Asunción 2, Pinto
+11283 c/ Cataluña 12, Pinto
+15281 c/ Cataluña 23, Pinto
+11381 c/ Águilas 14, Pinto
+08036 Ctra Parla 5100, Pinto
+07858 Ctra de Parla-Pinto 25, Parla
+11055 c/ Pinto 81, Parla
+07848 c/ Pinto 67, Parla
+07845 c/ Juan Xxiii 2, Parla
+07850 c/ Valladolid 15, Parla
+07854 c/ Valladolid, Parla
+07792 c/ Río Guadiana 1, Parla
+07800 c/ Leganés 34, Parla
+16176 Avda Industria 3, Fuenlabrada
+13110 Avda Lagunas 2, Parla
+13108 Avda Lagunas 6, Parla
+07791 Ctra Antigua de Madrid-Toledo N 0.200, Parla
+08081 Ctra N-401 (Madrid-Toledo) 18800, Fuenlabrada
+11219 c/ Vascos 25, Fuenlabrada
+08079 Ctra N-401 (Madrid-Toledo) 17900, Fuenlabrada
+16290 c/ Valtuílle, Fuenlabrada
+08069 Ctra M-506 (Villaviciosa-Pinto) 21700, Fuenlabrada
+12839 Ctra M-506 (Villaviciosa-Pinto) 21100, Fuenlabrada
+16284 c/ Molinaseca 15, Fuenlabrada
+16285 c/ Molinaseca 1, Fuenlabrada
+16286 c/ Barrios 11, Fuenlabrada
+16287 c/ Felipe Asenjo 45, Fuenlabrada
+16288 c/ Felipe Asenjo 29, Fuenlabrada
+16280 c/ Manuel Cobo Calleja 27B, Fuenlabrada
+08095 c/ Manuel Cobo Calleja 22, Fuenlabrada
+08087 c/ Manuel Cobo Calleja 10, Fuenlabrada
+16177 Avda Industria 2, Fuenlabrada
+16175 Avda Cantueña 300, Fuenlabrada
+16173 Avda Cantueña 1, Fuenlabrada
+08062 c/ Constitución 129, Fuenlabrada
+08060 c/ Constitución 111, Fuenlabrada
+11061 c/ Constitución 108, Fuenlabrada
+16541 c/ Brasil 2, Fuenlabrada
+10884 c/ Brasil 16, Fuenlabrada
+10882 Avda Los Estados 22, Fuenlabrada
+07769 Avda Los Estados 8, Fuenlabrada
+07772 c/ Leganés 23, Fuenlabrada
+07751 c/ Leganés 4000, Fuenlabrada
+07749 c/ Luis Sauquillo 44, Fuenlabrada
+07740 c/ Luis Sauquillo 80B, Fuenlabrada
+08148 Avda Fuenlabrada 118, Humanes de Madrid
+15522 Avda Fuenlabrada 43, Humanes de Madrid
+08150 Avda Fuenlabrada 56A, Humanes de Madrid
+08152 Avda Fuenlabrada 10, Humanes de Madrid
+08098 c/ Santiago Ramón Y Cajal 9, Humanes de Madrid
+08100 c/ Madrid 79, Humanes de Madrid
+08102 c/ Madrid 46, Humanes de Madrid
+08104 c/ Madrid 33, Humanes de Madrid
+16304 c/ Río Guaten 8, Humanes de Madrid
+16306 c/ Río Guaten 20, Humanes de Madrid
+12780 Avda Los Deportes 12, Humanes de Madrid
+12778 Avda Los Deportes 12, Humanes de Madrid
+12776 Avda Los Deportes 16, Humanes de Madrid

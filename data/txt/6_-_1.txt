@@ -1,0 +1,31 @@
+1918 Pl Jacinto Benavente
+1919 Pl Tirso de Molina 1B
+1921 c/ Atocha 58
+1922 c/ Atocha 82
+1924 c/ Atocha 114
+1167 Pl Emperador Carlos V 6
+1926 Pº Santa María de la Cabeza 44
+1927 Pº Santa María de la Cabeza 60
+1928 c/ Embajadores 114
+1931 c/ Jaime El Conquistador 5
+1933 c/ Jaime El Conquistador 38
+1122 Pº Chopera 12
+1124 Pº Chopera
+1935 c/ Marcelo Usera 4
+1938 c/ San Antonio de Padua 22
+1939 c/ San Antonio de Padua 51
+1941 c/ Los Evangelios 2
+1943 c/ Dolores Barranco 12
+1945 c/ Dolores Barranco 50
+1947 Avda Rafaela Ybarra 8
+1949 Avda Rafaela Ybarra 40
+1951 Avda Cerro de Los Ángeles 27
+1953 Avda Rafaela Ybarra 52
+1955 Avda Rafaela Ybarra 91
+1957 Avda Rafaela Ybarra 72
+1958 c/ Deva 43
+1959 Avda Rafaela Ybarra 90
+ 292 Avda Rafaela Ybarra 121
+ 315 c/ Gainza 331
+ 332 c/ Guetaria 73
+5359 c/ Guetaria 49

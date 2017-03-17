@@ -1,0 +1,16 @@
+2494 c/ Carretas 2
+5589 Pl Jacinto Benavente 1
+5148 c/ Atocha 1
+2247 Pl Puerta Cerrada 12
+2249 c/ Segovia 16
+2251 c/ Segovia
+2319 c/ Juan Duque 2
+2320 c/ Juan Duque 24
+2321 c/ Juan Duque 34
+2322 Pº Los Melancólicos
+2323 Pº Los Melancólicos 18
+2498 Pº San Illán 9
+3920 c/ San Dámaso 1
+3921 Avda Manzanares 74
+3922 Avda Manzanares 90
+3923 Pº San Illán

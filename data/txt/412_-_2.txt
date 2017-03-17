@@ -1,0 +1,29 @@
+08017 Avda Alcalde Antonio Chapado 41, San Martin de la Vega
+16834 Avda Alcalde Antonio Chapado 46, San Martin de la Vega
+08015 Pl Cervantes 5, San Martin de la Vega
+08011 Pl Miguel de Unamuno 12, San Martin de la Vega
+08010 Avda Doctor Manuel Jarabo 72, San Martin de la Vega
+12266 Avda Doctor Manuel Jarabo 59, San Martin de la Vega
+08019 c/ Santa Mónica 3, San Martin de la Vega
+08012 c/ San Cristóbal 121, San Martin de la Vega
+08008 Avda Doctor Manuel Jarabo 92, San Martin de la Vega
+13000 Ctra M-503 Km 15.500, San Martin de la Vega
+16714 Ctra de M-301 (Madrid) 15200, San Martin de la Vega
+07670 c/ Marañosa 13, San Martin de la Vega
+10168 Ctra de Pinto N, San Martin de la Vega
+08057 Ctra M-841 (Ramal de Enlace A4-Pinto Con M-506) 10, Pinto
+07671 c/ Alfonso Xii 6, San Martin de la Vega
+18461 c/ Río Guadalquivir 19, Getafe
+18702 Ctra M-301 Km 7300, Getafe
+09970 Ctra de San Martín de la Vega 7400, Getafe
+08132 Ctra de San Martín de la Vega 6, Getafe
+08130 Ctra M-301 N 3.000, Getafe
+08126 Ctra de San Martín de la Vega 6, Getafe
+08124 Avda Los Rosales 401, Madrid
+07688 Avda Los Rosales 399, Madrid
+07691 Avda Los Rosales 147, Madrid
+07687 Avda Los Rosales 143, Madrid
+18276 Avda Los Rosales 133, Madrid
+ 4983 Avda Los Rosales 131, Madrid
+08137 Avda Los Rosales 107, Madrid
+16732 c/ Santa Petronila 9, Madrid

@@ -1,0 +1,41 @@
+ 373 Avda General Fanjul 18
+ 372 Avda General Fanjul 112
+ 370 c/ Mirabel 19
+ 374 c/ Oliva de Plasencia 22
+ 585 c/ General Romero Basart 69
+ 366 c/ General Romero Basart 54
+ 364 c/ General Romero Basart 78
+ 362 c/ General Millán Astray 22
+ 360 c/ General Millán Astray 68
+4205 c/ Joaquín Turina 49
+3818 c/ Joaquín Turina 47
+ 358 c/ Joaquín Turina 66
+ 356 c/ Joaquín Turina 37
+ 376 c/ Eugenia de Montijo 105
+ 378 c/ Eugenia de Montijo 87
+ 352 c/ Eugenia de Montijo 63
+ 350 c/ Eugenia de Montijo 62
+ 348 c/ General Ricardos 213
+ 346 c/ General Ricardos 189
+ 344 c/ General Ricardos
+ 342 c/ General Ricardos
+4671 c/ General Ricardos 171
+ 340 c/ General Ricardos 162
+ 338 c/ General Ricardos 133
+1254 c/ General Ricardos 107
+ 334 c/ General Ricardos 85
+5625 c/ General Ricardos 55
+ 331 c/ General Ricardos 37
+ 330 c/ General Ricardos 5
+ 328 Pº Acacias 69
+ 380 Pº Acacias 49
+ 381 Pº Acacias 43
+ 325 Pº Acacias 25B
+ 323 Pº Acacias 5
+ 321 Rda Valencia 7
+  85 Rda Atocha 37
+4985 Rda Atocha 1
+  82 Pº Prado
+5511 Pº Prado 22
+  78 Pl Cánovas del Castillo 2
+  74 Pl Cibeles 3

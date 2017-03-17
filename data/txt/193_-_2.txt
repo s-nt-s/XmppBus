@@ -1,0 +1,49 @@
+15942 Avda Cabrera 81, La Cabrera
+10037 Avda Cabrera 69, La Cabrera
+10345 Avda Cabrera 23, La Cabrera
+16163 c/ Cotos de Monterey N, Venturada
+10666 Avda Cabrera 5, La Cabrera
+12881 Ctra M-122 (El Vellón) N, Pedrezuela
+11542 Ctra Antigua N-I (Madrid-Burgos) 8, Cabanillas de la Sierra
+11242 Ctra M-122 (El Espartal) 700, El Vellon
+10342 c/ Real 57, Cabanillas de la Sierra
+15992 c/ Magdalena 27, El Vellon
+11524 c/ Real 19, Cabanillas de la Sierra
+10339 Pl A Mayor 12, El Vellon
+12480 c/ Pozonuevo 1, El Vellon
+11295 Ctra Irún 52000, Venturada
+10338 Pl A Mayor 13, El Vellon
+10341 Ctra Irún 7, Venturada
+15993 c/ Magdalena 72, El Vellon
+11241 Ctra M-122 (El Espartal) 700, El Vellon
+16554 Ctra M-122 (El Vellón), Pedrezuela
+16450 Avia A-1 Km 47000, Pedrezuela
+10336 Pº Ermita 21, Pedrezuela
+12781 c/ Eras 54, Pedrezuela
+12442 c/ San Roque 40, Pedrezuela
+16713 c/ Eras N, Pedrezuela
+09142 c/ Eras 29, Pedrezuela
+09143 Pº Ermita 30, Pedrezuela
+10333 c/ Rosaleda 51, El Molar
+12690 c/ Fuente 23, El Molar
+09649 Pl Mayor 10, El Molar
+09648 Avda España 73I, El Molar
+09834 Polg Las Cabezas 4, San Agustin de Guadalix
+18362 Avda Madrid 32, San Agustin de Guadalix
+06705 c/ Félix Sanz 31, San Agustin de Guadalix
+12098 Avda Madrid 5, San Agustin de Guadalix
+11185 Avia A-1 31500, San Agustin de Guadalix
+10041 Ctra Nacional I 30500, Colmenar Viejo
+06719 Ctra A-1 N 27.9, San Sebastian de Los Reyes
+06720 Ctra N-I Burgos, San Sebastian de Los Reyes
+06723 Ctra N-I (Burgos) 23400, San Sebastian de Los Reyes
+16438 Ctra N-I (Burgos) 19900, San Sebastian de Los Reyes
+17025 Pº Europa 11, San Sebastian de Los Reyes
+10019 Pº Europa 7, San Sebastian de Los Reyes
+12422 Pº Europa 1, San Sebastian de Los Reyes
+06751 Pº Europa 26, San Sebastian de Los Reyes
+17470 Avda Asturias 2, Madrid
+15191 Pº Europa 26, San Sebastian de Los Reyes
+06752 Bulv de Salvador Allende 19, Alcobendas
+10550 Pº Castellana 296, Madrid
+18074 Pº Castellana 195A, Madrid

@@ -1,0 +1,41 @@
+09802 c/ Fragua 41, Valdeavero
+19258 Ctra de Alcalá A Torrejón N, Torrejón del Rey
+18827 Ctra Alcalá N, Torrejón del Rey
+15792 Ctra de Guadalajara, Torrejón del Rey
+15788 Avda Castillas, Torrejón del Rey
+15841 Avda Guadalajara, Torrejón del Rey
+15794 Avda Guadalajara N Sn, Torrejón del Rey
+15796 Gta Río Júcar N Sn, Torrejón del Rey
+15795 Avda Guadalajara N, Torrejón del Rey
+15790 Avda Guadalajara, Torrejón del Rey
+15787 Avda Castillas, Torrejón del Rey
+18857 N-320 N, Torrejón del Rey
+12419 Ctra de Ajalvir 13, Ribatejada
+09793 c/ Concepción 1, Ribatejada
+09794 Ctra de Ribatejada-Casar de Talamanca N 23.010, Ribatejada
+09650 Ctra M-113 (Ajalvir-Ribatejada) 2, Fresno de Torote
+09651 Ctra M-113 (Ajalvir-Ribatejada) 3, Fresno de Torote
+09652 Ctra M-113 (Ajalvir-Ribatejada) 60, Fresno de Torote
+09653 Ctra M-113 (Ajalvir-Ribatejada) 60, Fresno de Torote
+12628 c/ Niño 1, Daganzo de Arriba
+12626 c/ Oriente 51, Daganzo de Arriba
+17272 c/ Oriente 89, Daganzo de Arriba
+17273 Avda Circunvalación 7, Daganzo de Arriba
+17274 c/ Valdidueñas 40, Daganzo de Arriba
+15550 Avda Conde de Coruña 97, Daganzo de Arriba
+15551 Ctra Cobeña 24, Daganzo de Arriba
+07403 Ctra Ajalvir 10600, Daganzo de Arriba
+09533 Ctra Ajalvir 10000, Daganzo de Arriba
+12104 Ctra Daganzo 26, Ajalvir
+15657 Ctra Daganzo 27, Ajalvir
+09008 Ctra Daganzo 1, Ajalvir
+16449 Avda Los Hoyos 2, Paracuellos de Jarama
+16447 Pº Camelias, Paracuellos de Jarama
+16444 Avda Juan Pablo Ii 25, Paracuellos de Jarama
+16442 Avda Juan Pablo Ii 1, Paracuellos de Jarama
+15766 c/ Rda Cuestas 2, Paracuellos de Jarama
+07342 Ctra M-113 (De La M-111 Al Límite Por Ajalvir) 1300, Paracuellos de Jarama
+07343 Ctra M-113 (De La M-111 Al Límite Por Ajalvir) N 0.800, Paracuellos de Jarama
+07344 Ctra M-113 (De La M-111 Al Límite Por Ajalvir) N 0.100, Paracuellos de Jarama
+07361 Ctra de Antigua de Paracuellos de Jarama 3000, Madrid
+17306 Avda Logroño 365, Madrid

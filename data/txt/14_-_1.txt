@@ -1,0 +1,35 @@
+2124 Pl Conde de Casal 5
+2125 Pl Conde de Casal 1
+2127 Avda Mediterráneo 29
+2129 Avda Mediterráneo 3
+2049 Pº Reina Cristina 13
+2047 Pº Infanta Isabel 29
+2045 Pº Infanta Isabel 13
+5453 Pº Infanta Isabel 1
+  82 Pº Prado
+5511 Pº Prado 22
+  78 Pl Cánovas del Castillo 2
+5443 Pº Prado 1
+  72 Pº Recoletos 2
+  65 Pº Recoletos 22
+  66 Pº Castellana 2
+  62 Pº Castellana 20
+  60 Pº Castellana 38
+5333 Pº Castellana 52
+  56 Pl Doctor Marañón 70
+  54 Pº Castellana 61
+  52 c/ Jorge Manrique 1
+2131 Pº Castellana 112
+2132 Pº Habana 26
+2133 Pº Habana 56
+2134 Pº Habana 70
+2136 Pº Habana 74D
+2138 Pº Habana 138
+2140 Pº Habana 172
+2142 Pº Habana 196
+2144 Pº Habana 206
+2146 Pº Habana 179
+2148 Pl Duque de Pastrana 7
+2150 Avda Burgos 4A
+  11 Avda Burgos 6
+1728 Avda Pío Xii 83

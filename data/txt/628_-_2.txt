@@ -1,0 +1,37 @@
+15224 Avda Lazarejo 322, Rozas de Madrid, Las
+15222 Avda Lazarejo 294, Rozas de Madrid, Las
+15220 Avda Lazarejo 307, Rozas de Madrid, Las
+15218 Avda Lazarejo 23, Rozas de Madrid, Las
+15216 c/ Kalamos 32, Rozas de Madrid, Las
+15213 Avda Lazarejo 5, Rozas de Madrid, Las
+15211 c/ Aristóteles 5, Rozas de Madrid, Las
+09819 c/ Aristóteles 3, Rozas de Madrid, Las
+09817 c/ Aristóteles 1, Rozas de Madrid, Las
+06414 Avda Esparta 22, Rozas de Madrid, Las
+06415 Avda Esparta 52, Rozas de Madrid, Las
+09811 c/ Tracia 30, Rozas de Madrid, Las
+11827 c/ Camilo José Cela 2, Rozas de Madrid, Las
+11829 c/ Camilo José Cela 10, Rozas de Madrid, Las
+11831 c/ Severo Ochoa 1, Rozas de Madrid, Las
+06128 Ctra Vía Servicio Carretera de A Coruña, Rozas de Madrid, Las
+06129 Ctra Vía Servicio Carretera de A Coruña N 21.450, Rozas de Madrid, Las
+06130 Ctra Vía Servicio Carretera de A Coruña N, Rozas de Madrid, Las
+17255 c/ Clara Campoamor, Rozas de Madrid, Las
+17257 c/ Emilia Pardo Bazán, Rozas de Madrid, Las
+17259 c/ Emilia Pardo Bazán, Rozas de Madrid, Las
+17261 c/ Emilia Pardo Bazán, Rozas de Madrid, Las
+15720 Avda Polideportivo 15, Rozas de Madrid, Las
+15718 c/ Real 52, Rozas de Madrid, Las
+06166 Ctra del Escorial 5, Rozas de Madrid, Las
+11090 Ctra del Escorial 8, Rozas de Madrid, Las
+06170 Ctra de la Coruña 16900, Rozas de Madrid, Las
+06218 Ctra de la Coruña 1, Rozas de Madrid, Las
+06222 Avda Padre Huidobro 27, Madrid
+06223 Avda Padre Huidobro 12600, Madrid
+06268 Avda Padre Huidobro 9700, Madrid
+ 4311 Avda Padre Huidobro 8900, Madrid
+   23 Avda Puerta de Hierro 5400, Madrid
+ 1335 Avda Puerta de Hierro 4900, Madrid
+ 1333 Avda Puerta de Hierro 4500, Madrid
+06002 c/ Princesa 89, Madrid
+ 5147 Pº Ruperto Chapí 1, Madrid

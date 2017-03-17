@@ -1,0 +1,42 @@
+18885 c/ Eras Cerradas 33, Valdemorillo
+18139 c/ Eras Cerradas 15, Valdemorillo
+18138 Cmno Robledo de Chavela 28, Valdemorillo
+09858 Ctra Cerro Alarcón 11, Valdemorillo
+18884 Ctra M-510 (Navalagamella) 5, Valdemorillo
+09854 c/ Solana 2, Navalagamella
+12516 c/ Cañada 6, Fresnedillas de la Oliva
+12514 Ctra de Navalagamella 33, Fresnedillas de la Oliva
+16590 Cmno de la Estación 1, Zarzalejo
+09330 c/ Real 61, Fresnedillas de la Oliva
+09328 c/ Real 47, Fresnedillas de la Oliva
+12806 Ctra M-532 (Zarzalejo) 28, Fresnedillas de la Oliva
+12805 Ctra M-532 (Zarzalejo) 3, Robledo de Chavela
+18211 Avda Estación 136, Zarzalejo
+16299 Avda Cruz Verde 14, Zarzalejo
+15598 Avda Estación 2, Zarzalejo
+12159 Avda Estación 58, Zarzalejo
+18558 Avda Cruz Verde 31, Zarzalejo
+15600 Avda Estación 102, Zarzalejo
+18560 Avda Cruz Verde 33, Zarzalejo
+10264 Pl Constitución 9, Zarzalejo
+18210 Avda Estación 123, Zarzalejo
+15601 Avda Estación 101, Zarzalejo
+12158 Avda Estación 67D, Zarzalejo
+15599 c/ Muelle 2, Zarzalejo
+11532 Ctra M-533 (Zarzalejo) 8, El Escorial
+12982 Ctra M-533 (Zarzalejo) 2, El Escorial
+12164 Ctra de Valdemorillo N 13.000, El Escorial
+11525 Avda Contitución 61, El Escorial
+10183 Avda Constitución 17, El Escorial
+11923 c/ Padre Wigfrido 1, El Escorial
+11529 c/ Juan de Toledo 8, San Lorenzo de El Escorial
+10212 c/ Juan de Toledo 23, San Lorenzo de El Escorial
+10213 c/ Juan de Toledo 84, San Lorenzo de El Escorial
+11530 Ctra de Guadarram, El Escorial
+10214 Ctra de Guadarrama N 6.900, San Lorenzo de El Escorial
+11026 Cmno del Hospital Sn Sn, San Lorenzo de El Escorial
+10206 Ctra de M-600 (Guadarrama) 65, San Lorenzo de El Escorial
+11531 Ctra de Guadarrama 39, San Lorenzo de El Escorial
+10207 c/ Juan de Toledo 88, San Lorenzo de El Escorial
+10208 c/ Juan de Toledo 23, San Lorenzo de El Escorial
+10185 c/ Cañada Nueva 19, San Lorenzo de El Escorial

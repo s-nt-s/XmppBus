@@ -1,0 +1,22 @@
+5099 c/ Aguacate
+4182 c/ Aguacate 43
+3051 c/ Aguacate 29
+5059 c/ Antonia Rodríguez Sacristán 27
+2457 c/ Antonia Rodríguez Sacristán 8
+2454 c/ Aliseda 41
+3054 Pº Los Castellanos 51
+3055 c/ Alba de Tormes 49
+3056 c/ Alba de Tormes 33
+3057 c/ Alba de Tormes 11
+4653 c/ Sombra 15
+5058 c/ Padre Amigó 18
+2449 c/ Carcastillo 29
+2447 c/ Besolla
+2444 Avda Abrantes 141
+2442 Avda Abrantes 101
+2440 Avda Abrantes 77
+5046 Avda Abrantes 23
+2437 Pl Setubal 5
+5663 c/ Portalegre 75
+5549 c/ Valle de Oro 35
+5550 c/ Valle de Oro 1

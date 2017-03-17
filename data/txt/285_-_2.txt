@@ -1,0 +1,48 @@
+07462 Ctra de Loeches N, Arganda del Rey
+10655 Ctra de Loeches 55, Arganda del Rey
+07464 Avda Madrid 3800, Arganda del Rey
+07465 Avda Madrid 66, Arganda del Rey
+07466 Avda Madrid 57, Arganda del Rey
+09782 Avda Cañal 25, Arganda del Rey
+09780 Avda Cañal 5, Arganda del Rey
+10627 c/ Reyes Magos 1, Arganda del Rey
+07468 c/ Monte Potrero 33, Arganda del Rey
+07469 c/ Gran Vía 7, Arganda del Rey
+11637 Ctra de Campo Real 1200, Arganda del Rey
+12201 Zona Aparcamiento, Arganda del Rey
+18273 c/ Tomás Edison 3, Arganda del Rey
+15365 Ctra de Campo Real 44, Arganda del Rey
+12039 Avda Los Carpinteros 2, Velilla de San Antonio
+15061 c/ Doctor Enrique Alcorta 25, Velilla de San Antonio
+12265 c/ Joselito 4, Velilla de San Antonio
+11437 c/ Antonio Palacios 5, Velilla de San Antonio
+11441 c/ Olivar 59, Velilla de San Antonio
+07279 Avda Ilustración 56, Velilla de San Antonio
+07280 Avda Ilustración 24, Velilla de San Antonio
+07281 c/ Federico García Lorca 9, Velilla de San Antonio
+07282 c/ Federico García Lorca 36, Velilla de San Antonio
+11015 Ctra M-208 (La Poveda A Mejorada Por Velilla) Km 7500, Mejorada del Campo
+10463 c/ Duero 7, Mejorada del Campo
+11439 c/ Duero 22, Mejorada del Campo
+10012 c/ Castilla 3, Mejorada del Campo
+15571 Avda Juan Gris 33, Mejorada del Campo
+07287 Avda Juan Gris 27A, Mejorada del Campo
+07288 Avda Juan Gris 1, Mejorada del Campo
+07289 Avda Concordia 14G, Mejorada del Campo
+07290 Avda Concordia 26, Mejorada del Campo
+10460 Ctra M-203 (A3-Alcalá Por Mejorada) 11000, Mejorada del Campo
+07291 Ctra M-203 (A3-Alcalá Por Mejorada) 9600, Mejorada del Campo
+07292 Ctra Mejorada del Campo (M-203) 1, Rivas-Vaciamadrid
+07293 Ctra San Fernando 2, Rivas-Vaciamadrid
+16178 Pl Alfred Nobel, San Fernando de Henares
+07295 Ctra de Mejorada N 2.800, San Fernando de Henares
+07296 Ctra Mejorada 24, San Fernando de Henares
+12518 Avda Irún 14, San Fernando de Henares
+12519 c/ Ventura de Argumosa 22, San Fernando de Henares
+07252 c/ Presa 22, San Fernando de Henares
+12593 Avda Montserrat 5, San Fernando de Henares
+07297 c/ José Alix Alix 18, San Fernando de Henares
+07132 Avda San Pablo 2000, Coslada
+07133 Avda San Pablo 2300, Coslada
+18785 Avda San Pablo 17, Coslada
+09972 c/ Estación de Ferrocarril 6, Coslada

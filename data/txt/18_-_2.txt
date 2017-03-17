@@ -1,0 +1,33 @@
+3880 c/ Santa Petronila 9
+1790 c/ Alcocer 8
+1788 c/ Alcocer 26
+1190 c/ Virgen de Los Desamparados 4
+3878 c/ Anoeta 21
+1147 c/ Alegría de la Huerta 37
+1148 c/ Alegría de la Huerta 1
+1142 Avda Verbena de la Paloma 27
+1140 Avda Verbena de la Paloma 3
+4728 Avda Andalucía 38
+1138 Avda Andalucía
+1136 Avda Andalucía 9
+1134 Avda Andalucía 20
+5379 Acces de Nudo Sur
+5380 Avda Córdoba 49
+5702 Avda Córdoba 25
+5703 Avda Córdoba 15
+5704 Avda Córdoba 3A
+1125 Pº Chopera 69
+1123 Pº Chopera 45
+1121 Pº Chopera
+4485 Pº Yeserías 59
+1119 Pº Yeserías 35
+4519 Pº Yeserías 13
+ 947 Pº Yeserías 1
+ 917 c/ Toledo 185
+4481 c/ Toledo 161
+ 915 c/ Toledo 141
+ 593 c/ Toledo 129
+4780 c/ Capitán Salazar Martínez 1
+ 548 c/ Toledo 97
+ 546 c/ Toledo 55
+ 912 c/ Duque de Rivas 3

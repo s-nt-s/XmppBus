@@ -1,0 +1,30 @@
+4435 c/ Juan Ignacio Luca de Tena 27
+3115 c/ Juan Ignacio Luca de Tena 18
+3114 c/ Juan Ignacio Luca de Tena 10
+3112 c/ Juan Ignacio Luca de Tena 4A
+4433 c/ Tampico 95
+4431 c/ López de Aranda
+4429 c/ López de Aranda 13
+4511 c/ José del Hierro 65A
+ 770 c/ José del Hierro 39
+ 775 c/ Virgen del Portillo 39
+ 776 c/ Virgen del Portillo 25
+ 777 c/ Virgen del Portillo 9
+ 763 c/ Alcalde López Casero 15
+ 761 c/ Alcalde López Casero 3
+ 759 c/ Alcalá 265A
+ 757 c/ Alcalá 206
+5146 c/ Alcalá 217
+ 684 c/ Alcalá 197
+ 683 c/ Alcalá 191
+ 681 c/ Alcalá 165
+ 679 c/ Alcalá 153
+ 754 c/ Alcalá 149
+ 778 c/ Alcalá 129
+ 752 c/ Alcalá 113
+ 161 Pl Independencia 3
+  69 Pl Cibeles 1
+5135 c/ Gran Vía 2
+5137 c/ Gran Vía 16
+ 166 c/ San Alberto 5
+5568 c/ Jacometrezo 4

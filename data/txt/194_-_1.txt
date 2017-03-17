@@ -1,0 +1,62 @@
+17470 Avda Asturias 2, Madrid
+ 3253 Acces Nudo Norte 29700, Madrid
+06692 Avda Olímpica 3A, Alcobendas
+15192 Pº Europa 26, San Sebastian de Los Reyes
+06693 Pº Europa 26, San Sebastian de Los Reyes
+12421 Avda Somosierra 14, San Sebastian de Los Reyes
+11402 Pº Europa 7, San Sebastian de Los Reyes
+17474 Pº Europa 11, San Sebastian de Los Reyes
+16437 Ctra N-I (Burgos) 19900, San Sebastian de Los Reyes
+06697 Ctra N-I (Burgos) 23400, San Sebastian de Los Reyes
+06700 Ctra N-I (Burgos) 26000, San Sebastian de Los Reyes
+06701 Ctra Nacional I N 28.300, Colmenar Viejo
+06703 Ctra Nacional I N 30.800, Colmenar Viejo
+15988 Ctra A-1 31, San Agustin de Guadalix
+11184 Avia A-1 31700, San Agustin de Guadalix
+15990 Avia A-1 32100, San Agustin de Guadalix
+12097 Avda Madrid 3, San Agustin de Guadalix
+06704 Avda Madrid 37, San Agustin de Guadalix
+18361 Avda Madrid 32, San Agustin de Guadalix
+09848 Polg Las Cabezas 3, San Agustin de Guadalix
+17975 Avia A-1 39100, El Molar
+10329 Pl Mayor N 0.200, El Molar
+09939 c/ Rosaleda 51, El Molar
+09648 Avda España 73I, El Molar
+10336 Pº Ermita 21, Pedrezuela
+12781 c/ Eras 54, Pedrezuela
+12442 c/ San Roque 40, Pedrezuela
+17974 Avia A-1 Km 47000, Pedrezuela
+10340 Ctra Irún 10, Venturada
+11294 Ctra Irún 52100, Venturada
+11544 c/ Real 54, Cabanillas de la Sierra
+10343 c/ Real 78, Cabanillas de la Sierra
+11543 Ctra Antigua N-I (Madrid-Burgos) 54100, Cabanillas de la Sierra
+11995 Avda Cabrera 5, La Cabrera
+10346 Avda Cabrera 28, La Cabrera
+11996 Avda Cabrera 80, La Cabrera
+15941 Avda Cabrera 98, La Cabrera
+11736 Avda Madrid 16, Lozoyuela-Navas-Sieteiglesias
+10347 Avda Madrid 82, Lozoyuela-Navas-Sieteiglesias
+11044 Avda Madrid 136, Lozoyuela-Navas-Sieteiglesias
+12018 c/ Prados Quemados 10, Lozoyuela-Navas-Sieteiglesias
+10350 Ctra de Rascafría 1, Garganta de Los Montes
+10352 Ctra Comarcal, Garganta de Los Montes
+18199 M-969 N, Garganta de Los Montes
+10357 Ctra de Rascafría Sn 23, Garganta de Los Montes
+12111 Cllon del Real N 2.500, Garganta de Los Montes
+18200 M-969 N, Garganta de Los Montes
+10351 Ctra Comarcal N 0.000, Garganta de Los Montes
+10356 Ctra de Canencia Km 21.600, Garganta de Los Montes
+10360 Pl Constitución 16, Canencia
+11028 Ctra de Canencia N 21.600, Garganta de Los Montes
+10362 Ctra de Gargantilla-Canencia 1, Gargantilla del Lozoya
+10368 Avda Lozoya 13800, Lozoya
+12492 c/ Canal Isabel Ii 1, Pinilla del Valle
+10369 Pl Gobernador 1, Pinilla del Valle
+12491 c/ Canal de Isabel Ii 2, Pinilla del Valle
+18151 c/ Grande 45, Alameda del Valle
+10370 Pl Santa Marina 11, Alameda del Valle
+18150 c/ Grande 34, Alameda del Valle
+10371 Ctra M-604 (De La A-1 Al Puerto de Navacerrada) 6, Rascafria
+18986 Avda Valle 40, Rascafria
+10373 Avda Cascajales 5, Rascafria

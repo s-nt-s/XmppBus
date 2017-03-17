@@ -1,0 +1,72 @@
+07077 c/ Los Hermanos García Noblejas N, Madrid
+  242 c/ Los Hermanos García Noblejas 40, Madrid
+  244 c/ Los Hermanos García Noblejas 70, Madrid
+  478 c/ Los Hermanos García Noblejas 128, Madrid
+  250 c/ Los Hermanos García Noblejas 160, Madrid
+ 4230 c/ Los Hermanos García Noblejas 196, Madrid
+ 4396 c/ Fuente Carrantona 41, Madrid
+ 4546 c/ Lago Sanabria 3, Madrid
+ 4552 c/ San Cipriano 44B, Madrid
+ 5321 c/ San Cipriano 59, Madrid
+ 5109 Avda Gran Vía del Este 12, Madrid
+ 4012 c/ Rivas 5900, Madrid
+07101 c/ Boyer 5300, Madrid
+07102 c/ Boyer 4900, Madrid
+07103 Ctra de Vicálvaro A Coslada, Madrid
+18530 Ctra de Vicálvaro A Coslada 50, Madrid
+10874 Ctra de Vicálvaro A Coslada 52, Coslada
+17611 Avda Constitución 3, Coslada
+07105 Avda Constitución 13, Coslada
+07106 Pl Constitución 6, Coslada
+07109 Avda Constitución 82, Coslada
+12327 Gta de la Rosa de Los Vientos N Sn, Coslada
+07114 Avda Constitución 106, Coslada
+07115 c/ Uruguay 13, Coslada
+07116 c/ Uruguay 6, Coslada
+07117 c/ Méjico 8, Coslada
+07119 c/ Méjico 16, Coslada
+07120 c/ Perú 12B, Coslada
+07121 c/ Venezuela 7, Coslada
+07122 c/ Venezuela 21, Coslada
+07123 Avda Madrid 12, Coslada
+07124 Avda Madrid 30, Coslada
+12408 Avda Berlín 5, Coslada
+07126 Avda Vicálvaro 51, Coslada
+07127 Avda Vicálvaro 10, Coslada
+07156 Avda Cañada 4, Coslada
+17420 Avda Madrid 21, San Fernando de Henares
+07142 Avda Madrid 11, San Fernando de Henares
+12521 c/ Ventura de Argumosa 4, San Fernando de Henares
+12522 c/ Ventura de Argumosa 20, San Fernando de Henares
+07249 Avda Irún 9, San Fernando de Henares
+07145 Pl Ondarreta 1, San Fernando de Henares
+07146 Avda Zarauz 2, San Fernando de Henares
+07147 Avda Zarauz 20, San Fernando de Henares
+07084 Avda Zarauz 34, San Fernando de Henares
+11549 Avda Algorta 13, San Fernando de Henares
+07254 Ctra M-206 N 3.500, Rivas-Vaciamadrid
+07255 Ctra M-203 (Mejorada del Campo) 8500, Rivas-Vaciamadrid
+07256 Ctra M-203 (A3-Alcalá Por Mejorada) N 9.080, Mejorada del Campo
+18080 Ctra M-203 (A3-Alcalá Por Mejorada) 11000, Mejorada del Campo
+10014 Avda Concordia 85, Mejorada del Campo
+10013 Avda Concordia 31, Mejorada del Campo
+07260 Avda Juan Gris 4, Mejorada del Campo
+07261 Avda Juan Gris 32, Mejorada del Campo
+07262 c/ Castilla 3, Mejorada del Campo
+11440 c/ Duero 19, Mejorada del Campo
+10461 c/ Portugal 18, Mejorada del Campo
+10453 Ctra M-208 (La Poveda A Mejorada Por Velilla) 7600, Mejorada del Campo
+07265 c/ Federico García Lorca 36, Velilla de San Antonio
+15783 c/ Olivar N, Velilla de San Antonio
+15784 c/ Olivar 2, Velilla de San Antonio
+12262 c/ Olivar 59, Velilla de San Antonio
+12263 c/ Antonio Palacios 5, Velilla de San Antonio
+12264 c/ Saiz de Rueda 26, Velilla de San Antonio
+07270 Ctra de M-217 Loeches N 2.010, Velilla de San Antonio
+10454 Ctra de M-217 (Loeches-Velilla de San Antonio) N 3.200, Loeches
+15061 c/ Doctor Enrique Alcorta 25, Velilla de San Antonio
+07271 Ctra de M-217 (Loeches-Velilla de San Antonio) 5500, Loeches
+16253 c/ Dublín 1, Loeches
+07272 Avda Constitución 10, Loeches
+12049 Avda Constitución 23, Loeches
+07273 Pl Villa N, Loeches

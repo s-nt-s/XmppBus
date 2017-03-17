@@ -1,0 +1,32 @@
+1890 c/ Raimundo Fernández Villaverde 4
+2693 c/ Raimundo Fernández Villaverde 32
+2695 c/ Raimundo Fernández Villaverde 50
+2696 c/ Raimundo Fernández Villaverde
+ 421 c/ Joaquín Costa 1
+ 420 c/ Joaquin Costa 18
+4678 c/ Joaquín Costa 20
+2698 c/ Joaquín Costa 30
+4676 c/ Joaquín Costa 40
+2700 c/ Francisco Silvela 99
+ 789 c/ Francisco Silvela 81
+ 786 c/ Francisco Silvela 57
+ 811 c/ Francisco Silvela 25
+3829 c/ Francisco Silvela 1
+1427 Pl Manuel Becerra 17
+ 148 c/ Jardín de San Federico 17
+1252 c/ Goya 105
+2152 Avda Felipe Ii 6
+2154 c/ Narváez 30
+2156 c/ Narváez 64
+ 814 Avda Menéndez Pelayo 45
+ 816 Avda Menéndez Pelayo 63
+2213 Pº Fernán Núñez N
+2211 Avda Menéndez Pelayo 14
+2049 Pº Reina Cristina 13
+2047 Pº Infanta Isabel 29
+2045 Pº Infanta Isabel 13
+2178 Pº Infanta Isabel 9
+  83 Pl Emperador Carlos V 7
+  84 Rda Atocha 32
+ 320 Rda Valencia 14
+2355 Rda Toledo 40

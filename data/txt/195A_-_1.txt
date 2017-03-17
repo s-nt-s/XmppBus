@@ -1,0 +1,22 @@
+11293 Avda Madrid 16B, Buitrago del Lozoya
+15770 Avda Madrid 113, Buitrago del Lozoya
+11736 Avda Madrid 16, Lozoyuela-Navas-Sieteiglesias
+10347 Avda Madrid 82, Lozoyuela-Navas-Sieteiglesias
+11044 Avda Madrid 136, Lozoyuela-Navas-Sieteiglesias
+12018 c/ Prados Quemados 10, Lozoyuela-Navas-Sieteiglesias
+10350 Ctra de Rascafría 1, Garganta de Los Montes
+10353 Ctra de Rascafría 23, Garganta de Los Montes
+10356 Ctra de Canencia Km 21.600, Garganta de Los Montes
+10357 Ctra de Rascafría Sn 23, Garganta de Los Montes
+10360 Pl Constitución 16, Canencia
+11028 Ctra de Canencia N 21.600, Garganta de Los Montes
+10364 Cmno de la Estación, Gargantilla del Lozoya
+12339 Avda Estación 13500, Gargantilla del Lozoya
+10374 Pl Carlos Ruiz 4, Gargantilla del Lozoya
+10376 Ctra de Gargantilla, Gargantilla del Lozoya
+18192 Ctra de Pinilla de Buitrago 2, Navarredonda
+10378 Pl Constitución (Navarredonda) 1, Navarredonda
+10379 Pl Constitución (San Mamés) 5, Navarredonda
+10381 Cmno de las Huertecillas 2, Villavieja del Lozoya
+16295 Ctra M-634 (Buitrago de Lozoya) Km 2500, Villavieja del Lozoya
+12545 Avda Madrid N, Buitrago del Lozoya

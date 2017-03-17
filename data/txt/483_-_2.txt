@@ -1,0 +1,38 @@
+18323 c/ Huelva 5, Leganes
+18321 c/ Zamora 37, Leganes
+18320 c/ Granada 2, Leganes
+07936 Avda Museo 9200, Leganes
+07896 Avda Museo 4, Leganes
+12744 Avda Gibraltar 2, Leganes
+07928 c/ Rioja 76, Leganes
+07952 c/ Rioja 90, Leganes
+07954 c/ Rioja 118, Leganes
+16211 c/ Monegros 85, Leganes
+07958 c/ Monegros 65, Leganes
+07961 c/ Monegros 63, Leganes
+07963 c/ Monegros 41, Leganes
+07965 c/ Monegros 21, Leganes
+09512 c/ Monegros 7, Leganes
+07923 Avda Rey Juan Carlos I 1, Leganes
+07915 Avda Dos de Mayo 12, Leganes
+07910 Avda Mar Mediterráneo 2, Leganes
+12115 c/ Jesús Miguel Haddad Blanco 2, Leganes
+08140 c/ Jesús Miguel Haddad Blanco 10, Leganes
+17804 Ctra de la Fortuna 2E, Leganes
+15530 c/ Álava N, Leganes
+16600 c/ San Luis 4, Leganes
+16601 c/ San Pedro 33, Leganes
+16603 c/ San Pedro 5, Leganes
+16605 c/ Beja 9, Leganes
+16607 c/ Coimbra, Leganes
+15145 Pl San Antonio de la Florida 1, Leganes
+16610 c/ Santo Domingo 8, Leganes
+08035 c/ San Bernardo 4, Leganes
+07588 Ctra del Barrio de la Fortuna 21, Madrid
+07587 Avda Peseta 6, Madrid
+ 4265 Ctra del Barrio de la Fortuna 1, Madrid
+  359 c/ General Millán Astray 53, Madrid
+  361 c/ General Millán Astray 21, Madrid
+  581 c/ Rafael Finat 23, Madrid
+  579 c/ Rafael Finat 5, Madrid
+08380 c/ Valmojado 293, Madrid

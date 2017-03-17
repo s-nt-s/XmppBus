@@ -1,0 +1,34 @@
+ 491 c/ Almagro 2
+ 492 c/ Almagro 28
+ 494 c/ Almagro 44
+ 529 Pº General Martínez Campos 46
+  58 Pº Castellana 52
+  56 Pl Doctor Marañón 70
+  54 Pº Castellana 61
+  52 c/ Jorge Manrique 1
+ 421 c/ Joaquín Costa 1
+ 420 c/ Joaquin Costa 18
+5318 Avda Doctor Arce 10
+ 416 Avda Doctor Arce 24
+ 433 c/ Cinca 25
+ 434 c/ Cinca 1
+ 435 c/ Serrano 216
+ 437 c/ Serrano 240
+4849 c/ Príncipe de Vergara 256
+ 439 c/ Príncipe de Vergara 268
+ 299 c/ Costa Rica 12
+ 300 c/ Costa Rica 30
+ 302 c/ Costa Rica 42
+ 217 c/ Arturo Soria 212A
+ 216 c/ Arturo Soria 230
+ 214 c/ Arturo Soria 250
+ 497 c/ Arturo Soria 278
+ 499 c/ Arturo Soria 284
+ 501 Avda San Luis 89
+ 503 Avda San Luis
+ 505 c/ Cuevas de Almanzora
+ 507 c/ Cuevas de Almanzora
+ 508 c/ Cuevas de Almanzora 181
+ 509 c/ Alicun 14
+ 510 c/ Vélez Rubio 113
+ 511 c/ Bacares 9

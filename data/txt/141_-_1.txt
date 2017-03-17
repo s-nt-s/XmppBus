@@ -1,0 +1,21 @@
+5717 Avda Ciudad de Barcelona 2B
+1402 Avda Ciudad de Barcelona 6
+1404 Avda Ciudad de Barcelona 134B
+1406 Avda Ciudad de Barcelona 144
+1408 Avda Ciudad de Barcelona 182
+1410 Avda Ciudad de Barcelona 208
+2058 Avda Ciudad de Barcelona 224
+4325 Cmno de Valderribas
+1980 Avda Peña Prieta 24
+3314 c/ Mendívil 42B
+3315 c/ Sierra Toledana 1
+3330 c/ Sierra Toledana 29
+3317 c/ Baltasar Santos
+3333 c/ Baltasar Santos 6
+3319 c/ Marismas 2
+3321 c/ Marismas 22
+3323 c/ Ramón Pérez de Ayala 70
+3325 c/ Ramón Pérez de Ayala 94
+3327 c/ Ramón Pérez de Ayala 156
+2517 c/ Pío Felipe 18
+5671 c/ Pío Felipe 36

@@ -1,0 +1,36 @@
+5442 Pº Prado 2
+  77 Pl Cánovas del Castillo 5
+  79 Pº Prado 22
+  81 Pº Prado 48
+  83 Pl Emperador Carlos V 7
+  84 Rda Atocha 32
+ 320 Rda Valencia 14
+ 322 Pº Acacias 2
+ 326 Pº Acacias 32
+ 327 Pº Acacias 60
+4518 Pº Yeserías
+1118 Pº Yeserías 6
+4484 Pº Yeserías 63
+1120 Pº Chopera 2
+1122 Pº Chopera 12
+1124 Pº Chopera
+ 930 c/ Antonio López 198
+ 932 c/ Antonio López 232G
+ 934 c/ Antonio López 250
+ 936 c/ González Feíto 5B
+5124 Cmno de Perales 48D
+ 937 c/ San Mario 10
+ 939 c/ San Mario
+ 943 c/ Estafeta 35
+2839 c/ Antequera 14
+4865 Avda Los Rosales 13
+4867 Avda Los Rosales 20
+5638 Avda Los Rosales 36
+5244 Avda Los Rosales 48
+5253 Avda Los Rosales 82
+4982 Avda Los Rosales 116
+3203 c/ Berrocal 12
+5072 c/ Canchal 17
+3205 c/ Berrocal 46
+5074 c/ Berrocal 74
+5073 c/ Berrocal

@@ -1,0 +1,16 @@
+1000 c/ Monte Ulia N
+2059 Avda Monte Igueldo 10
+2091 c/ Martínez de la Riva 18
+2184 c/ Martínez de la Riva 58
+1111 c/ Puerto de la Bonaigua 37
+1112 c/ Puerto de la Bonaigua 58
+1113 c/ Imagen 10
+1114 c/ Imagen 36
+1098 c/ Mancha 2
+5437 c/ Lagartera 31
+3096 c/ Ruidera 5
+2930 c/ Ruidera 30
+2931 Rda Sur 4
+3099 Rda Sur 163
+3100 Rda Sur N
+2937 c/ Hornachos 1

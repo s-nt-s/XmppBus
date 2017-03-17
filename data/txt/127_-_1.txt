@@ -1,0 +1,27 @@
+2481 Avda Reina Victoria 6
+1418 Avda Reina Victoria 24
+1666 Avda Doctor Federico Rubio Y Galí 16
+1668 Avda Doctor Federico Rubio Y Galí 32
+1670 Avda Doctor Federico Rubio Y Galí 56
+1672 Avda Pablo Iglesias
+1674 Avda Pablo Iglesias 92
+1577 c/ Francos Rodríguez 98
+1643 Avda Santo Ángel de la Guarda 17
+1645 Avda Santo Ángel de la Guarda
+1647 c/ Alcalde Martín de Alzaga 23
+1649 c/ Alcalde Martín de Alzaga 3
+1651 c/ Antonio Machado 15A
+1653 c/ Antonio Machado 12
+1655 c/ Antonio Machado 24
+1657 c/ Antonio Machado 38
+1516 c/ César Manrique 5
+1514 c/ César Manrique
+1663 Gta de Mariano Salvador Maella 1
+1624 c/ Fermín Caballero 105
+1622 c/ Fermín Caballero 91
+1620 c/ Fermín Caballero 19
+1359 c/ Fermín Caballero 75
+1618 c/ Fermín Caballero 67
+1616 c/ Fermín Caballero 57
+1614 c/ Fermín Caballero 54
+1665 c/ Ginzo de Limia 47

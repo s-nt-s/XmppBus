@@ -1,0 +1,22 @@
+12782 c/ Vía Complutense 111, Alcala de Henares
+12784 c/ Vía Complutense 103, Alcala de Henares
+19416 c/ Vía Complutense 51, Alcala de Henares
+06968 c/ Rda Fiscal 2, Alcala de Henares
+12415 Pº Pastrana 52, Alcala de Henares
+10076 Ctra Pastrana (Margen Derecho) 2, Alcala de Henares
+08998 Ctra M-300 (Alcalá-Loeches) Km 22.850, Villalbilla
+17497 Ctra M-300 (Alcalá-Loeches) N, Villalbilla
+13007 c/ Escocia 63, Villalbilla
+13008 Avda España 1, Villalbilla
+13009 Avda Dinamarca 3, Villalbilla
+17770 Avda Soria 1, Villalbilla
+09673 Avda Madrid N Sn, Villalbilla
+09674 c/ Toledo 20, Villalbilla
+17771 c/ Jaén 2, Villalbilla
+17772 Cmno de San Juan del Viso N Sn, Villalbilla
+18521 c/ Los Baños de Sacedón 2, Villalbilla
+18522 c/ Los Baños de Sacedón 20, Villalbilla
+18523 Avda Los Antiguos Baños de la Isabela 42, Villalbilla
+12048 Ctra M-300 (Alcalá de Henares), Torres de la Alameda
+13010 c/ Roma 6, Torres de la Alameda
+13012 c/ Atenas 1, Torres de la Alameda

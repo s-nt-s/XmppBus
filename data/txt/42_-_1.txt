@@ -1,0 +1,22 @@
+5610 Pº Castellana 222
+3568 Pº Castellana 189
+5016 Avda Asturias 24
+5018 Avda Asturias 40
+5020 Avda Asturias 66
+1494 c/ Sinesio Delgado
+1496 c/ Ribadavia N
+1498 c/ Ribadavia 27
+1500 c/ Ribadavia 5
+1501 Avda Betanzos 18
+1503 Avda Betanzos 37A
+1505 Avda Betanzos 44
+1507 c/ Bañeza 11
+1509 c/ Bañeza 40E
+1511 c/ Bañeza 48
+3578 c/ Chantada
+3580 c/ Chantada 48
+1515 c/ César Manrique 7
+1517 c/ Joaquín Lorenzo 2
+3733 c/ Doctor Ramón Castroviejo 61
+3821 c/ Joaquín Lorenzo 20
+1522 c/ Islas Aleutianas 1

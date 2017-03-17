@@ -1,0 +1,27 @@
+ 147 c/ Francisco Silvela 1
+1427 Pl Manuel Becerra 17
+ 148 c/ Jardín de San Federico 17
+ 150 c/ Doctor Esquerdo 42
+1256 c/ Doctor Esquerdo 48
+4712 c/ Doctor Esquerdo
+4714 c/ Doctor Esquerdo 72
+1431 c/ Doctor Esquerdo 96
+1433 c/ Doctor Esquerdo 128
+2603 Avda Mediterráneo 50
+2605 c/ El Bosco 14
+2606 c/ El Bosco 14
+2607 c/ El Bosco 20
+3355 c/ Pío Felipe 10
+2517 c/ Pío Felipe 18
+2515 c/ Monleón 10
+1011 Avda Albufera 220
+1013 Avda Albufera 246
+1015 Avda Albufera 254
+1017 Avda Albufera 272
+1019 Avda Albufera 300
+4680 Avda Albufera 319
+1023 Avda Albufera 308
+4682 Ctra de Vicálvaro A Vallecas 3
+1027 Avda Democracia 1
+5163 c/ Sierra de Guadalupe 11
+1030 c/ Real de Arganda 1

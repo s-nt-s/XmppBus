@@ -1,0 +1,29 @@
+17997 Ctra M-604 (De La A-1 Al Puerto de Navacerrada) 1, Rascafria
+17996 Avda Paular 29, Rascafria
+18985 Avda Valle 40, Rascafria
+10372 Ctra M-604 (De La A-1 Al Puerto de Navacerrada) 6, Rascafria
+18151 c/ Grande 45, Alameda del Valle
+10370 Pl Santa Marina 11, Alameda del Valle
+18150 c/ Grande 34, Alameda del Valle
+12492 c/ Canal Isabel Ii 1, Pinilla del Valle
+10369 Pl Gobernador 1, Pinilla del Valle
+12491 c/ Canal de Isabel Ii 2, Pinilla del Valle
+10367 Avda Lozoya 15, Lozoya
+10361 Ctra de Gargantilla-Canencia 1, Gargantilla del Lozoya
+10356 Ctra de Canencia Km 21.600, Garganta de Los Montes
+10360 Pl Constitución 16, Canencia
+10358 Ctra de Rascafría 23, Garganta de Los Montes
+10354 Ctra de Rascafría 23, Garganta de Los Montes
+18199 M-969 N, Garganta de Los Montes
+10352 Ctra Comarcal, Garganta de Los Montes
+12111 Cllon del Real N 2.500, Garganta de Los Montes
+18200 M-969 N, Garganta de Los Montes
+10351 Ctra Comarcal N 0.000, Garganta de Los Montes
+10349 Ctra de Rascafría 1, Garganta de Los Montes
+11736 Avda Madrid 16, Lozoyuela-Navas-Sieteiglesias
+10347 Avda Madrid 82, Lozoyuela-Navas-Sieteiglesias
+11044 Avda Madrid 136, Lozoyuela-Navas-Sieteiglesias
+12018 c/ Prados Quemados 10, Lozoyuela-Navas-Sieteiglesias
+15769 Avda Madrid 99, Buitrago del Lozoya
+12546 Avda Madrid 39, Buitrago del Lozoya
+12545 Avda Madrid N, Buitrago del Lozoya

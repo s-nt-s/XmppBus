@@ -1,0 +1,32 @@
+2308 Pº Santa María de la Cabeza 4
+2309 c/ Marqués de la Valdavia 1
+  84 Rda Atocha 32
+ 320 Rda Valencia 14
+ 322 Pº Acacias 2
+ 324 Pº Acacias 20
+ 326 Pº Acacias 32
+4669 Pº Acacias 40
+ 327 Pº Acacias 60
+2310 Pº Imperial
+2312 Pº Imperial 53
+ 552 Pº Pontones 26
+5642 Pº Virgen del Puerto 63
+2316 Pº Virgen del Puerto 49
+2317 Pº Virgen del Puerto 31
+2318 Pº Virgen del Puerto 13
+ 871 Pº Extremadura 6
+ 873 Pº Extremadura 36
+ 875 Pº Extremadura 92
+ 877 Pº Extremadura 132
+ 879 Pº Extremadura 160
+ 881 Pº Extremadura
+ 882 Pº Extremadura 212
+ 884 c/ Serafín de Asís
+ 886 Pº Extremadura 268
+ 888 c/ San Manuel 1
+ 890 Pº Extremadura 302
+ 892 Pº Extremadura 324A
+2324 c/ Sebastián Álvaro
+3592 Avda Los Poblados
+2325 Avda Padre Piquer 27
+3718 Avda Padre Piquer 3

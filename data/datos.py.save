@@ -1,0 +1,39 @@
+#!/usr/bin/python
+
+import time
+import requests
+import json
+import os
+import sys
+import time
+import re
+import os
+import glob
+import csv
+
+madrid = re.compile(
+    r"\s*Madrid\s+\(\s*(.*?)\s*\)\s*$", re.MULTILINE | re.UNICODE)
+sp = re.compile(r"\s+", re.MULTILINE | re.UNICODE)
+sn = re.compile(r"( SN *)+$", re.MULTILINE | re.UNICODE)
+cn = re.compile(r" N (\d+[A-Z]?)$", re.MULTILINE | re.UNICODE)
+
+url1 = "http://www.cuantotardamiautobus.es/madrid/tiempos.php?t="
+cmp1 = "ids_parada"
+url2 = "http://api.interurbanos.welbits.com/v1/stop/"
+
+to_int = ["segundos", "distancia"]
+
+def paradas(linea,sentido=1):
+  with open(linea + '_' + str(sentido) + '.csv', 'wb') as w:
+    sw = csv.writer(w, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+    for _csv in sorted(glob.glob('csv/m*.csv')):
+        with open(_csv, 'rb') as csvfile:
+            spamreader = csv.reader(csvfile, delimiter=',', quotechar='"')
+            for row in spamreader:
+                if len(row)>6 and row[7].isdigit() and int(row[7])==sentido and row[6]==linea:
+
+    r=sorted(r,key=lambda x: x[1], reverse=False)
+                    
+if __name__ == "__main__":
+    paradas (sys.argv[1], sys.argv[2])

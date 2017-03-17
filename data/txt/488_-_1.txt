@@ -1,0 +1,47 @@
+18331 c/ Río Guadiana 16, Leganes
+07883 Pl Talavera La Vieja 1, Leganes
+07887 c/ Río Guadalquivir 11, Leganes
+07911 c/ Río Manzanares 29, Leganes
+07909 c/ Río Duero 7, Leganes
+07894 Avda Dos de Mayo 12, Leganes
+07924 Avda Rey Juan Carlos I 12A, Leganes
+08352 c/ Rioja 6, Leganes
+07931 c/ Rioja 58, Leganes
+07928 c/ Rioja 76, Leganes
+07952 c/ Rioja 90, Leganes
+07954 c/ Rioja 118, Leganes
+16211 c/ Monegros 85, Leganes
+07958 c/ Monegros 65, Leganes
+07960 c/ Somontano 3, Leganes
+09073 Avda Europa 14, Leganes
+09074 Avda Francia 10, Leganes
+09517 Avda Portugal 2, Leganes
+07972 Avda Portugal 14, Leganes
+09077 Avda Rey Juan Carlos I 112, Leganes
+07939 c/ Rey Pastor 48, Leganes
+09522 c/ Rey Pastor 32, Leganes
+07938 c/ Juan de la Cierva 4, Leganes
+11401 c/ Eduardo Torroja 27, Getafe
+08217 c/ Austria 1, Getafe
+08218 Avda Buenos Aires 1T, Getafe
+17443 Avda Parque 1B, Getafe
+17442 Avda Salvador Allende 53, Getafe
+17439 Avda Salvador Allende N, Getafe
+17440 Avda Paz 7, Getafe
+18803 c/ Ramón Rubial 27, Getafe
+08296 c/ Madrid 141, Getafe
+08293 c/ Madrid 129, Getafe
+08315 Avda Juan de la Cierva 54, Getafe
+09993 Avda Juan de la Cierva 49, Getafe
+08235 Avda España 14, Getafe
+08239 Avda España 36, Getafe
+10812 Avda España 57, Getafe
+08326 Avda Ciudades 66, Getafe
+08246 Avda Ciudades 100, Getafe
+10806 Avda Don Juan de Borbón 10, Getafe
+10808 Avda Don Juan de Borbón 11, Getafe
+10810 Avda Don Juan de Borbón 1, Getafe
+11726 Avda Rabia, Getafe
+11725 Avda Rigoberta Menchú 10, Getafe
+11723 Avda Rigoberta Menchú 19, Getafe
+11720 Avda Rigoberta Menchú 1, Getafe

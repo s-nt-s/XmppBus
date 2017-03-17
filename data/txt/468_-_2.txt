@@ -1,0 +1,74 @@
+15590 c/ Rafael Alberti 46, Casarrubuelos
+18395 c/ La Coruña N, Ugena
+15588 c/ Rafael Alberti 16, Casarrubuelos
+18397 c/ Vereda de San José 3, Ugena
+15586 c/ Guadalajara 1, Casarrubuelos
+18413 Ctra de Griñón N, Carranque
+12864 c/ Cuenca 1, Casarrubuelos
+18416 Pista de las Heras 1, Carranque
+16574 c/ Inmaculada 1, Casarrubuelos
+18417 c/ Nueva N, Carranque
+10433 c/ Illescas 3, Cubas de la Sagra
+18415 Ctra Cm-4008 97, Ugena
+18002 c/ Hispanidad 1, Cubas de la Sagra
+16300 Ctra de Carranque 2100, Serranillos del Valle
+18003 c/ Mester de Clerecía 63, Cubas de la Sagra
+16428 Pº Pradera 24, Serranillos del Valle
+18001 c/ Hispanidad 4, Cubas de la Sagra
+16427 c/ Los Magnolios 23, Serranillos del Valle
+15195 Cmno de Batres 1, Cubas de la Sagra
+16426 c/ Los Almendros 35, Serranillos del Valle
+18133 Cmno de Batres 15, Cubas de la Sagra
+09137 Pº Pradera 3, Serranillos del Valle
+18135 Cmno de Batres 20, Cubas de la Sagra
+08331 c/ Madrid 64, Serranillos del Valle
+15196 c/ Viñagrande 1, Cubas de la Sagra
+09138 Ctra Vía de Servicio N 16.600, Serranillos del Valle
+15197 c/ Viñagrande 18, Cubas de la Sagra
+11286 Ctra Vía de Servicio Km 5, Serranillos del Valle
+15198 Avda Acacias 17, Cubas de la Sagra
+09140 Avda Navalcarnero 71, Griñon
+12738 Pº Carraperal Km 177, Griñon
+12739 Avda Portugal 36, Griñon
+12173 Avda Cañada Toledana 26, Griñon
+12170 Avda Portugal 27, Griñon
+12175 Avda Cañada Toledana 54, Griñon
+16563 Avda Los Andaluces 4, Griñon
+12176 c/ Ermita 15, Griñon
+16565 Pº Mina 4, Griñon
+15584 Pº Cárcava 11, Griñon
+17775 Pº de la Mina 40, Griñon
+08116 c/ Fuente de la Salud 32, Griñon
+08115 Avda Humanes 70, Griñon
+16787 Avda Humanes 6900, Griñon
+08113 Avda Humanes 6400, Griñon
+08111 Avda Griñón Km 5300, Humanes de Madrid
+08109 Avda Griñón Km 45, Humanes de Madrid
+08107 Avda Griñón 4100, Humanes de Madrid
+08105 c/ Madrid 10, Humanes de Madrid
+08103 c/ Madrid 46, Humanes de Madrid
+08101 c/ Madrid 70, Humanes de Madrid
+08099 Pl Miguel Echegaray 5, Humanes de Madrid
+08153 Avda Fuenlabrada 10, Humanes de Madrid
+08151 Avda Fuenlabrada 56A, Humanes de Madrid
+15523 Avda Fuenlabrada 96, Humanes de Madrid
+08149 Avda Fuenlabrada 118, Humanes de Madrid
+18376 c/ Luis Sauquillo 97A, Fuenlabrada
+07739 c/ Luis Sauquillo 93, Fuenlabrada
+07748 c/ Luis Sauquillo 57, Fuenlabrada
+07781 c/ Leganés 2, Fuenlabrada
+07771 c/ Leganés 36, Fuenlabrada
+07764 c/ Leganés 46, Fuenlabrada
+07755 c/ Leganés 60, Fuenlabrada
+17324 Avda Recomba N, Leganes
+17304 c/ Primavera 1, Leganes
+17635 Avda Recomba, Leganes
+17303 Avda Recomba 1, Leganes
+07863 Avda Fuenlabrada 123, Leganes
+07864 Avda Doctor Fleming N, Leganes
+07891 Avda Doctor Fleming 22, Leganes
+07895 Avda Museo 4, Leganes
+07937 c/ Lugo 4, Leganes
+08226 Ctra de Getafe-Leganés N 10.300, Getafe
+08241 c/ Leganés 69, Getafe
+16006 c/ Ferrocarril 2, Getafe

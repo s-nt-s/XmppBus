@@ -1,0 +1,45 @@
+3126 Gta de Embajadores 7
+ 324 Pº Acacias 20
+ 326 Pº Acacias 32
+4669 Pº Acacias 40
+ 327 Pº Acacias 60
+3127 c/ Antonio de Leyva 2
+3129 c/ Antonio de Leyva 14
+3131 c/ Antonio de Leyva 54
+5079 c/ Antonio de Leyva 82
+3135 c/ Antonio de Leyva 88
+3929 c/ Vía Lusitana 2
+3986 c/ Vía Lusitana 12
+3988 c/ Vía Lusitana
+3990 c/ Vía Lusitana 56
+3992 c/ Vía Lusitana
+3994 c/ Vía Lusitana 102
+3181 Avda Los Poblados 110
+3180 Avda Los Poblados 131
+3178 Avda Los Poblados 122
+3139 Avda Los Poblados 126
+3141 Avda Los Poblados 128
+1963 Avda Los Poblados 130
+1957 Avda Rafaela Ybarra 72
+2824 c/ Unidad
+4624 c/ Gran Avda 10
+2828 c/ Gran Avda 24
+2830 c/ Campotejar 19
+2832 c/ Campotejar 24
+2838 c/ Fernando Ortiz 1
+5217 Pl Pueblo 2
+4880 c/ Moreja 26
+2836 c/ Salvador Martínez 54
+2797 c/ Eduardo Barreiros
+2799 c/ Eduardo Barreiros
+2803 c/ Eduardo Barreiros 106
+3596 c/ Corte de Faraón 31
+3144 c/ del Manojo de Rosas 2
+3597 c/ del Manojo de Rosas 44
+3598 c/ del Manojo de Rosas 52
+1144 c/ del Manojo de Rosas 76
+1145 c/ del Manojo de Rosas 120
+1189 c/ Virgen de Los Desamparados 4
+1787 c/ Alcocer 13
+1789 c/ Alcocer 1
+3880 c/ Santa Petronila 9

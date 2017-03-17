@@ -1,0 +1,28 @@
+2588 c/ Toledo 56
+ 547 c/ Toledo 82
+2589 c/ Toledo 108
+2358 Rda Toledo 14
+2356 Rda Toledo 40
+2591 c/ Embajadores 72
+2818 c/ Embajadores 106
+5623 Pº Sta.Mª de la Cabeza 88
+2536 Pº Santa María de la Cabeza 120
+2538 Pº Santa María de la Cabeza
+2540 Pº Santa María de la Cabeza 12D
+3135 c/ Antonio de Leyva 88
+5050 c/ Marcelo Usera 170
+2429 c/ Marcelo Usera 145
+1947 Avda Rafaela Ybarra 8
+1949 Avda Rafaela Ybarra 40
+1951 Avda Cerro de Los Ángeles 27
+1953 Avda Rafaela Ybarra 52
+1955 Avda Rafaela Ybarra 91
+1957 Avda Rafaela Ybarra 72
+3075 c/ Leiza 147
+3152 c/ Leiza
+3154 c/ Guetaria
+3171 c/ Ordicia 30
+3189 c/ Ordicia 10
+5008 c/ Simca 4
+5010 c/ A Simca 1
+5012 c/ A Simca 18A

@@ -1,0 +1,21 @@
+06002 c/ Princesa 89
+06003 c/ Princesa 90
+ 1330 Avda Arco de la Victoria 4100
+ 1332 Avda Puerta de Hierro 4400
+ 1334 Avda Puerta de Hierro 6
+ 1336 Avda Puerta de Hierro 5400
+ 1338 Avda Puerta de Hierro 5600
+ 1341 Ctra de El Pardo 22400
+ 1343 Avda Fuentelarreyna 2
+ 5793 Avda Fuentelarreyna 2
+06315 c/ Alberca 1
+06316 Ctra de El Pardo 1600
+06317 Ctra de El Pardo 3100
+06318 Ctra de El Pardo 4800
+06319 Avda Palacio 1
+10887 Ctra de El Pardo A Fuencarral 7600
+06320 Avda Los Infantes 1
+06321 Pº El Pardo 19
+06322 Pº El Pardo 53
+06323 Ctra del El Pardo A Colmenar 2B
+06324 Ctra del El Pardo A Colmenar 16

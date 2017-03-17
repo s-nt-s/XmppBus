@@ -1,0 +1,39 @@
+4084 c/ Real 1
+4092 Avda Peseta 107
+2964 c/ Ducado 1
+2965 c/ Corona 24
+ 649 Avda Peseta 71
+3859 c/ Catedral de Burgos 7
+ 687 Avda Peseta 33
+3633 c/ Jacobeo 50
+3631 c/ Casatejada 4
+1162 Cmno de las Cruces 25
+1163 c/ Marianistas 1
+1164 c/ Gómez de Arteche 31
+1165 c/ Gómez de Arteche 1
+4020 Avda Carabanchel Alto 17
+ 376 c/ Eugenia de Montijo 105
+ 378 c/ Eugenia de Montijo 87
+1157 Avda Nuestra Señora de Fátima
+1155 Avda Nuestra Señora de Fátima 85
+1153 Avda Nuestra Señora de Fátima 69
+ 589 Avda Nuestra Señora de Fátima 31
+1150 Pº Muñoz Grandes 35
+1149 Pº Muñoz Grandes 3
+ 342 c/ General Ricardos
+4671 c/ General Ricardos 171
+ 340 c/ General Ricardos 162
+ 338 c/ General Ricardos 133
+1254 c/ General Ricardos 107
+ 334 c/ General Ricardos 85
+5625 c/ General Ricardos 55
+ 331 c/ General Ricardos 37
+ 330 c/ General Ricardos 5
+ 917 c/ Toledo 185
+4481 c/ Toledo 161
+ 915 c/ Toledo 141
+ 593 c/ Toledo 129
+4780 c/ Capitán Salazar Martínez 1
+ 548 c/ Toledo 97
+ 546 c/ Toledo 55
+5454 c/ Colegiata 17

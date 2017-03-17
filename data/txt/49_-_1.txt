@@ -1,0 +1,33 @@
+5608 c/ San Benito 3
+1530 c/ Bravo Murillo 379
+1532 c/ Bravo Murillo 359
+5632 c/ Pinos Alta 3
+5633 c/ Veza 30
+5634 c/ Plátano 18
+5635 c/ Arroyo 3
+5636 c/ Arroyo 28
+5664 Pº Dirección 320
+5637 Pº Dirección 268
+1542 Gta de Piedrafita del Cebrero N
+1503 Avda Betanzos 37A
+1505 Avda Betanzos 44
+1364 Pl Ribadeo 11
+1366 Avda Monforte de Lemos 115A
+1368 Avda Monforte de Lemos 101
+1544 c/ Ginzo de Limia 58A
+5329 c/ Ginzo de Limia 58C
+1546 c/ Ginzo de Limia 60
+1548 c/ Ginzo de Limia 66
+4730 c/ Roda de Bara 2
+1357 Avda Cardenal Herrera Oria
+1550 c/ Ramón Gómez de la Serna 2
+1552 c/ Ramón Gómez de la Serna 12
+1554 c/ Riscos de Polanco 16
+4777 c/ Peña del Águila 6
+1556 c/ Riscos de Polanco 7
+1558 c/ Senda del Infante 12
+4731 c/ Valle de Enmedio 15
+4736 Avda Ventisquero de la Condesa 24
+3822 Avda Ventisquero de la Condesa 35
+3823 Avda Ventisquero de la Condesa 44
+3824 Avda Ventisquero de la Condesa 43
