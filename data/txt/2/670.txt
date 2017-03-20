@@ -1,7 +1,0 @@
-12512 c/ Antón 48, Moralzarzal
-09308 Ctra M-608 A Villalba 6, Moralzarzal
-09309 Ctra M-608 A Villalba 36200, Moralzarzal
-10230 Ctra Moralzarzal 37400, Collado Villalba
-06377 Ctra de Alpedrete 4, Collado Villalba
-06378 Ctra de Alpedrete 40000, Collado Villalba
-19385 Ctra de Alpedrete 40400, Collado Villalba

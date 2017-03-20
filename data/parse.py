@@ -6,183 +6,272 @@ import re
 import glob
 import csv
 import os
+import sqlite3
 
+database = "../data.db"
+con = sqlite3.connect(database)
 
 if sys.version_info < (3, 0):
     reload(sys)
     sys.setdefaultencoding('utf8')
 
-HEAD_LINEA = 'NUMEROLINEAUSUARIO'
+HEAD_LINEA_ID = 'CODIGOGESTIONLINEA'
+HEAD_LINEA_COD = 'NUMEROLINEAUSUARIO'
+HEAD_ESTACION_ID = 'CODIGOESTACION'
+HEAD_ESTACION_COD = 'CODIGOEMPRESA'
 HEAD_SENTIDO = 'SENTIDO'
 HEAD_SUBLINEA = 'CODIGOSUBLINEA'
 HEAD_ORDEN = 'NUMEROORDEN'
-HEAD_PARADA = 'CODIGOESTACION'
 HEAD_DIRECCION = 'DIRECCION'
+HEAD_DIRECCION_ALT = ["TIPOVIA", "PARTICULA", "NOMBREVIA", "TIPONUMERO", "NUMEROPORTAL"]
 HEAD_MUNICIPIO = 'MUNICIPIO'
+HEAD_MUNICIPIO_COD = 'CODIGOMUNICIPIO'
+HEAD_PROVINCIA_COD = 'CODIGOPROVINCIA'
 HEAD_DENOMINACION = 'DENOMINACION'
-HEAD_CODIGOEMPRESA = 'CODIGOEMPRESA'
-HEAD_IDESTACION = 'IDESTACION'
-
+HEAD_CODIGOPOSTAL = 'CODIGOPOSTAL'
+HEAD_ITINERARIO_ID = 'CODIGOITINERARIO'
 
 sp = re.compile(r"\s+", re.MULTILINE | re.UNICODE)
 sn = re.compile(r"( SN *)+$| N S\/N *$", re.UNICODE)
-cn = re.compile(r" N (\d+[A-Z]?)$", re.UNICODE)
+cn = re.compile(r" Nº? (\d+[A-Z]?)$", re.UNICODE)
 pr1 = re.compile(r"\( +")
 pr2 = re.compile(r" +\)")
-el = re.compile(r"^([^,]+), +(El|La) *$", re.UNICODE)
+el = re.compile(r"^([^,]+), +(El|Las|La) *$", re.UNICODE)
 pre = re.compile(r"\b([A-Z]º)", re.UNICODE)
+cleanlinea = re.compile(r"[¡]", re.UNICODE)
 
-
-arti=" (de las|de la|del|de)? *"
-subs=[
-    re.compile("Calle"+arti, re.UNICODE | re.IGNORECASE),
+arti = " (de las|de la|del|de)? *"
+subs = [
+    re.compile("Calle" + arti, re.UNICODE | re.IGNORECASE),
     "c/ ",
-    re.compile("Plaza"+arti, re.UNICODE | re.IGNORECASE),
+    re.compile("Plaza" + arti, re.UNICODE | re.IGNORECASE),
     "Pl ",
-    re.compile("(Avenida|Avda)"+arti, re.UNICODE | re.IGNORECASE),
+    re.compile("(Avenida|Avda)" + arti, re.UNICODE | re.IGNORECASE),
     "Avda ",
-    re.compile("Paseo"+arti, re.UNICODE | re.IGNORECASE),
+    re.compile("Paseo" + arti, re.UNICODE | re.IGNORECASE),
     "Pº ",
-    re.compile("Ronda"+arti, re.UNICODE | re.IGNORECASE),
+    re.compile("Ronda" + arti, re.UNICODE | re.IGNORECASE),
     "Rda ",
 ]
 
 
-indices = [ i[6] for i in glob.glob('csv/em*.csv') ]
+redes = ["6", "8", "9"]
+iteraciones = 0
 
-def hash_estaciones(i):
-    obj={}
-    with open('csv/em'+i+'.csv', 'rb') as csvfile:
-        sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-        next(sr, None)
-        for row in sr:
-            if HEAD_CODIGOEMPRESA not in row or HEAD_IDESTACION not in row:
-                continue
-            a=row[HEAD_PARADA]
-            b=row[HEAD_CODIGOEMPRESA]
-            if b and len(b)>0:
-                obj[a]=b
-    return obj
-
-def lineas(i):
-    lst=[]
-    with open('csv/pm'+i+'.csv', 'rb') as csvfile:
-        sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-        next(sr, None)
-        for row in sr:
-            if HEAD_LINEA not in row:
-                continue
-            l=row[HEAD_LINEA]
-            if l not in lst:
-                lst.append(l)
-    return lst
-
-def paradas(linea, i):
-    lst=[]
-    with open('csv/pm'+i+'.csv', 'rb') as csvfile:
-        sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-        next(sr, None)
-        for row in sr:
-            if HEAD_LINEA in row and row[HEAD_LINEA]==linea:
-                lst.append(row)
-    return lst
-
-def sentidos(paradas):
-    st=[]
-    for row in paradas:
-        if row[HEAD_SENTIDO] not in st:
-            s=row[HEAD_SENTIDO]
-            st.append(s)
-            d="txt/" + s
-            if not os.path.exists(d):
-                os.makedirs(d)
-    return st
+def puntos():
+    global iteraciones
+    if (iteraciones % 10) == 0:
+        sys.stdout.write('.')
+        sys.stdout.flush()
+    iteraciones = iteraciones+1
 
 def title(s):
-    s=unicode(s).title()
-    s=s.replace(" De La "," de la ")
-    s=s.replace(" De Las "," de las ")
-    s=s.replace(" Del "," del ")
-    s=s.replace(" De "," de ")
-    s=s.replace(" y "," y ")
+    s = unicode(s).title()
+    s = s.replace(" De La ", " de la ")
+    s = s.replace(" De Las ", " de las ")
+    s = s.replace(" Del ", " del ")
+    s = s.replace(" De ", " de ")
+    s = s.replace(" Y ", " y ")
     return s
 
-def itinerario(cod, linea, sentido, obj):
-    linea_filter = filter(lambda l: l[HEAD_SENTIDO] == sentido, linea)
-    linea_filter = sorted(linea_filter,key=lambda l: int(l[HEAD_ORDEN]), reverse=False)
-    paradas_vistas=[]
-    for i in range(len(linea_filter)-1,-1,-1):
-        l=linea_filter[i]
-        p=l[HEAD_PARADA]
-        if p in paradas_vistas:
-            del linea_filter[i]
-        else:
-            paradas_vistas.append(p)
-            muni=l[HEAD_MUNICIPIO]
-            muni=title(muni)
-            muni=el.sub(r"\2 \1",muni)
-            muni=sp.sub(" ",muni).strip()
-            l[HEAD_MUNICIPIO]=muni
-            dire=sp.sub(" ",l[HEAD_DIRECCION]).strip()
-            dire=sn.sub("",dire)
-            dire=cn.sub(r" \1",dire)
-            dire=pr1.sub(r"(", dire)
-            dire=pr2.sub(r"(", dire)
-            dire=title(dire)
-            for i in range(0,len(subs),2):
-                dire=subs[i].sub(subs[i+1],dire)
-            l[HEAD_DIRECCION]=dire
-            demo=l[HEAD_DENOMINACION]
-            demo=demo.replace("-", " - ")
-            demo=demo.replace(".", ". ")
-            demo=pre.sub(r"\1 ",demo)
-            demo=sp.sub(" ",demo).strip()
-            demo=title(demo)
-            l[HEAD_DENOMINACION]=demo
+
+def dire_muni_demo(dire, muni, demo):
+    muni = title(muni)
+    muni = el.sub(r"\2 \1", muni)
+    muni = sp.sub(" ", muni).strip()
+
+    dire = sp.sub(" ", dire).strip()
+    dire = sn.sub("", dire)
+    dire = cn.sub(r" \1", dire)
+    dire = pr1.sub(r"(", dire)
+    dire = pr2.sub(r"(", dire)
+    dire = title(dire)
+    for i in range(0, len(subs), 2):
+        dire = subs[i].sub(subs[i + 1], dire)
+
+    demo = demo.replace("-", " - ")
+    demo = demo.replace(".", ". ")
+    demo = pre.sub(r"\1 ", demo)
+    demo = sp.sub(" ", demo).strip()
+    demo = sn.sub("", demo)
+    demo = cn.sub(r" \1", demo)
+    demo = title(demo)
+
+    return dire, muni, demo
+
+def get_direccion(row):
+    if HEAD_DIRECCION in row:
+        return row[HEAD_DIRECCION]
+    dire=""
+    for h in HEAD_DIRECCION_ALT:
+        dire= dire + " "+row[h]
+    return sp.sub(" ",dire).strip()
 
 
-    pmn=False
-    mn=linea_filter[0][HEAD_MUNICIPIO]
-    lt=0
-    for l in linea_filter:
-        if l[HEAD_MUNICIPIO]!=mn:
-            pmn=True
-        lt=max(len(str(l[HEAD_PARADA])), lt)
+def get_municipio(row):
+    if HEAD_MUNICIPIO in row:
+        return row[HEAD_MUNICIPIO]
+    cod_prov=row[HEAD_PROVINCIA_COD]
+    cod_muni=row[HEAD_MUNICIPIO_COD]
+    
+    c2 = con.cursor()
+    c2.execute("select municipio from municipios where cod_prov=? and cod_muni=?", (cod_prov, cod_muni))
+    muni = c2.fetchone()[0]
+    c2.close()
+    return muni
+
+def rellenar_tablas():
+    with open('schema.sql', 'r') as schema:
+        c = con.cursor()
+        qry = schema.read()
+        c.executescript(qry)
+        con.commit()
+        c.close()
+    
+    c = con.cursor()
+
+    for _csv in glob.glob("csv/*.csv"):
+        print "======== MUNICIPIOS "+_csv
+        with open(_csv, 'rb') as csvfile:
+            sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            next(sr, None)
+            for row in sr:
+                puntos()
+                if HEAD_MUNICIPIO in row and HEAD_MUNICIPIO_COD in row and HEAD_PROVINCIA_COD in row:
+                    cod_muni=sp.sub(" ",row[HEAD_MUNICIPIO_COD]).strip()
+                    cod_prov=sp.sub(" ",row[HEAD_PROVINCIA_COD]).strip()
+                    muni=unicode(sp.sub(" ",row[HEAD_MUNICIPIO]).strip())
+                    if cod_prov and cod_muni and muni:
+                        c.execute("select count(*) from municipios where cod_prov=? and cod_muni=? and municipio=?", (cod_prov, cod_muni, muni))
+                        count = c.fetchone()
+                        if count[0]==0:
+                            c.execute("insert into municipios (cod_prov, cod_muni, municipio) values (?, ?, ?)", (cod_prov, cod_muni, muni))
+        print ""
+
+    c.close()
+    con.commit()
+
+    c = con.cursor()
+    
+    for i in redes:
+        print "======== LINEAS "+i
+        visto=[]
+        sql = "insert into lineas (red, id, cod) values (" + i + ", ?, ?)"
+        with open('csv/lineas_' + i + '.csv', 'rb') as csvfile:
+            sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            next(sr, None)
+            for row in sr:
+                puntos()
+                linea=row[HEAD_LINEA_ID]
+                if linea in visto:
+                    continue
+                visto.append(linea)
+                cod=cleanlinea.sub("",row[HEAD_LINEA_COD])
+                c.execute(sql, (linea, cod))
+                con.commit()
+        c.close()
+        c = con.cursor()
+        print ""
+        print "======== ESTACIONES "+i
+        sql = "insert into estaciones (red, id, cod, direccion, municipio, denominacion, cp) values (" + i + ", ?, ?, ?, ?, ?, ?)"
+        with open('csv/estaciones_' + i + '.csv', 'rb') as csvfile:
+            sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            next(sr, None)
+            for row in sr:
+                puntos()
+                a = row[HEAD_ESTACION_ID]
+                b = row[HEAD_ESTACION_COD]
+                dire, muni, demo = dire_muni_demo(
+                    get_direccion(row), get_municipio(row), row[HEAD_DENOMINACION])
+                if not b or len(b) == 0:
+                    b = a
+                c.execute(sql, (a, b, dire, muni, demo, row[HEAD_CODIGOPOSTAL]))
+                con.commit()
+        print ""
+
+    c.close()
+    c = con.cursor()
+
+    for i in redes:
+        print "======== ITINERARIOS "+i
+        sql = "insert into itinerarios (red, itinerario, sentido, linea, sublinea, estacion, orden) values (" + i + ", ?, ?, ?, ?, ?, ?)"
+        with open('csv/itinerario_' + i + '.csv', 'rb') as csvfile:
+            sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            next(sr, None)
+            for row in sr:
+                puntos()
+                c.execute(sql, (
+                          row[HEAD_ITINERARIO_ID],
+                          row[HEAD_SENTIDO], 
+                          row[HEAD_LINEA_ID],
+                          row[HEAD_SUBLINEA],
+                          row[HEAD_ESTACION_ID],
+                          row[HEAD_ORDEN]))
+                con.commit()
+        print ""
+
+    c.close()
+    c = con.cursor()
+
+    print "======== IDS_ITINERARIOS"
+
+    c.execute('''INSERT INTO ids_itinerarios (red, id, linea, sublinea, sentido)
+                SELECT red, itinerario id, linea, sublinea, sentido
+                FROM itinerarios
+                group by red, itinerario, linea, sublinea, sentido''')
+    con.commit()
+
+    c.close()
+
+def update_tablas():
+    '''
+    c = con.cursor()
+    
+    print "======== UPDATE IDS_ITINERARIOS"
+
+    c.execute('''
+    #            UPDATE ids_itinerarios SET long=(
+    #                select max(length(cod)) from estaciones where estaciones.id || '--' || estaciones.red in (
+    #                    select estacion || '--' || red from itinerarios where itinerario=ids_itinerarios.id and red=ids_itinerarios.red
+    #                )
+    #            )
+    ''')
+    con.commit()
+    c.close()
+    '''
+    print "======== UPDATE LINEAS"
+
+    c = con.cursor()
+    c.execute("select red, id from lineas")
+    lineas = c.fetchall()
+    c.close()
+
+    for linea in lineas:
+        puntos()
+        c = con.cursor()
+        c.execute("select distinct municipio from estaciones where red || '--' || id in (select red || '--' || estacion from itinerarios where red=? and linea=?) order by municipio" , linea)
+        municipios = c.fetchall()
+        c.close()
+        munis=[]
+        for m in municipios:
+            munis.append(m[0])
+        if len(munis)>0:
+            muni = ", ".join(munis)
+            c = con.cursor()
+            c.execute("UPDATE lineas set municipio=? where red=? and id=?", (muni , linea[0], linea[1]))
+            con.commit()
+            c.close()
+
+    print ""
+
+    c.close()
 
 
-    msg = "%" + str(lt) + "s %s"
-
-    ruta="txt/" + sentido.upper() + "/" + cod.upper() + ".txt"
-    with open(ruta, "wb") as f:
-            
-        for l in linea_filter:
-            #print l[HEAD_SUBLINEA]+"  "+l[HEAD_ORDEN]+"\t"+l[HEAD_PARADA]+"\t"+demo+"\t"+dire+", "+muni
-            p=l[HEAD_PARADA]
-            if p in obj:
-                p=obj[p]
-
-            item = (msg % (p, l[HEAD_DIRECCION]))
-            if pmn:
-                item = item + ", "+l[HEAD_MUNICIPIO]
-            
-            f.write(item+"\n")
-
-                    
 if __name__ == "__main__":
-    _linea = sys.argv[1] if len(sys.argv)>1 else None
-    _sentido = [sys.argv[2]] if len(sys.argv)>2 else None
+    if len(sys.argv) == 1:
+        rellenar_tablas()
+        #update_tablas()
+    elif sys.argv[1] == "update":
+        update_tablas()
 
-    for i in indices:
-        lns = lineas(i)
-        if _linea:
-            if _linea not in lns:
-                continue
-            lns=[_linea]
-        obj = hash_estaciones(i)
-
-        for l in lns:
-            prd=paradas(l, i)
-            st = sentidos(prd) if _sentido is None else _sentido
-            for s in st:
-                itinerario(l, prd, s, obj)
-
+    con.close()

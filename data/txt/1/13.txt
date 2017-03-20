@@ -1,7 +1,0 @@
-07692 c/ Galicia 29
-07695 c/ Galicia 25
-07696 c/ Galicia 15
-07699 c/ Galicia 1
-07702 c/ Móstoles 68
-07716 c/ Móstoles 35
-19219 Pº Roma 1

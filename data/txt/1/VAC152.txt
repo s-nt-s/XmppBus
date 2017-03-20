@@ -1,7 +1,0 @@
-06165 c/ Méndez Álvaro 85, Madrid
-08227 Avda Libertad 2, Getafe
-18647 c/ Real 92, Parla
-17231 c/ Real 1, Torrejon de la Calzada
-08119 c/ Real 18, Torrejon de la Calzada
-11581 c/ Real 56, Torrejon de la Calzada
-10288 c/ Real 78, Torrejon de la Calzada
