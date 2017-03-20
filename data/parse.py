@@ -7,8 +7,9 @@ import glob
 import csv
 import os
 import sqlite3
+import locale
 
-database = "../data.db"
+database = "data.db"
 con = sqlite3.connect(database)
 
 if sys.version_info < (3, 0):
@@ -58,12 +59,16 @@ subs = [
 redes = ["6", "8", "9"]
 iteraciones = 0
 
-def puntos():
+def progreso(total):
     global iteraciones
-    if (iteraciones % 10) == 0:
-        sys.stdout.write('.')
+    porcentaje=(iteraciones*100)/total
+    if (iteraciones % 10) == 0 or porcentaje==100:
+        sys.stdout.write("\r%3d%% de %5d" % (porcentaje, total))
         sys.stdout.flush()
-    iteraciones = iteraciones+1
+    if iteraciones == total:
+        iteraciones=0
+    else:
+        iteraciones = iteraciones+1
 
 def title(s):
     s = unicode(s).title()
@@ -134,9 +139,11 @@ def rellenar_tablas():
         print "======== MUNICIPIOS "+_csv
         with open(_csv, 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            total=len(list(sr))-1
+            csvfile.seek(0)
             next(sr, None)
             for row in sr:
-                puntos()
+                progreso(total)
                 if HEAD_MUNICIPIO in row and HEAD_MUNICIPIO_COD in row and HEAD_PROVINCIA_COD in row:
                     cod_muni=sp.sub(" ",row[HEAD_MUNICIPIO_COD]).strip()
                     cod_prov=sp.sub(" ",row[HEAD_PROVINCIA_COD]).strip()
@@ -159,9 +166,11 @@ def rellenar_tablas():
         sql = "insert into lineas (red, id, cod) values (" + i + ", ?, ?)"
         with open('csv/lineas_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            total=len(list(sr))-1
+            csvfile.seek(0)
             next(sr, None)
             for row in sr:
-                puntos()
+                progreso(total)
                 linea=row[HEAD_LINEA_ID]
                 if linea in visto:
                     continue
@@ -176,9 +185,11 @@ def rellenar_tablas():
         sql = "insert into estaciones (red, id, cod, direccion, municipio, denominacion, cp) values (" + i + ", ?, ?, ?, ?, ?, ?)"
         with open('csv/estaciones_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            total=len(list(sr))-1
+            csvfile.seek(0)
             next(sr, None)
             for row in sr:
-                puntos()
+                progreso(total)
                 a = row[HEAD_ESTACION_ID]
                 b = row[HEAD_ESTACION_COD]
                 dire, muni, demo = dire_muni_demo(
@@ -197,9 +208,11 @@ def rellenar_tablas():
         sql = "insert into itinerarios (red, itinerario, sentido, linea, sublinea, estacion, orden) values (" + i + ", ?, ?, ?, ?, ?, ?)"
         with open('csv/itinerario_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
+            total=len(list(sr))-1
+            csvfile.seek(0)
             next(sr, None)
             for row in sr:
-                puntos()
+                progreso(total)
                 c.execute(sql, (
                           row[HEAD_ITINERARIO_ID],
                           row[HEAD_SENTIDO], 
@@ -224,21 +237,6 @@ def rellenar_tablas():
     c.close()
 
 def update_tablas():
-    '''
-    c = con.cursor()
-    
-    print "======== UPDATE IDS_ITINERARIOS"
-
-    c.execute('''
-    #            UPDATE ids_itinerarios SET long=(
-    #                select max(length(cod)) from estaciones where estaciones.id || '--' || estaciones.red in (
-    #                    select estacion || '--' || red from itinerarios where itinerario=ids_itinerarios.id and red=ids_itinerarios.red
-    #                )
-    #            )
-    ''')
-    con.commit()
-    c.close()
-    '''
     print "======== UPDATE LINEAS"
 
     c = con.cursor()
@@ -246,8 +244,9 @@ def update_tablas():
     lineas = c.fetchall()
     c.close()
 
+    total=len(lineas)
     for linea in lineas:
-        puntos()
+        progreso(total)
         c = con.cursor()
         c.execute("select distinct municipio from estaciones where red || '--' || id in (select red || '--' || estacion from itinerarios where red=? and linea=?) order by municipio" , linea)
         municipios = c.fetchall()
@@ -270,7 +269,7 @@ def update_tablas():
 if __name__ == "__main__":
     if len(sys.argv) == 1:
         rellenar_tablas()
-        #update_tablas()
+        update_tablas()
     elif sys.argv[1] == "update":
         update_tablas()
 
