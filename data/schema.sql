@@ -45,7 +45,6 @@ CREATE TABLE ids_itinerarios (
     linea INTEGER NOT NULL,
     sublinea TEXT,
     sentido INTEGER,
-    long INTEGER,
     PRIMARY KEY (red, id),
     FOREIGN KEY(id) REFERENCES itinerarios(itinerario)
 );
