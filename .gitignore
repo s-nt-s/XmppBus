@@ -1,6 +1,6 @@
 config.yml
 *.pyc
 user.db
-avatar.png
+*.png
 nohup.out
 *.csv
