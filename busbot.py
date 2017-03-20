@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from xmppbot import botcmd, XmppBot
-from datos import tiempos
-from datos import pt
-import db
+from data.datos import tiempos
+from data.datos import pt
+from data import db
 import yaml
 import os
 import textwrap
@@ -185,7 +185,7 @@ class BusBot(XmppBot):
         marcador=" ".join(txt.split(' ')[1:]).lower()
         if len(marcador)==0:
             return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
-        db.del_marcadores(user, marcador)
+        db.del_marcador(user, marcador)
         return "¡Marcador borrado!"
 
 if __name__ == '__main__':

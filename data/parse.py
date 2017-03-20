@@ -9,7 +9,10 @@ import os
 import sqlite3
 import locale
 
-database = "data.db"
+path = os.path.dirname(os.path.abspath(__file__))
+
+database = path + "/tmp/data.db"
+
 con = sqlite3.connect(database)
 
 if sys.version_info < (3, 0):
@@ -126,7 +129,7 @@ def get_municipio(row):
     return muni
 
 def rellenar_tablas():
-    with open('schema.sql', 'r') as schema:
+    with open(path + '/schema/data.sql', 'r') as schema:
         c = con.cursor()
         qry = schema.read()
         c.executescript(qry)

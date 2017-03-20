@@ -1,7 +1,10 @@
 import sqlite3
+import os
 
-db_user = "user.db"
-db_data = "data.db"
+path = os.path.dirname(os.path.abspath(__file__))
+
+db_user = path + "/db/user.db"
+db_data = path + "/db/data.db"
 
 
 def get_marcador(user, marcador):
@@ -62,9 +65,9 @@ def get_id_itinerario(red, linea, sentido=1, sublinea=None):
     con = sqlite3.connect(db_data)
     c = con.cursor()
     if sublinea:
-        c.execute("select id, sublinea, long from ids_itinerarios where red=? and linea=? and sentido=? and sublinea=? order by sublinea", (red, linea, sentido, sublinea))
+        c.execute("select id, sublinea from ids_itinerarios where red=? and linea=? and sentido=? and sublinea=? order by sublinea", (red, linea, sentido, sublinea))
     else:
-        c.execute("select id, sublinea, long from ids_itinerarios where red=? and linea=? and sentido=? order by sublinea", (red, linea, sentido))
+        c.execute("select id, sublinea from ids_itinerarios where red=? and linea=? and sentido=? order by sublinea", (red, linea, sentido))
     r = c.fetchall()
     c.close()
     con.close()
@@ -97,9 +100,10 @@ def get_itinerario_mixto(red, linea, sentido=1):
 
 if __name__ == "__main__":
     con = sqlite3.connect(db_user)
-    c = con.cursor()
-    c.execute("DROP TABLE IF EXISTS marcadores")
-    c.execute(
-        "CREATE TABLE marcadores (user text, marcador text, cmd text, PRIMARY KEY (user, marcador))")
-    con.commit()
+    with open(path + '/schema/user.sql', 'r') as schema:
+        c = con.cursor()
+        qry = schema.read()
+        c.executescript(qry)
+        con.commit()
+        c.close()
     con.close()
