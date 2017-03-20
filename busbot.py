@@ -135,12 +135,9 @@ class BusBot(XmppBot):
         '''
 
         itinerario = db.get_itinerario_mixto(rd, li, sent)
-        plong=5
         
         if len(itinerario)==0:
             return "No hay datos para la línea "+arg
-        
-        msg = "%"+str(plong)+"s %s"
 
         reply = "Itinerario "
         if variantes>1:
@@ -150,13 +147,20 @@ class BusBot(XmppBot):
         if cod!=arg:
             reply = reply + " de " + muni +" ("+arg+")"
         reply = reply + ":\n"
+
+        reply_itinerario=""
         for item in itinerario:
             dire=item[3]
             '''
             if not muni:
                 dire=dire+", "+item[2]
             '''
-            reply = reply + "\n" + (msg % (item[0], dire))
+            reply_itinerario = reply_itinerario + ("%5s %s" % (item[0], dire)) + "\n"
+
+        reply_itinerario = textwrap.dedent(reply_itinerario.rstrip())
+
+        reply = reply + "\n" + reply_itinerario
+        
         if sent == 1 or variantes>1:
             reply = reply + "\n"
         if sent == 1:
