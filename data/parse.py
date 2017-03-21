@@ -174,11 +174,11 @@ def rellenar_tablas():
             next(sr, None)
             for row in sr:
                 progreso(total)
-                linea=row[HEAD_LINEA_ID]
+                linea=row[HEAD_LINEA_ID].upper()
                 if linea in visto:
                     continue
                 visto.append(linea)
-                cod=cleanlinea.sub("",row[HEAD_LINEA_COD])
+                cod=cleanlinea.sub("",row[HEAD_LINEA_COD]).upper()
                 c.execute(sql, (linea, cod))
                 con.commit()
         c.close()
@@ -219,7 +219,7 @@ def rellenar_tablas():
                 c.execute(sql, (
                           row[HEAD_ITINERARIO_ID],
                           row[HEAD_SENTIDO], 
-                          row[HEAD_LINEA_ID],
+                          row[HEAD_LINEA_ID].upper(),
                           row[HEAD_SUBLINEA],
                           row[HEAD_ESTACION_ID],
                           row[HEAD_ORDEN]))

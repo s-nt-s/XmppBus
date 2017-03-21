@@ -22,7 +22,7 @@ CREATE TABLE estaciones (
 );
 CREATE TABLE lineas (
     red INTEGER,
-    id INTEGER,
+    id TEXT,
     cod TEXT NOT NULL,
     municipio TEXT,
     PRIMARY KEY (red, id)
@@ -32,7 +32,7 @@ CREATE TABLE itinerarios (
     itinerario INTEGER,
     orden INTEGER,
     sentido INTEGER NOT NULL,
-    linea INTEGER NOT NULL,
+    linea TEXT NOT NULL,
     sublinea TEXT,
     estacion INTEGER NOT NULL,
     PRIMARY KEY (red, itinerario, orden),
@@ -42,7 +42,7 @@ CREATE TABLE itinerarios (
 CREATE TABLE ids_itinerarios (
     red INTEGER,
     id INTEGER,
-    linea INTEGER NOT NULL,
+    linea TEXT NOT NULL,
     sublinea TEXT,
     sentido INTEGER,
     PRIMARY KEY (red, id),

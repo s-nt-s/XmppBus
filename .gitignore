@@ -4,3 +4,4 @@ user.db
 *.png
 nohup.out
 *.csv
+data/tmp/
