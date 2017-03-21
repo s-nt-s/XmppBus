@@ -94,7 +94,7 @@ class BusBot(XmppBot):
 
     @botcmd(name="paradas")
     def reply_paradas(self, user, txt, args):
-        arg=args[0]
+        arg=args[0].upper()
         m=red_linea_sub.match(arg)
         if not m:
             return arg + " no cumple el formato de línea"
