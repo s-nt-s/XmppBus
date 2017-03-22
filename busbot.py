@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import traceback
 from xmppbot import botcmd, XmppBot
 from data.datos import tiempos
 from data.datos import pt
@@ -34,6 +35,7 @@ class BusBot(XmppBot):
         Si quieres repetir la última consulta que hayas hecho escribe simplemente un punto (.).
         Si quieres guardar un marcador a tu consulta añade una palabra tras ella (ej: 435 51 casa) y cuando escribas esa palabra se realizara la consulta guardada.
         Si no te acuerdas de tus marcadores guardados, escribe # y te los listare.
+        También puedes consultar el itinerario de una línea escribiendo la palabra paradas seguida del número de linea (ej: paradas 51).
         ''').strip()
 
     @botcmd(regex=re.compile(r"^(\d+.*)"), rg_mode="match")
@@ -187,6 +189,11 @@ class BusBot(XmppBot):
             return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
         db.del_marcador(user, marcador)
         return "¡Marcador borrado!"
+
+    def command_error(self, user, text, args, e):
+        if user == self.config['admin']:
+            return str(e)+"\n\n"+traceback.format_exc()
+        return "Ha ocurrido un error inesperado. Por favor, vuelva a intentarlo más tarde."
 
 if __name__ == '__main__':
     path = os.path.dirname(os.path.realpath(__file__))
