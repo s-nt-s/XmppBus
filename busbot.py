@@ -39,7 +39,7 @@ class BusBot(XmppBot):
         ''').strip()
 
     @botcmd(regex=re.compile(r"^(\d+.*)"), rg_mode="match")
-    def reply_message(self, user, txt, args):
+    def reply_tiempos(self, user, txt, args):
         reply = None
         marcador = None
         words = txt.split(" ")
@@ -91,7 +91,7 @@ class BusBot(XmppBot):
         word1 = txt.split(" ")[0]
         txt2 = db.get_marcador(user, txt.lower())
         if txt2:
-            return self.reply_message(user, txt2, [txt])
+            return self.reply_tiempos(user, txt2, [txt])
         return None
 
     @botcmd(name="paradas")
