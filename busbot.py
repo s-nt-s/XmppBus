@@ -38,62 +38,6 @@ class BusBot(XmppBot):
         También puedes consultar el itinerario de una línea escribiendo la palabra paradas seguida del número de linea (ej: paradas 51).
         ''').strip()
 
-    @botcmd(regex=re.compile(r"^(\d+.*)"), rg_mode="match")
-    def reply_tiempos(self, user, txt, args):
-        reply = None
-        marcador = None
-        words = txt.split(" ")
-
-        r = tiempos([words[0]])
-
-        linea = words[1] if len(words) > 1 else None
-        marcador = " ".join(words[2:]) if len(words) > 2 else None
-
-        if not r or len(r) == 0:
-            reply = "Actualmente no hay datos para la parada " + words[0]
-            if linea and not linea.isdigit():
-                marcador = " ".join(words[1:])
-        else:
-            if linea:
-                buses = [i["linea"] for i in r]
-                if linea not in buses:
-                    marcador = " ".join(words[1:])
-                    linea = None
-            if linea:
-                r = [i for i in r if i["linea"] == linea]
-
-            reply = pt(r)
-
-        if marcador:
-            index = 2 if linea else 1
-            txt = " ".join(words[0:index])
-            db.set_marcador(user, marcador.lower(), txt)
-
-        if args is None or len(args)==0 or not puntos.match(args[0]):
-            for h in range(historia-1, 0, -1):
-                hs = db.get_marcador(user, "." * h)
-                if hs:
-                     db.set_marcador(user, "." * (h+1), hs)
-
-            db.set_marcador(user, ".", txt)
-        if not r or len(r) == 0:
-            return reply
-        a = txt.split(" ")
-        if len(a)>1:
-            tit = "Los tiempos del bus %s en la parada %s son:\n" % (a[1], a[0])
-        else:
-            tit = "Los tiempos en la parada %s son:\n" % a[0]
-
-        return tit + reply
-
-    @botcmd(regex=re.compile(r"^(\D+.*)$"), rg_mode="match")
-    def reply_else(self, user, txt, args):
-        word1 = txt.split(" ")[0]
-        txt2 = db.get_marcador(user, txt.lower())
-        if txt2:
-            return self.reply_tiempos(user, txt2, [txt])
-        return None
-
     @botcmd(name="paradas")
     def reply_paradas(self, user, txt, args):
         arg=args[0].upper()
@@ -189,6 +133,62 @@ class BusBot(XmppBot):
             return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
         db.del_marcador(user, marcador)
         return "¡Marcador borrado!"
+
+    @botcmd(regex=re.compile(r"^(\d+.*)"), rg_mode="match")
+    def reply_tiempos(self, user, txt, args):
+        reply = None
+        marcador = None
+        words = txt.split(" ")
+
+        r = tiempos([words[0]])
+
+        linea = words[1] if len(words) > 1 else None
+        marcador = " ".join(words[2:]) if len(words) > 2 else None
+
+        if not r or len(r) == 0:
+            reply = "Actualmente no hay datos para la parada " + words[0]
+            if linea and not linea.isdigit():
+                marcador = " ".join(words[1:])
+        else:
+            if linea:
+                buses = [i["linea"] for i in r]
+                if linea not in buses:
+                    marcador = " ".join(words[1:])
+                    linea = None
+            if linea:
+                r = [i for i in r if i["linea"] == linea]
+
+            reply = pt(r)
+
+        if marcador:
+            index = 2 if linea else 1
+            txt = " ".join(words[0:index])
+            db.set_marcador(user, marcador.lower(), txt)
+
+        if args is None or len(args)==0 or not puntos.match(args[0]):
+            for h in range(historia-1, 0, -1):
+                hs = db.get_marcador(user, "." * h)
+                if hs:
+                     db.set_marcador(user, "." * (h+1), hs)
+
+            db.set_marcador(user, ".", txt)
+        if not r or len(r) == 0:
+            return reply
+        a = txt.split(" ")
+        if len(a)>1:
+            tit = "Los tiempos del bus %s en la parada %s son:\n" % (a[1], a[0])
+        else:
+            tit = "Los tiempos en la parada %s son:\n" % a[0]
+
+        return tit + reply
+
+    @botcmd(regex=re.compile(r"^(\D+.*)$"), rg_mode="match")
+    def reply_else(self, user, txt, args):
+        word1 = txt.split(" ")[0]
+        txt2 = db.get_marcador(user, txt.lower())
+        if txt2:
+            return self.reply_tiempos(user, txt2, [txt])
+        return None
 
     def command_error(self, user, text, args, e):
         if user == self.config['admin']:
