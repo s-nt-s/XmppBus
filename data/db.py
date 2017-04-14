@@ -98,6 +98,18 @@ def get_itinerario_mixto(red, linea, sentido=1):
             visto.append(e)
     return r
 
+def get_direccion(estacion):
+    con = sqlite3.connect(db_data)
+    c = con.cursor()
+    c.execute("select distinct direccion from estaciones where cod=?", (estacion,))
+    r = c.fetchall()
+    c.close()
+    con.close()
+    if len(r)!=1:
+        return None
+    return r[0][0]
+
+
 if __name__ == "__main__":
     con = sqlite3.connect(db_user)
     with open(path + '/schema/user.sql', 'r') as schema:

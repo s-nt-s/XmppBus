@@ -175,10 +175,14 @@ class BusBot(XmppBot):
         if not r or len(r) == 0:
             return reply
         a = txt.split(" ")
+        p = a[0]
+        d = db.get_direccion(p)
+        if d:
+            p += " ("+d+")"
         if len(a)>1:
-            tit = "Los tiempos del bus %s en la parada %s son:\n" % (a[1], a[0])
+            tit = "Los tiempos del bus %s en la parada %s son:\n" % (a[1], p)
         else:
-            tit = "Los tiempos en la parada %s son:\n" % a[0]
+            tit = "Los tiempos en la parada %s son:\n" % p
 
         return tit + reply
 
