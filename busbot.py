@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import traceback
-from xmppbot import botcmd, XmppBot
-from data.datos import tiempos
-from data.datos import pt
-from data import db
-import yaml
 import os
-import textwrap
 import re
-import os
 import sys
+import textwrap
+import traceback
+
+import yaml
+from xmppbot import XmppBot, botcmd
+
+from data import db
+from data.datos import pt, tiempos
+
 '''
 if sys.version_info < (3, 0):
     reload(sys)

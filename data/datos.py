@@ -1,13 +1,12 @@
 #!/usr/bin/python
 
-import time
-import requests
 import json
 import os
+import re
 import sys
 import time
-import re
-import os
+
+import requests
 
 madrid = re.compile(
     r"\s*Madrid\s+\(\s*(.*?)\s*\)\s*$", re.MULTILINE | re.UNICODE)

@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import sys
-import re
-import glob
 import csv
-import os
-import sqlite3
+import glob
 import locale
+import os
+import re
+import sqlite3
+import sys
 
 path = os.path.dirname(os.path.abspath(__file__))
 
