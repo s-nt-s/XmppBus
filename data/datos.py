@@ -5,6 +5,7 @@ import os
 import re
 import sys
 import time
+import bs4
 
 import requests
 
@@ -26,8 +27,30 @@ def get_json(url):
         return js["lines"]
     return js
 
+def get_saldo(tarjeta):
+    r = requests.get("https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx")
+    soup = bs4.BeautifulSoup(r.text, "lxml")
+    data = {
+        "ctl00$cntPh$btnConsultar": "Continuar",
+        "ctl00$cntPh$dpdCodigoTTP": tarjeta[:3],
+        "ctl00$cntPh$txtNumTTP": tarjeta[3:]
+    }
+    for i in soup.select("input"):
+        if "name" in i.attrs and "value" in i.attrs and i.attrs["name"].startswith("__"):
+            data[i.attrs["name"]] = i.attrs["value"]
+    r = requests.post("https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx", data=data)
+    soup = bs4.BeautifulSoup(r.text, "lxml")
+    resultado = soup.find("div", attrs={"id" : "ctl00_cntPh_tableResultados"})
+    if not resultado or len(resultado.get_text().strip())==0:
+        return None
+    for tag in resultado.select("*"):
+        if tag.name == "br":
+            tag.replaceWith("\n")
+        else:
+            tag.unwrap()
+    return resultado.get_text().strip()+"\n\nFuente: https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx"
 
-def tiempos(paradas):
+def get_tiempos(paradas):
     t = time.time()
     param = str(t).replace(".", "")
     c = 0
@@ -85,6 +108,6 @@ def pt(info):
     return r.rstrip()
 
 if __name__ == "__main__":
-    r = tiempos(sys.argv[1:])
+    r = get_tiempos(sys.argv[1:])
     # print json.dumps(r, indent=4, sort_keys=True)
     print pt(r)

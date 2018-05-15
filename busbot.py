@@ -11,7 +11,7 @@ import yaml
 from xmppbot import XmppBot, botcmd
 
 from data import db
-from data.datos import pt, tiempos
+from data.datos import pt, get_tiempos, get_saldo
 
 '''
 if sys.version_info < (3, 0):
@@ -36,8 +36,29 @@ class BusBot(XmppBot):
         Si quieres repetir la última consulta que hayas hecho escribe simplemente un punto (.).
         Si quieres guardar un marcador a tu consulta añade una palabra tras ella (ej: 435 51 casa) y cuando escribas esa palabra se realizara la consulta guardada.
         Si no te acuerdas de tus marcadores guardados, escribe # y te los listare.
-        También puedes consultar el itinerario de una línea escribiendo la palabra paradas seguida del número de linea (ej: paradas 51).
+        También puedes consultar el itinerario de una línea escribiendo la palabra paradas seguida del número de linea (ej: paradas 51),
+        o consultar el saldo de tu tarjeta de transporte escribiendo saldo.
         ''').strip()
+
+
+    @botcmd(regex=re.compile(r"^saldo(\s+[\d\s]+)?$", re.IGNORECASE), rg_mode="match")
+    def saldo(self, user, txt, args):
+        tarjeta=args[0].strip() if len(args)>0 and args[0] else ""
+        tarjeta = re.sub(r"\s+", "", tarjeta)
+        from_db = False
+        if len(tarjeta)==0:
+            tarjeta = db.get_tarjeta(user)
+            from_db = True
+            if tarjeta is None:
+                return "Escriba el número de su tarjeta ( https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg ) después de la palabra saldo"
+        elif len(tarjeta)!=13 or not tarjeta.isdigit():
+            return tarjeta + " no es un número de tarjeta válido ( https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg )"
+        saldo = get_saldo(tarjeta)
+        if not saldo:
+            return tarjeta + " no es un número de tarjeta válido ( https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg )"
+        if not from_db:
+            db.set_tarjeta(user, tarjeta)
+        return "Información para la tarjeta "+tarjeta+":\n\n"+saldo
 
     @botcmd(name="paradas")
     def reply_paradas(self, user, txt, args):
@@ -141,7 +162,7 @@ class BusBot(XmppBot):
         marcador = None
         words = txt.split(" ")
 
-        r = tiempos([words[0]])
+        r = get_tiempos([words[0]])
 
         linea = words[1] if len(words) > 1 else None
         marcador = " ".join(words[2:]) if len(words) > 2 else None

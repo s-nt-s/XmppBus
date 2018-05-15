@@ -6,6 +6,25 @@ path = os.path.dirname(os.path.abspath(__file__))
 db_user = path + "/db/user.db"
 db_data = path + "/db/data.db"
 
+def get_tarjeta(user):
+    con = sqlite3.connect(db_user)
+    c = con.cursor()
+    c.execute("select tarjeta from tarjetas where user=?", (user,))
+    r = c.fetchone()
+    c.close()
+    con.close()
+    if r and len(r) > 0:
+        return r[0]
+    return None
+
+def set_tarjeta(user, tarjeta):
+    con = sqlite3.connect(db_user)
+    c = con.cursor()
+    c.execute(
+        "insert or replace into tarjetas (user, tarjeta) values (?, ?)", (user, tarjeta))
+    c.close()
+    con.commit()
+    con.close()
 
 def get_marcador(user, marcador):
     con = sqlite3.connect(db_user)
