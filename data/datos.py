@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
 import json
 import os
@@ -110,4 +111,4 @@ def pt(info):
 if __name__ == "__main__":
     r = get_tiempos(sys.argv[1:])
     # print json.dumps(r, indent=4, sort_keys=True)
-    print pt(r)
+    print (pt(r))

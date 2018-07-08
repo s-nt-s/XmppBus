@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
 import os
@@ -13,11 +13,6 @@ from xmppbot import XmppBot, botcmd
 from data import db
 from data.datos import pt, get_tiempos, get_saldo
 
-'''
-if sys.version_info < (3, 0):
-    reload(sys)
-    sys.setdefaultencoding('utf8')
-'''
 puntos = re.compile(r"^\.+$")
 red_linea_sub =re.compile("^(?:([689])_)?([\dA-Z]+)(?:-(\d+))?$", re.IGNORECASE)
 historia = 3
@@ -28,7 +23,7 @@ class BusBot(XmppBot):
         return "<span style='font-family: monospace'>" + txt.replace("\n", "<br/>") + "</span>"
 
     @botcmd(regex=re.compile(r"(hola|\?$)", re.IGNORECASE), rg_mode="search")
-    def hola(self, user, txt, args):
+    def hola(self, *args, **kwargs):
         return textwrap.dedent('''
         ¡Hola!
         Escribe el número de una parada para consultar los autobuses que pasan por ella (ej: 435).
@@ -61,18 +56,18 @@ class BusBot(XmppBot):
         return "Información para la tarjeta "+tarjeta+":\n\n"+saldo
 
     @botcmd(name="paradas")
-    def reply_paradas(self, user, txt, args):
-        arg=args[0].upper()
-        m=red_linea_sub.match(arg)
+    def reply_paradas(self, linea, *args, user, **kwargs):
+        linea=linea.upper()
+        m=red_linea_sub.match(linea)
         if not m:
-            return arg + " no cumple el formato de línea"
-        rd, li, su = m.groups()
-        sent= 2 if args[-1]=="+" else 1
+            return linea + " no cumple el formato de línea"
 
+        rd, li, su = m.groups()
+        sent= 2 if len(args)>0 and args[0]=="+" else 1
 
         idlineas=db.get_linea(li,rd)
         if len(idlineas)==0:
-            return "No hay datos para la linea "+arg
+            return "No hay datos para la linea "+linea
         elif len(idlineas)>1:
             reply = "Exiten varias líneas "+li+", por favor, concreta escribiendo:"
             for idlinea in idlineas:
@@ -89,12 +84,12 @@ class BusBot(XmppBot):
         
         '''
         if len(iditinerarios)==0:
-            return "No hay datos para la linea "+arg
+            return "No hay datos para la linea "+linea
         elif len(iditinerarios)>1:
-            reply = "La línea "+arg+" tiene varios itinerarios, por favor, concreta escribiendo:"
+            reply = "La línea "+linea+" tiene varios itinerarios, por favor, concreta escribiendo:"
             for iditinerario in iditinerarios:
                 su=iditinerario[1]
-                reply = reply +"\n"+arg+"-"+su+" para el subitinerario "+su
+                reply = reply +"\n"+linea+"-"+su+" para el subitinerario "+su
             return reply
         
         iditinerario, su, plong = iditinerarios[0]
@@ -105,15 +100,15 @@ class BusBot(XmppBot):
         itinerario = db.get_itinerario_mixto(rd, li, sent)
         
         if len(itinerario)==0:
-            return "No hay datos para la línea "+arg
+            return "No hay datos para la línea "+linea
 
         reply = "Itinerario "
         if variantes>1:
             reply = reply + "(aproximado) "
 
         reply = reply + "de la línea "+cod
-        if cod!=arg:
-            reply = reply + " de " + muni +" ("+arg+")"
+        if cod!=linea:
+            reply = reply + " de " + muni +" ("+linea+")"
         reply = reply + ":\n"
 
         reply_itinerario=""
@@ -132,13 +127,13 @@ class BusBot(XmppBot):
         if sent == 1 or variantes>1:
             reply = reply + "\n"
         if sent == 1:
-            reply = reply + ("\nPara ver el sentido contrario escribe: paradas %s +" % arg)
+            reply = reply + ("\nPara ver el sentido contrario escribe: paradas %s +" % linea)
         if variantes>1:
             reply = reply + ("\nAntes de desplazarte consulta tu parada para confirmar que el bus va a pasar por ella")
         return reply
 
     @botcmd(name="#")
-    def marcadores(self, user, txt, args):
+    def marcadores(self, *args, user, **kwargs):
         marcador = db.get_marcadores(user)
         if not marcador or len(marcador) == 0:
             return "Aún no has guardado ningún marcador"
@@ -149,18 +144,18 @@ class BusBot(XmppBot):
         return r
 
     @botcmd(name="borrar")
-    def borrar_marcador(self, user, txt, args):
-        marcador=" ".join(txt.split(' ')[1:]).lower()
+    def borrar_marcador(self, *marcador, user, **kwargs):
         if len(marcador)==0:
             return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
+        marcador=" ".join(marcador).lower()
         db.del_marcador(user, marcador)
         return "¡Marcador borrado!"
 
     @botcmd(regex=re.compile(r"^(\d+.*)"), rg_mode="match")
-    def reply_tiempos(self, user, txt, args):
+    def reply_tiempos(self, *args, user, text, **kwargs):
         reply = None
         marcador = None
-        words = txt.split(" ")
+        words = text.split(" ")
 
         r = get_tiempos([words[0]])
 
@@ -193,10 +188,10 @@ class BusBot(XmppBot):
                 if hs:
                      db.set_marcador(user, "." * (h+1), hs)
 
-            db.set_marcador(user, ".", txt)
+            db.set_marcador(user, ".", text)
         if not r or len(r) == 0:
             return reply
-        a = txt.split(" ")
+        a = text.split(" ")
         p = a[0]
         d = db.get_direccion(p)
         if d:
@@ -209,14 +204,13 @@ class BusBot(XmppBot):
         return tit + reply
 
     @botcmd(regex=re.compile(r"^(\D+.*)$"), rg_mode="match")
-    def reply_else(self, user, txt, args):
-        word1 = txt.split(" ")[0]
-        txt2 = db.get_marcador(user, txt.lower())
+    def reply_else(self, *args, user, text, **kwargs):
+        txt2 = db.get_marcador(user, text.lower())
         if txt2:
-            return self.reply_tiempos(user, txt2, [txt])
+            return self.reply_tiempos(user=user, text=txt2)
         return None
 
-    def command_error(self, user, text, args, e):
+    def command_error(self, e, *args, user, **kwargs):
         if user == self.config['admin']:
             return str(e)+"\n\n"+traceback.format_exc()
         return "Ha ocurrido un error inesperado. Por favor, vuelva a intentarlo más tarde."
