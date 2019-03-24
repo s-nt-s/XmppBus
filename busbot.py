@@ -16,6 +16,7 @@ from data.datos import pt, get_tiempos, get_saldo
 puntos = re.compile(r"^\.+$")
 red_linea_sub =re.compile("^(?:([689])_)?([\dA-Z]+)(?:-(\d+))?$", re.IGNORECASE)
 historia = 3
+img_tarjeta="https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg"
 
 class BusBot(XmppBot):
 
@@ -37,20 +38,21 @@ class BusBot(XmppBot):
 
 
     @botcmd(regex=re.compile(r"^saldo(\s+[\d\s]+)?$", re.IGNORECASE), rg_mode="match")
-    def saldo(self, user, txt, args):
-        tarjeta=args[0].strip() if len(args)>0 and args[0] else ""
+    def saldo(self, tarjeta, *args, user, **kwargs):
+        if not tarjeta:
+            tarjeta = ""
         tarjeta = re.sub(r"\s+", "", tarjeta)
         from_db = False
         if len(tarjeta)==0:
             tarjeta = db.get_tarjeta(user)
             from_db = True
             if tarjeta is None:
-                return "Escriba el número de su tarjeta ( https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg ) después de la palabra saldo"
+                return "Escriba el número de su tarjeta ( " + img_tarjeta + " ) después de la palabra saldo"
         elif len(tarjeta)!=13 or not tarjeta.isdigit():
-            return tarjeta + " no es un número de tarjeta válido ( https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg )"
+            return tarjeta + " no es un número de tarjeta válido ( " + img_tarjeta + " )"
         saldo = get_saldo(tarjeta)
         if not saldo:
-            return tarjeta + " no es un número de tarjeta válido ( https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TTP.jpg )"
+            return tarjeta + " no es un número de tarjeta válido ( " + img_tarjeta + " )"
         if not from_db:
             db.set_tarjeta(user, tarjeta)
         return "Información para la tarjeta "+tarjeta+":\n\n"+saldo

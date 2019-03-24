@@ -29,7 +29,7 @@ def get_json(url):
     return js
 
 def get_saldo(tarjeta):
-    r = requests.get("https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx")
+    r = requests.get("https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx", verify=False)
     soup = bs4.BeautifulSoup(r.text, "lxml")
     data = {
         "ctl00$cntPh$btnConsultar": "Continuar",
@@ -39,7 +39,7 @@ def get_saldo(tarjeta):
     for i in soup.select("input"):
         if "name" in i.attrs and "value" in i.attrs and i.attrs["name"].startswith("__"):
             data[i.attrs["name"]] = i.attrs["value"]
-    r = requests.post("https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx", data=data)
+    r = requests.post("https://www.tarjetatransportepublico.es/CRTM-ABONOS/consultaSaldo.aspx", data=data, verify=False)
     soup = bs4.BeautifulSoup(r.text, "lxml")
     resultado = soup.find("div", attrs={"id" : "ctl00_cntPh_tableResultados"})
     if not resultado or len(resultado.get_text().strip())==0:
