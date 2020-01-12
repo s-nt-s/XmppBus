@@ -20,8 +20,8 @@ img_tarjeta="https://www.tarjetatransportepublico.es/CRTM-ABONOS/archivos/img/TT
 
 class BusBot(XmppBot):
 
-    def format_message(self, txt):
-        return "<span style='font-family: monospace'>" + txt.replace("\n", "<br/>") + "</span>"
+    def tune_reply(self, txt):
+        return "```\n%s\n```" % txt
 
     @botcmd(regex=re.compile(r"(hola|\?$)", re.IGNORECASE), rg_mode="search")
     def hola(self, *args, **kwargs):
@@ -30,7 +30,7 @@ class BusBot(XmppBot):
         Escribe el número de una parada para consultar los autobuses que pasan por ella (ej: 435).
         Si quieres ver solo un autobús, añade a continuación dicho bus (ej: 435 51).
         Si quieres repetir la última consulta que hayas hecho escribe simplemente un punto (.).
-        Si quieres guardar un marcador a tu consulta añade una palabra tras ella (ej: 435 51 casa) y cuando escribas esa palabra se realizara la consulta guardada.
+        Si quieres guardar un marcador a tu consulta añade una palabra que empieze por # tras ella (ej: 435 51 #casa) y cuando escribas esa palabra se realizara la consulta guardada.
         Si no te acuerdas de tus marcadores guardados, escribe # y te los listare.
         También puedes consultar el itinerario de una línea escribiendo la palabra paradas seguida del número de linea (ej: paradas 51),
         o consultar el saldo de tu tarjeta de transporte escribiendo saldo.
@@ -76,14 +76,14 @@ class BusBot(XmppBot):
                 li=str(idlinea[0])
                 rd=str(idlinea[1])
                 reply = reply + "\n" + rd+"_"+li+" para la línea de "+idlinea[2]
-                
+
             return reply
 
         li, rd, muni, cod = idlineas[0]
 
         iditinerarios=db.get_id_itinerario(rd, li, sent, su)
         variantes=len(iditinerarios)
-        
+
         '''
         if len(iditinerarios)==0:
             return "No hay datos para la linea "+linea
@@ -93,14 +93,14 @@ class BusBot(XmppBot):
                 su=iditinerario[1]
                 reply = reply +"\n"+linea+"-"+su+" para el subitinerario "+su
             return reply
-        
+
         iditinerario, su, plong = iditinerarios[0]
-        
+
         itinerario = db.get_itinerario(rd, iditinerario, sent)
         '''
 
         itinerario = db.get_itinerario_mixto(rd, li, sent)
-        
+
         if len(itinerario)==0:
             return "No hay datos para la línea "+linea
 
@@ -125,7 +125,7 @@ class BusBot(XmppBot):
         reply_itinerario = textwrap.dedent(reply_itinerario.rstrip())
 
         reply = reply + "\n" + reply_itinerario
-        
+
         if sent == 1 or variantes>1:
             reply = reply + "\n"
         if sent == 1:
@@ -156,33 +156,26 @@ class BusBot(XmppBot):
     @botcmd(regex=re.compile(r"^(\d+.*)"), rg_mode="match")
     def reply_tiempos(self, *args, user, text, **kwargs):
         reply = None
-        marcador = None
-        words = text.split(" ")
+        slp = text.split("#", 1)
+        marcador = slp[-1] if len(slp)>1 else None
+        words = slp[0].split(" ")
+        parada = words[0]
+        lineas = set(words[1:])
 
-        r = get_tiempos([words[0]])
-
-        linea = words[1] if len(words) > 1 else None
-        marcador = " ".join(words[2:]) if len(words) > 2 else None
+        r = get_tiempos([parada])
 
         if not r or len(r) == 0:
-            reply = "Actualmente no hay datos para la parada " + words[0]
-            if linea and not linea.isdigit():
-                marcador = " ".join(words[1:])
-        else:
-            if linea:
-                buses = [i["linea"] for i in r]
-                if linea not in buses:
-                    marcador = " ".join(words[1:])
-                    linea = None
-            if linea:
-                r = [i for i in r if i["linea"] == linea]
+            reply = "Actualmente no hay datos para la parada " + parada
+        elif lineas:
+            r = [i for i in r if i["linea"] in lineas]
+            if len(r)==0:
+                reply = "Actualmente no hay datos para la parada " + parada+ ": " + ", ".join(lineas)
 
+        if r:
             reply = pt(r)
 
         if marcador:
-            index = 2 if linea else 1
-            txt = " ".join(words[0:index])
-            db.set_marcador(user, marcador.lower(), txt)
+            db.set_marcador(user, marcador.lower(), parada + " " + " ".join(sorted(lineas)))
 
         if args is None or len(args)==0 or not puntos.match(args[0]):
             for h in range(historia-1, 0, -1):
@@ -207,7 +200,10 @@ class BusBot(XmppBot):
 
     @botcmd(regex=re.compile(r"^(\D+.*)$"), rg_mode="match")
     def reply_else(self, *args, user, text, **kwargs):
-        txt2 = db.get_marcador(user, text.lower())
+        marcador = text.lower()
+        txt2 = db.get_marcador(user, marcador)
+        if not txt2 and marcador.startswith("#"):
+            txt2 = db.get_marcador(user, marcador[1:])
         if txt2:
             return self.reply_tiempos(user=user, text=txt2)
         return None
