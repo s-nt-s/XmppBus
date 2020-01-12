@@ -160,7 +160,7 @@ class BusBot(XmppBot):
         marcador = slp[-1] if len(slp)>1 else None
         words = slp[0].split(" ")
         parada = words[0]
-        lineas = set(words[1:])
+        lineas = sorted(set(words[1:]))
 
         r = get_tiempos([parada])
 
@@ -175,7 +175,7 @@ class BusBot(XmppBot):
             reply = pt(r)
 
         if marcador:
-            db.set_marcador(user, marcador.lower(), parada + " " + " ".join(sorted(lineas)))
+            db.set_marcador(user, marcador.lower(), parada + " " + " ".join(lineas))
 
         if args is None or len(args)==0 or not puntos.match(args[0]):
             for h in range(historia-1, 0, -1):
