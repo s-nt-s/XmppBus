@@ -160,7 +160,7 @@ class BusBot(XmppBot):
         marcador = slp[-1] if len(slp)>1 else None
         words = slp[0].split(" ")
         parada = words[0]
-        lineas = sorted(set(words[1:]), key=lambda x: (int(x) if x.isdigit() else None, x))
+        lineas = sorted(set(words[1:]), key=lambda x: (int(x) if x.isdigit() else 99999999, x))
 
         r = get_tiempos([parada])
 
