@@ -158,7 +158,7 @@ class BusBot(XmppBot):
         reply = None
         slp = text.split("#", 1)
         marcador = slp[-1] if len(slp)>1 else None
-        words = slp[0].split(" ")
+        words = slp[0].strip().split(" ")
         parada = words[0]
         lineas = sorted(set(words[1:]), key=lambda x: (int(x) if x.isdigit() else 99999999, x))
 
