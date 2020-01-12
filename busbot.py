@@ -186,15 +186,15 @@ class BusBot(XmppBot):
             db.set_marcador(user, ".", text)
         if not r or len(r) == 0:
             return reply
-        a = text.split(" ")
-        p = a[0]
-        d = db.get_direccion(p)
+        d = db.get_direccion(parada)
         if d:
-            p += " ("+d+")"
-        if len(a)>1:
-            tit = "Los tiempos del bus %s en la parada %s son:\n" % (a[1], p)
+            parada += " ("+d+")"
+        if len(lineas)==1:
+            tit = "Los tiempos del bus %s en la parada %s son:\n" % (lineas[0], parada)
+        elif len(lineas)>1:
+            tit = "Los tiempos de los buses %s y %s en la parada %s son:\n" % (", ".join(lineas[:-1]), lineas[-1], parada)
         else:
-            tit = "Los tiempos en la parada %s son:\n" % p
+            tit = "Los tiempos en la parada %s son:\n" % parada
 
         return tit + reply
 
