@@ -121,7 +121,7 @@ def get_municipio(row):
         return row[HEAD_MUNICIPIO]
     cod_prov=row[HEAD_PROVINCIA_COD]
     cod_muni=row[HEAD_MUNICIPIO_COD]
-    
+
     c2 = con.cursor()
     c2.execute("select municipio from municipios where cod_prov=? and cod_muni=?", (cod_prov, cod_muni))
     muni = c2.fetchone()[0]
@@ -135,11 +135,11 @@ def rellenar_tablas():
         c.executescript(qry)
         con.commit()
         c.close()
-    
+
     c = con.cursor()
 
     for _csv in glob.glob("csv/*.csv"):
-        print "======== MUNICIPIOS "+_csv
+        print("======== MUNICIPIOS "+_csv)
         with open(_csv, 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
             total=len(list(sr))-1
@@ -156,15 +156,15 @@ def rellenar_tablas():
                         count = c.fetchone()
                         if count[0]==0:
                             c.execute("insert into municipios (cod_prov, cod_muni, municipio) values (?, ?, ?)", (cod_prov, cod_muni, muni))
-        print ""
+        print("")
 
     c.close()
     con.commit()
 
     c = con.cursor()
-    
+
     for i in redes:
-        print "======== LINEAS "+i
+        print("======== LINEAS "+i)
         visto=[]
         sql = "insert into lineas (red, id, cod) values (" + i + ", ?, ?)"
         with open('csv/lineas_' + i + '.csv', 'rb') as csvfile:
@@ -183,8 +183,8 @@ def rellenar_tablas():
                 con.commit()
         c.close()
         c = con.cursor()
-        print ""
-        print "======== ESTACIONES "+i
+        print("")
+        print("======== ESTACIONES "+i)
         sql = "insert into estaciones (red, id, cod, direccion, municipio, denominacion, cp) values (" + i + ", ?, ?, ?, ?, ?, ?)"
         with open('csv/estaciones_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -201,13 +201,13 @@ def rellenar_tablas():
                     b = a
                 c.execute(sql, (a, b, dire, muni, demo, row[HEAD_CODIGOPOSTAL]))
                 con.commit()
-        print ""
+        print ("")
 
     c.close()
     c = con.cursor()
 
     for i in redes:
-        print "======== ITINERARIOS "+i
+        print ("======== ITINERARIOS "+i)
         sql = "insert into itinerarios (red, itinerario, sentido, linea, sublinea, estacion, orden) values (" + i + ", ?, ?, ?, ?, ?, ?)"
         with open('csv/itinerario_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
@@ -218,18 +218,18 @@ def rellenar_tablas():
                 progreso(total)
                 c.execute(sql, (
                           row[HEAD_ITINERARIO_ID],
-                          row[HEAD_SENTIDO], 
+                          row[HEAD_SENTIDO],
                           row[HEAD_LINEA_ID].upper(),
                           row[HEAD_SUBLINEA],
                           row[HEAD_ESTACION_ID],
                           row[HEAD_ORDEN]))
                 con.commit()
-        print ""
+        print ("")
 
     c.close()
     c = con.cursor()
 
-    print "======== IDS_ITINERARIOS"
+    print ("======== IDS_ITINERARIOS")
 
     c.execute('''INSERT INTO ids_itinerarios (red, id, linea, sublinea, sentido)
                 SELECT red, itinerario id, linea, sublinea, sentido
@@ -240,7 +240,7 @@ def rellenar_tablas():
     c.close()
 
 def update_tablas():
-    print "======== UPDATE LINEAS"
+    print ("======== UPDATE LINEAS")
 
     c = con.cursor()
     c.execute("select red, id from lineas")
@@ -264,7 +264,7 @@ def update_tablas():
             con.commit()
             c.close()
 
-    print ""
+    print ("")
 
     c.close()
 
