@@ -1,9 +1,5 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
 import csv
 import glob
-import locale
 import os
 import re
 import sqlite3
@@ -15,10 +11,6 @@ database = path + "/tmp/data.db"
 
 con = sqlite3.connect(database)
 
-if sys.version_info < (3, 0):
-    reload(sys)
-    sys.setdefaultencoding('utf8')
-
 HEAD_LINEA_ID = 'CODIGOGESTIONLINEA'
 HEAD_LINEA_COD = 'NUMEROLINEAUSUARIO'
 HEAD_ESTACION_ID = 'CODIGOESTACION'
@@ -27,7 +19,8 @@ HEAD_SENTIDO = 'SENTIDO'
 HEAD_SUBLINEA = 'CODIGOSUBLINEA'
 HEAD_ORDEN = 'NUMEROORDEN'
 HEAD_DIRECCION = 'DIRECCION'
-HEAD_DIRECCION_ALT = ["TIPOVIA", "PARTICULA", "NOMBREVIA", "TIPONUMERO", "NUMEROPORTAL"]
+HEAD_DIRECCION_ALT = ["TIPOVIA", "PARTICULA",
+                      "NOMBREVIA", "TIPONUMERO", "NUMEROPORTAL"]
 HEAD_MUNICIPIO = 'MUNICIPIO'
 HEAD_MUNICIPIO_COD = 'CODIGOMUNICIPIO'
 HEAD_PROVINCIA_COD = 'CODIGOPROVINCIA'
@@ -62,16 +55,18 @@ subs = [
 redes = ["6", "8", "9"]
 iteraciones = 0
 
+
 def progreso(total):
     global iteraciones
-    porcentaje=(iteraciones*100)/total
-    if (iteraciones % 10) == 0 or porcentaje==100:
+    porcentaje = (iteraciones*100)/total
+    if (iteraciones % 10) == 0 or porcentaje == 100:
         sys.stdout.write("\r%3d%% de %5d" % (porcentaje, total))
         sys.stdout.flush()
     if iteraciones == total:
-        iteraciones=0
+        iteraciones = 0
     else:
         iteraciones = iteraciones+1
+
 
 def title(s):
     s = unicode(s).title()
@@ -107,29 +102,32 @@ def dire_muni_demo(dire, muni, demo):
 
     return dire, muni, demo
 
+
 def get_direccion(row):
     if HEAD_DIRECCION in row:
         return row[HEAD_DIRECCION]
-    dire=""
+    dire = ""
     for h in HEAD_DIRECCION_ALT:
-        dire= dire + " "+row[h]
-    return sp.sub(" ",dire).strip()
+        dire = dire + " "+row[h]
+    return sp.sub(" ", dire).strip()
 
 
 def get_municipio(row):
     if HEAD_MUNICIPIO in row:
         return row[HEAD_MUNICIPIO]
-    cod_prov=row[HEAD_PROVINCIA_COD]
-    cod_muni=row[HEAD_MUNICIPIO_COD]
+    cod_prov = row[HEAD_PROVINCIA_COD]
+    cod_muni = row[HEAD_MUNICIPIO_COD]
 
     c2 = con.cursor()
-    c2.execute("select municipio from municipios where cod_prov=? and cod_muni=?", (cod_prov, cod_muni))
+    c2.execute(
+        "select municipio from municipios where cod_prov=? and cod_muni=?", (cod_prov, cod_muni))
     muni = c2.fetchone()[0]
     c2.close()
     return muni
 
+
 def rellenar_tablas():
-    with open(path + '/schema/data.sql', 'r') as schema:
+    with open(path + '../sql/schema/data.sql', 'r') as schema:
         c = con.cursor()
         qry = schema.read()
         c.executescript(qry)
@@ -142,20 +140,22 @@ def rellenar_tablas():
         print("======== MUNICIPIOS "+_csv)
         with open(_csv, 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-            total=len(list(sr))-1
+            total = len(list(sr))-1
             csvfile.seek(0)
             next(sr, None)
             for row in sr:
                 progreso(total)
                 if HEAD_MUNICIPIO in row and HEAD_MUNICIPIO_COD in row and HEAD_PROVINCIA_COD in row:
-                    cod_muni=sp.sub(" ",row[HEAD_MUNICIPIO_COD]).strip()
-                    cod_prov=sp.sub(" ",row[HEAD_PROVINCIA_COD]).strip()
-                    muni=unicode(sp.sub(" ",row[HEAD_MUNICIPIO]).strip())
+                    cod_muni = sp.sub(" ", row[HEAD_MUNICIPIO_COD]).strip()
+                    cod_prov = sp.sub(" ", row[HEAD_PROVINCIA_COD]).strip()
+                    muni = unicode(sp.sub(" ", row[HEAD_MUNICIPIO]).strip())
                     if cod_prov and cod_muni and muni:
-                        c.execute("select count(*) from municipios where cod_prov=? and cod_muni=? and municipio=?", (cod_prov, cod_muni, muni))
+                        c.execute(
+                            "select count(*) from municipios where cod_prov=? and cod_muni=? and municipio=?", (cod_prov, cod_muni, muni))
                         count = c.fetchone()
-                        if count[0]==0:
-                            c.execute("insert into municipios (cod_prov, cod_muni, municipio) values (?, ?, ?)", (cod_prov, cod_muni, muni))
+                        if count[0] == 0:
+                            c.execute(
+                                "insert into municipios (cod_prov, cod_muni, municipio) values (?, ?, ?)", (cod_prov, cod_muni, muni))
         print("")
 
     c.close()
@@ -165,30 +165,31 @@ def rellenar_tablas():
 
     for i in redes:
         print("======== LINEAS "+i)
-        visto=[]
+        visto = []
         sql = "insert into lineas (red, id, cod) values (" + i + ", ?, ?)"
         with open('csv/lineas_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-            total=len(list(sr))-1
+            total = len(list(sr))-1
             csvfile.seek(0)
             next(sr, None)
             for row in sr:
                 progreso(total)
-                linea=row[HEAD_LINEA_ID].upper()
+                linea = row[HEAD_LINEA_ID].upper()
                 if linea in visto:
                     continue
                 visto.append(linea)
-                cod=cleanlinea.sub("",row[HEAD_LINEA_COD]).upper()
+                cod = cleanlinea.sub("", row[HEAD_LINEA_COD]).upper()
                 c.execute(sql, (linea, cod))
                 con.commit()
         c.close()
         c = con.cursor()
         print("")
         print("======== ESTACIONES "+i)
-        sql = "insert into estaciones (red, id, cod, direccion, municipio, denominacion, cp) values (" + i + ", ?, ?, ?, ?, ?, ?)"
+        sql = "insert into estaciones (red, id, cod, direccion, municipio, denominacion, cp) values (" + \
+            i + ", ?, ?, ?, ?, ?, ?)"
         with open('csv/estaciones_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-            total=len(list(sr))-1
+            total = len(list(sr))-1
             csvfile.seek(0)
             next(sr, None)
             for row in sr:
@@ -199,19 +200,21 @@ def rellenar_tablas():
                     get_direccion(row), get_municipio(row), row[HEAD_DENOMINACION])
                 if not b or len(b) == 0:
                     b = a
-                c.execute(sql, (a, b, dire, muni, demo, row[HEAD_CODIGOPOSTAL]))
+                c.execute(sql, (a, b, dire, muni, demo,
+                                row[HEAD_CODIGOPOSTAL]))
                 con.commit()
-        print ("")
+        print("")
 
     c.close()
     c = con.cursor()
 
     for i in redes:
-        print ("======== ITINERARIOS "+i)
-        sql = "insert into itinerarios (red, itinerario, sentido, linea, sublinea, estacion, orden) values (" + i + ", ?, ?, ?, ?, ?, ?)"
+        print("======== ITINERARIOS "+i)
+        sql = "insert into itinerarios (red, itinerario, sentido, linea, sublinea, estacion, orden) values (" + \
+            i + ", ?, ?, ?, ?, ?, ?)"
         with open('csv/itinerario_' + i + '.csv', 'rb') as csvfile:
             sr = csv.DictReader(csvfile, delimiter=',', quotechar='"')
-            total=len(list(sr))-1
+            total = len(list(sr))-1
             csvfile.seek(0)
             next(sr, None)
             for row in sr:
@@ -224,12 +227,12 @@ def rellenar_tablas():
                           row[HEAD_ESTACION_ID],
                           row[HEAD_ORDEN]))
                 con.commit()
-        print ("")
+        print("")
 
     c.close()
     c = con.cursor()
 
-    print ("======== IDS_ITINERARIOS")
+    print("======== IDS_ITINERARIOS")
 
     c.execute('''INSERT INTO ids_itinerarios (red, id, linea, sublinea, sentido)
                 SELECT red, itinerario id, linea, sublinea, sentido
@@ -239,32 +242,34 @@ def rellenar_tablas():
 
     c.close()
 
+
 def update_tablas():
-    print ("======== UPDATE LINEAS")
+    print("======== UPDATE LINEAS")
 
     c = con.cursor()
     c.execute("select red, id from lineas")
     lineas = c.fetchall()
     c.close()
 
-    total=len(lineas)
+    total = len(lineas)
     for linea in lineas:
         progreso(total)
         c = con.cursor()
-        c.execute("select distinct municipio from estaciones where red || '--' || id in (select red || '--' || estacion from itinerarios where red=? and linea=?) order by municipio" , linea)
+        c.execute("select distinct municipio from estaciones where red || '--' || id in (select red || '--' || estacion from itinerarios where red=? and linea=?) order by municipio", linea)
         municipios = c.fetchall()
         c.close()
-        munis=[]
+        munis = []
         for m in municipios:
             munis.append(m[0])
-        if len(munis)>0:
+        if len(munis) > 0:
             muni = ", ".join(munis)
             c = con.cursor()
-            c.execute("UPDATE lineas set municipio=? where red=? and id=?", (muni , linea[0], linea[1]))
+            c.execute("UPDATE lineas set municipio=? where red=? and id=?",
+                      (muni, linea[0], linea[1]))
             con.commit()
             c.close()
 
-    print ("")
+    print("")
 
     c.close()
 

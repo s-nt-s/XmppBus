@@ -1,3 +1,6 @@
+.idea/
+env.txt
+emt.key
 config.yml
 *.pyc
 user.db
