@@ -1,17 +1,19 @@
 from .dblite import DBLite
 
+from os.path import dirname, realpath, join
+ROOT = join(dirname(realpath(__file__)), '../')
 
 class DBBus:
-    USER = "sql/db/user.db"
-    DATA = "sql/db/data.db"
+    USER = ROOT+"sql/db/user.db"
+    DATA = ROOT+"sql/db/data.db"
 
     def __init__(self):
         with DBLite(DBBus.USER) as db:
             if len(db.tables) == 0:
-                db.execute("sql/schema/user.sql")
+                db.execute(ROOT+"sql/schema/user.sql")
         with DBLite(DBBus.DATA) as db:
             if len(db.tables) == 0:
-                db.execute("sql/schema/data.sql")
+                db.execute(ROOT+"sql/schema/data.sql")
 
     def get_tarjeta(self, user):
         with DBLite(DBBus.USER, readonly=True) as db:
