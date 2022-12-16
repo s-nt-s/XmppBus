@@ -15,7 +15,7 @@ class DBBus:
 
     def get_tarjeta(self, user):
         with DBLite(DBBus.USER, readonly=True) as db:
-            return db.one("select tarjeta from tarjetas where user=?", (user,))
+            return db.one("select tarjeta from tarjetas where user=?", user)
 
     def set_tarjeta(self, user, tarjeta):
         with DBLite(DBBus.USER) as db:

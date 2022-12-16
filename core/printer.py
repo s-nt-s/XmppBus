@@ -97,7 +97,7 @@ class Printer:
         lines = tuple(str(l) for l in lines)
         d = Api().get_times(id)
         if d.get('error') is True:
-            print(f"La parada {id} no existe")
+            print("La parada {} no existe".format(id))
             return
         now = datetime.utcnow()
         routes = []
@@ -115,16 +115,22 @@ class Printer:
                 ))
         if len(routes) == 0:
             if len(lines) == 0:
-                print(f"La parada {id} actualmente no tiene ninguna ruta")
+                print("La parada {} actualmente no tiene ninguna ruta".format(id))
             else:
                 print(
-                    f"No hay datos para {yjoin(lines, singular='el bus', plural='los buses')} en la parada {id}")
+                    "No hay datos para {} en la parada {}".format(
+                        yjoin(lines, singular='el bus', plural='los buses'),
+                        id
+                    ))
             return
         if len(lines) == 0:
-            print(f"Los tiempos en la parada {id} ({d.stopName}) son:")
+            print("Los tiempos en la parada {} ({}) son:".format(id, d.stopName))
         else:
             print(
-                f"Los tiempos en la parada {id} ({d.stopName}) para {yjoin(lines, singular='el bus', plural='los buses')} son:")
+                "Los tiempos en la parada {} ({}) para {} son:".format(
+                    id, d.stopName, yjoin(
+                        lines, singular='el bus', plural='los buses')
+                ))
         wdt = get_width(routes)
         fln = "{min:>%s} min {code:>%s} -> {destiny}" % (
             max(2, wdt.min), wdt.code)
@@ -134,8 +140,8 @@ class Printer:
     def _card(self, card):
         d = Api().get_card(card)
         if d.get('error') is True:
-            print(f"No hay datos para la tarjeta {card}")
-            print(f"¿Seguro que ha introducido bien el número? Fijese en el ejemplo:")
+            print("No hay datos para la tarjeta {}".format(card))
+            print("¿Seguro que ha introducido bien el número? Fijese en el ejemplo:")
             print(Printer.IMG_CARD)
             return
         tickets = []
@@ -149,29 +155,31 @@ class Printer:
         if len(tickets) == 0:
             if d.isActive:
                 print(
-                    f"La tarjeta {card} esta ACTIVA pero no contiene ningún ticket")
+                    "La tarjeta {} esta ACTIVA pero no contiene ningún ticket".format(card))
             else:
                 print(
-                    f"La tarjeta {card} esta INACTIVA y no contiene ningún ticket")
+                    "La tarjeta {} esta INACTIVA y no contiene ningún ticket".format(card))
             return
         if len(tickets) == 1:
             t = tickets[0]
             if d.isActive:
-                print(f"La tarjeta {card} ({t.name}) esta ACTIVA", end="")
+                print("La tarjeta {} ({}) esta ACTIVA".format(
+                    card, t.name), end="")
                 if t.expires is not None:
                     print(" hasta {:%Y-%m-%d}".format(t.expires), end="")
                 print("")
             else:
-                print(f"La tarjeta {card} ({t.name}) esta INACTIVA", end="")
+                print("La tarjeta {} ({}) esta INACTIVA".format(
+                    card, t.name), end="")
                 if t.expires is not None:
                     print(
                         " (caducada en {:%Y-%m-%d})".format(t.expires), end="")
                 print("")
             return
         if d.isActive:
-            print(f"la tarjeta {card} esta ACTIVA")
+            print("la tarjeta {} esta ACTIVA".format(card))
         else:
-            print(f"la tarjeta {card} esta INACTIVA")
+            print("la tarjeta {} esta INACTIVA".format(card))
         wdt = get_width(tickets)
         fln = "{:>%s}" % (max(2, wdt.name),)
         for t in tickets:
