@@ -167,8 +167,8 @@ class DBLite:
         prm = ['?'] * len(vals)
         sql = "insert"
         if insert_or:
-            sql = "insert or "+insert_or
-        sql = sql+" into %s (%s) values (%s)" % (
+            sql = "insert or " + insert_or
+        sql = sql + " into %s (%s) values (%s)" % (
             table, ', '.join(keys), ', '.join(prm))
         self.con.execute(sql, vals)
 
@@ -213,7 +213,7 @@ class DBLite:
 
     def to_list(self, *args, **kvargs):
         r = list(self.select(*args, **kvargs))
-        if len(r)>0 and isinstance(r[0], list) and len(r[0])==1:
+        if len(r) > 0 and isinstance(r[0], tuple) and len(r[0]) == 1:
             r = [i[0] for i in r]
         return r
 

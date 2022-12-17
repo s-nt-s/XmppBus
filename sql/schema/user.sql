@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS marcadores;
 DROP TABLE IF EXISTS tarjetas;
+
 CREATE TABLE marcadores (
   user text,
   marcador text,

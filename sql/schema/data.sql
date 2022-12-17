@@ -36,8 +36,8 @@ CREATE TABLE itinerarios (
     sublinea TEXT,
     estacion INTEGER NOT NULL,
     PRIMARY KEY (red, itinerario, orden),
-    FOREIGN KEY(linea) REFERENCES lineas(id),
-    FOREIGN KEY(estacion) REFERENCES estaciones(id)
+    FOREIGN KEY (linea) REFERENCES lineas(id),
+    FOREIGN KEY (estacion) REFERENCES estaciones(id)
 );
 CREATE TABLE ids_itinerarios (
     red INTEGER,
@@ -46,5 +46,5 @@ CREATE TABLE ids_itinerarios (
     sublinea TEXT,
     sentido INTEGER,
     PRIMARY KEY (red, id),
-    FOREIGN KEY(id) REFERENCES itinerarios(itinerario)
+    FOREIGN KEY (id) REFERENCES itinerarios(itinerario)
 );
