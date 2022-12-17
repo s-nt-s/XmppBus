@@ -131,7 +131,7 @@ class Printer:
             print("Los tiempos en la parada {} son:".format(strstop))
         else:
             print("Los tiempos en la parada {} para {} son:".format(
-                    strstop, d.stopName, yjoin(lines, singular='el bus', plural='los buses')
+                    strstop, yjoin(lines, singular='el bus', plural='los buses')
                 ))
         wdt = get_width(routes)
         fln = "{min:>%s} min {code:>%s} -> {destiny}" % (
