@@ -190,7 +190,7 @@ class Printer:
         print("\n(*) Función beta, puede dar datos erroneos o tardar en actualizar")
 
     def _paradas(self, linea, *args):
-        linea = linea.upper()
+        linea = str(linea).upper()
         m = red_linea_sub.match(linea)
         if not m:
             print(linea + " no cumple el formato de línea")

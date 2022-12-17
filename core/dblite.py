@@ -212,7 +212,10 @@ class DBLite:
         self.con.row_factory = None
 
     def to_list(self, *args, **kvargs):
-        return list(self.select(*args, **kvargs))
+        r = list(self.select(*args, **kvargs))
+        if len(r)>0 and isinstance(r[0], list) and len(r[0])==1:
+            r = [i[0] for i in r]
+        return r
 
     def one(self, sql, *args):
         sql = self._build_select(sql)
