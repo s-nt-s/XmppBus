@@ -113,23 +113,25 @@ class Printer:
                     destiny=parse_route_name(r.routeName),
                     min=minutes
                 ))
+        strstop = str(id)
+        direcci = db.get_direccion(strstop) or d.get('stopName')
+        if direcci not in (None, ''):
+            strstop = strstop + ' ('+direcci+')'
+        routes = sorted(routes, key=lambda x: (x.min, int(x.code) if x.code.isdigit() else 99999999, x.code))
         if len(routes) == 0:
             if len(lines) == 0:
-                print("La parada {} actualmente no tiene ninguna ruta".format(id))
+                print("La parada {} actualmente no tiene ninguna ruta".format(strstop))
             else:
-                print(
-                    "No hay datos para {} en la parada {}".format(
+                print("No hay datos para {} en la parada {}".format(
                         yjoin(lines, singular='el bus', plural='los buses'),
-                        id
+                        strstop
                     ))
             return
         if len(lines) == 0:
-            print("Los tiempos en la parada {} ({}) son:".format(id, d.stopName))
+            print("Los tiempos en la parada {} son:".format(strstop))
         else:
-            print(
-                "Los tiempos en la parada {} ({}) para {} son:".format(
-                    id, d.stopName, yjoin(
-                        lines, singular='el bus', plural='los buses')
+            print("Los tiempos en la parada {} para {} son:".format(
+                    strstop, d.stopName, yjoin(lines, singular='el bus', plural='los buses')
                 ))
         wdt = get_width(routes)
         fln = "{min:>%s} min {code:>%s} -> {destiny}" % (
@@ -154,26 +156,21 @@ class Printer:
             ))
         if len(tickets) == 0:
             if d.isActive:
-                print(
-                    "La tarjeta {} esta ACTIVA pero no contiene ningún ticket".format(card))
+                print("La tarjeta {} esta ACTIVA pero no contiene ningún ticket".format(card))
             else:
-                print(
-                    "La tarjeta {} esta INACTIVA y no contiene ningún ticket".format(card))
+                print("La tarjeta {} esta INACTIVA y no contiene ningún ticket".format(card))
             return
         if len(tickets) == 1:
             t = tickets[0]
             if d.isActive:
-                print("La tarjeta {} ({}) esta ACTIVA".format(
-                    card, t.name), end="")
+                print("La tarjeta {} ({}) esta ACTIVA".format(card, t.name), end="")
                 if t.expires is not None:
                     print(" hasta {:%Y-%m-%d}".format(t.expires), end="")
                 print("")
             else:
-                print("La tarjeta {} ({}) esta INACTIVA".format(
-                    card, t.name), end="")
+                print("La tarjeta {} ({}) esta INACTIVA".format(card, t.name), end="")
                 if t.expires is not None:
-                    print(
-                        " (caducada en {:%Y-%m-%d})".format(t.expires), end="")
+                    print(" (caducada en {:%Y-%m-%d})".format(t.expires), end="")
                 print("")
             return
         if d.isActive:
@@ -248,7 +245,7 @@ class Printer:
         reply = reply + "de la línea " + cod
         if cod != linea:
             reply = reply + " de " + muni + " (" + linea + ")"
-        print(reply+':')
+        print(reply + ':')
 
         reply_itinerario = "\n"
         for item in itinerario:
@@ -258,7 +255,7 @@ class Printer:
                 dire=dire+", "+item[2]
             '''
             reply_itinerario = reply_itinerario + \
-                ("%5s %s" % (item[0], dire)) + "\n"
+                               ("%5s %s" % (item[0], dire)) + "\n"
 
         print(dedent(reply_itinerario.rstrip()))
 
@@ -274,6 +271,17 @@ class Printer:
         self._paradas(*args, **kvargs)
         print("\n(*) Función beta, puede dar datos erroneos o desactualizados")
 
+    def marcadores(self, user):
+        marcador = db.get_marcadores(user)
+        if not marcador or len(marcador) == 0:
+            print("Aún no has guardado ningún marcador")
+            return
+        print("Estos son tus marcadores:")
+        for m, b in marcador:
+            print(m)
+            print("  "+b)
+        print("")
+        print("Si quieres eliminar alguno, escribe borrar seguido del nombre del marcador.")
 
 def print_to_str(fnc):
     def fnc_wrapper(*args, **kvargs):
@@ -306,4 +314,4 @@ class StrPrinter(Printer):
 
 if __name__ == "__main__":
     p = Printer()
-    p.times(443, 16, 19, 20)
+    p.times(34)

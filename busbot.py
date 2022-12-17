@@ -41,19 +41,12 @@ class BusBot(XmppBot):
 
     @botcmd(name="#")
     def marcadores(self, *args, user, **kwargs):
-        marcador = db.get_marcadores(user)
-        if not marcador or len(marcador) == 0:
-            return "Aún no has guardado ningún marcador"
-        r = "Estos son tus marcadores:\n"
-        for i in marcador:
-            r = (r + "\n" + i[0] + ": " + i[1])
-        r = r + "\n\nSi quieres eliminar alguno, escribe borrar seguido del nombre del marcador."
-        return r
+        return StrPrinter().marcadores(user)
 
     @botcmd(name="borrar")
     def borrar_marcador(self, *marcador, user, **kwargs):
         if len(marcador) == 0:
-            return "¿Qué marcador quieres borrar? Escribelo despues de la palabra borrar."
+            return "¿Qué marcador quieres borrar? Escribelo despises de la palabra borrar."
         marcador = " ".join(marcador).lower()
         db.del_marcador(user, marcador)
         return "¡Marcador borrado!"
@@ -104,7 +97,10 @@ class BusBot(XmppBot):
             txt2 = db.get_marcador(user, marcador[1:])
         if txt2:
             return self.reply_tiempos(user=user, text=txt2)
-        return None
+        return dedent('''
+            No he entendido el mensaje, ¿estas usando mensajes encriptados (OMEMO, OpenPGP, etc)?
+            Por favor, desactiva el encriptado y escribe hola para ver las opciones.
+        ''').strip()
 
     def command_error(self, e, *args, user, **kwargs):
         if user == self.config['admin']:
