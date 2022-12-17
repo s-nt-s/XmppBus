@@ -116,23 +116,23 @@ class Printer:
         strstop = str(id)
         direcci = db.get_direccion(strstop) or d.get('stopName')
         if direcci not in (None, ''):
-            strstop = strstop + ' ('+direcci+')'
+            strstop = strstop + ' (' + direcci + ')'
         routes = sorted(routes, key=lambda x: (x.min, int(x.code) if x.code.isdigit() else 99999999, x.code))
         if len(routes) == 0:
             if len(lines) == 0:
                 print("La parada {} actualmente no tiene ninguna ruta".format(strstop))
             else:
                 print("No hay datos para {} en la parada {}".format(
-                        yjoin(lines, singular='el bus', plural='los buses'),
-                        strstop
-                    ))
+                    yjoin(lines, singular='el bus', plural='los buses'),
+                    strstop
+                ))
             return
         if len(lines) == 0:
             print("Los tiempos en la parada {} son:".format(strstop))
         else:
             print("Los tiempos en la parada {} para {} son:".format(
-                    strstop, yjoin(lines, singular='el bus', plural='los buses')
-                ))
+                strstop, yjoin(lines, singular='el bus', plural='los buses')
+            ))
         wdt = get_width(routes)
         fln = "{min:>%s} min {code:>%s} -> {destiny}" % (
             max(2, wdt.min), wdt.code)
@@ -276,12 +276,12 @@ class Printer:
         if not marcador or len(marcador) == 0:
             print("Aún no has guardado ningún marcador")
             return
-        print("Estos son tus marcadores:")
+        print("Estos son tus marcadores:\n")
         for m, b in marcador:
-            print(m)
-            print("  "+b)
+            print(m+":", b)
         print("")
         print("Si quieres eliminar alguno, escribe borrar seguido del nombre del marcador.")
+
 
 def print_to_str(fnc):
     def fnc_wrapper(*args, **kvargs):
