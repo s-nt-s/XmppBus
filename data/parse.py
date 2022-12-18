@@ -121,41 +121,49 @@ class DBData(DBLite):
             self.execute(ROOT + "../sql/schema/data.sql")
 
     def get_municipio(self, row):
-        if 'municipio' in row:
+        if 'municipio' in row and len(row.municipio) > 0:
             return row.municipio
         cod_prov = row.cdProvincia
         cod_muni = row.cdMunicipio
         return self.one("select municipio from municipios where cod_prov=? and cod_muni=?", cod_prov, cod_muni)
 
 
-def dire_muni_demo(dire, muni, demo):
-    muni = title(muni)
-    muni = re_el.sub(r"\2 \1", muni)
-    muni = re_sp.sub(" ", muni).strip()
+def format_municipio(muni):
+    if muni:
+        muni = title(muni)
+        muni = re_el.sub(r"\2 \1", muni)
+        muni = re_sp.sub(" ", muni).strip()
+    return muni
 
-    dire = re_sp.sub(" ", dire).strip()
-    dire = re_sn.sub("", dire)
-    dire = re_cn.sub(r" \1", dire)
-    dire = re_pr1.sub(r"(", dire)
-    dire = re_pr2.sub(r"(", dire)
-    dire = title(dire)
-    for i in range(0, len(re_subs), 2):
-        dire = re_subs[i].sub(re_subs[i + 1], dire)
 
-    demo = demo.replace("-", " - ")
-    demo = demo.replace(".", ". ")
-    demo = re_pre.sub(r"\1 ", demo)
-    demo = re_sp.sub(" ", demo).strip()
-    demo = re_sn.sub("", demo)
-    demo = re_cn.sub(r" \1", demo)
-    demo = title(demo)
+def format_direccion(dire):
+    if dire:
+        dire = re_sp.sub(" ", dire).strip()
+        dire = re_sn.sub("", dire)
+        dire = re_cn.sub(r" \1", dire)
+        dire = re_pr1.sub(r"(", dire)
+        dire = re_pr2.sub(r"(", dire)
+        dire = title(dire)
+        for i in range(0, len(re_subs), 2):
+            dire = re_subs[i].sub(re_subs[i + 1], dire)
+    return dire
 
-    return dire, muni, demo
+
+def format_denominacion(demo):
+    if demo:
+        demo = demo.replace("-", " - ")
+        demo = demo.replace(".", ". ")
+        demo = re_pre.sub(r"\1 ", demo)
+        demo = re_sp.sub(" ", demo).strip()
+        demo = re_sn.sub("", demo)
+        demo = re_cn.sub(r" \1", demo)
+        demo = title(demo)
+    return demo
 
 
 def rellenar_tablas():
     with DBData(reload=True) as db:
-        for _csv in sorted(glob.glob(ROOT + "csv/*.csv"), key=lambda x:tuple(reversed(x.rsplit("_", 1)))):
+        for _csv in sorted(glob.glob(ROOT + "csv/*.csv"), key=lambda x: tuple(reversed(x.rsplit("_", 1)))):
             print("# MUNICIPIOS " + _csv.rsplit("/", 1)[-1])
             for row in read_csv(_csv):
                 if len(set(row.get(k) for k in ('cdMunicipio', 'cdProvincia', 'municipio')).intersection((None, ""))):
@@ -172,15 +180,18 @@ def rellenar_tablas():
                 if row.idLinea in visto:
                     continue
                 visto.add(row.idLinea)
-                db.insert("lineas", red=row.red, id=row.idLinea, cod=row.cdLinea)
+                muni = format_municipio(db.get_municipio(row))
+                db.insert("lineas", red=row.red, id=row.idLinea, cod=row.cdLinea, municipio=muni)
             print("## ESTACIONES")
             for row in read_csv(ROOT + 'csv/estaciones_' + i + '.csv'):
                 id = row.idEstacion
                 cd = row.cdEstacion
-                dire, muni, demo = dire_muni_demo(row.direccion, db.get_municipio(row), row.denominacion)
                 if len(cd) == 0:
                     cd = id
-                db.insert("estaciones", red=row.red, id=id, cod=cd, direccion=dire, municipio=muni, denominacion=demo,
+                db.insert("estaciones", red=row.red, id=id, cod=cd,
+                          direccion=format_direccion(row.direccion),
+                          municipio=format_municipio(db.get_municipio(row)),
+                          denominacion=format_denominacion(row.denominacion),
                           cp=row.cp)
 
             print("## ITINERARIOS")
@@ -210,9 +221,24 @@ def update_tablas():
     with DBData(reload=False) as db:
         lineas = db.to_list("select red, id from lineas")
         for red, id in iterprogress(lineas):
-            munis = db.to_list(
-                "select distinct municipio from estaciones where red || '--' || id in (select red || '--' || estacion from itinerarios where red=? and linea=?) order by municipio",
-                red, id)
+            munis = db.to_list('''
+                select distinct 
+                    municipio 
+                from 
+                    estaciones
+                where 
+                    red || '--' || id in (
+                        select
+                            red || '--' || estacion 
+                        from
+                            itinerarios
+                        where
+                            red=? and linea=?
+                    )
+                order by municipio
+                ''',
+                               red, id
+                               )
             if len(munis) > 0:
                 muni = ", ".join(munis)
                 db.execute("UPDATE lineas set municipio=? where red=? and id=?", muni, red, id)

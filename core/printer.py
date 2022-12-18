@@ -3,13 +3,12 @@ import re
 import sys
 from datetime import datetime
 from io import StringIO
-from textwrap import dedent
 
 from munch import Munch
 
 from .api import Api
 from .dbbus import DBBus
-from .util import DAYNAME, notnull, parse_dia, tmap, to_strint
+from .util import tmap
 
 db = DBBus()
 
@@ -204,81 +203,55 @@ class Printer:
             print("No hay datos para la linea " + linea)
             return
         if len(idlineas) > 1:
-            print("Exiten varias líneas " + li +
-                  ", por favor, concreta escribiendo:")
-            for idlinea in idlineas:
-                li = str(idlinea[0])
-                rd = str(idlinea[1])
-                print(rd + "_" + li + " para la línea de " + idlinea[2])
+            print("Exiten varias líneas {}, por favor, concreta escribiendo:".format(li))
+            for lin in idlineas:
+                print("{red}_{id} para la linea de {municipio}".format(**lin))
             return
 
-        li, rd, muni, cod = idlineas[0]
+        lin = idlineas[0]
 
-        iditinerarios = db.get_id_itinerario(rd, li, sent, su)
-        variantes = len(iditinerarios)
-
-        '''
-        if len(iditinerarios)==0:
-            print("No hay datos para la linea "+linea)
-            return
-        if len(iditinerarios)>1:
-            print("La línea "+linea+" tiene varios itinerarios, por favor, concreta escribiendo:")
-            for iditinerario in iditinerarios:
-                su=iditinerario[1]
-                print(linea+"-"+su+" para el subitinerario "+su)
-            return
-
-        iditinerario, su, plong = iditinerarios[0]
-
-        itinerario = db.get_itinerario(rd, iditinerario, sent)
-        '''
-
-        itinerario = db.get_itinerario_mixto(rd, li, sent)
+        itinerario = db.get_itinerario_mixto(lin.red, lin.id, sent)
 
         if len(itinerario) == 0:
             print("No hay datos para la línea " + linea)
 
+        variantes = len(db.get_id_itinerario(lin.red, lin.id, sent, su))
         reply = "Itinerario "
         if variantes > 1:
             reply = reply + "(aproximado) "
 
-        reply = reply + "de la línea " + cod
-        if cod != linea:
-            reply = reply + " de " + muni + " (" + linea + ")"
-        print(reply + ':')
+        reply = reply + "de la línea " + lin.cod
+        if lin.cod != linea:
+            reply = reply + " de " + lin.municipio + " (" + linea + ")"
+        print(reply + ':\n')
 
-        reply_itinerario = "\n"
-        for item in itinerario:
-            dire = item[3]
-            '''
-            if not muni:
-                dire=dire+", "+item[2]
-            '''
-            reply_itinerario = reply_itinerario + \
-                               ("%5s %s" % (item[0], dire)) + "\n"
-
-        print(dedent(reply_itinerario.rstrip()))
+        wdt = get_width(itinerario)
+        fln = "{estacion:>%s} {direccion}" % wdt.estacion
+        for parada in itinerario:
+            print(fln.format(**parada))
 
         if sent == 1 or variantes > 1:
             print("")
         if sent == 1:
             print("Para ver el sentido contrario escribe: paradas %s +" % linea)
         if variantes > 1:
-            print(
-                "Antes de desplazarte consulta tu parada para confirmar que el bus va a pasar por ella")
+            print("Antes de desplazarte consulta tu parada para confirmar que el bus va a pasar por ella")
 
     def paradas(self, *args, **kvargs):
         self._paradas(*args, **kvargs)
         print("\n(*) Función beta, puede dar datos erroneos o desactualizados")
 
     def marcadores(self, user):
-        marcador = db.get_marcadores(user)
-        if not marcador or len(marcador) == 0:
+        marcadores = db.get_marcadores(user)
+        if len(marcadores) == 0:
             print("Aún no has guardado ningún marcador")
             return
+        #wdt = get_width(marcadores)
+        #fln = "{marcador:<%s} {linea:>%s} {buses}" % (wdt.marcador, wdt.linea)
+        fln = "{marcador}: {linea} {buses}"
         print("Estos son tus marcadores:\n")
-        for m, b in marcador:
-            print(m+":", b)
+        for m in marcadores:
+            print(fln.format(**m).rstrip())
         print("")
         print("Si quieres eliminar alguno, escribe borrar seguido del nombre del marcador.")
 
@@ -314,4 +287,4 @@ class StrPrinter(Printer):
 
 if __name__ == "__main__":
     p = Printer()
-    p.times(34)
+    p.paradas(sys.argv[1])
