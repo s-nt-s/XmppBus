@@ -1,10 +1,11 @@
 import csv as csvreader
 import glob
-from os.path import dirname, realpath
+from os.path import dirname, realpath, isfile
 import re
 import sys
 from munch import Munch
 from core.dbbus import DBLite
+from core.util import yjoin
 
 ROOT = dirname(realpath(__file__)) + '/'
 
@@ -83,6 +84,8 @@ def iterprogress(arr):
 
 
 def read_csv(file):
+    if not isfile(file):
+        raise StopIteration
     red = re.match(r".*_(\d+).csv", file)
     if red:
         red = int(red.group(1))
@@ -111,6 +114,8 @@ def read_csv(file):
             rtn['direccion'] = re_sp.sub(" ", rtn['direccion']).strip()
         if red is not None:
             rtn['red'] = red
+        if rtn.get('cdProvincia') and rtn.get('cdMunicipio'):
+            rtn['idMunicipio'] = "{:02d}{:03d}".format(int(rtn['cdProvincia']), int(rtn['cdMunicipio']))
         yield Munch.fromDict(rtn)
 
 
@@ -119,13 +124,6 @@ class DBData(DBLite):
         super().__init__(ROOT + "data.db", reload=reload, **kvargs)
         if len(self.tables) == 0:
             self.execute(ROOT + "../sql/schema/data.sql")
-
-    def get_municipio(self, row):
-        if 'municipio' in row and len(row.municipio) > 0:
-            return row.municipio
-        cod_prov = row.cdProvincia
-        cod_muni = row.cdMunicipio
-        return self.one("select municipio from municipios where cod_prov=? and cod_muni=?", cod_prov, cod_muni)
 
 
 def format_municipio(muni):
@@ -166,10 +164,9 @@ def rellenar_tablas():
         for _csv in sorted(glob.glob(ROOT + "csv/*.csv"), key=lambda x: tuple(reversed(x.rsplit("_", 1)))):
             print("# MUNICIPIOS " + _csv.rsplit("/", 1)[-1])
             for row in read_csv(_csv):
-                if len(set(row.get(k) for k in ('cdMunicipio', 'cdProvincia', 'municipio')).intersection((None, ""))):
+                if len(set(row.get(k) for k in ('idMunicipio', 'municipio')).intersection((None, ""))):
                     continue
-                db.insert("municipios", cod_prov=row.cdProvincia, cod_muni=row.cdMunicipio, municipio=row.municipio,
-                          insert_or="ignore")
+                db.insert("municipio", id=row.idMunicipio, txt=row.municipio, label=format_municipio(row.municipio), insert_or="ignore")
 
         for i in REDES:
             i = str(i)
@@ -180,68 +177,69 @@ def rellenar_tablas():
                 if row.idLinea in visto:
                     continue
                 visto.add(row.idLinea)
-                muni = format_municipio(db.get_municipio(row))
-                db.insert("lineas", red=row.red, id=row.idLinea, cod=row.cdLinea, municipio=muni)
+                muni = db.one("select label from municipio where id=?", row.idMunicipio)
+                db.insert("linea",
+                          red=row.red,
+                          id=row.idLinea,
+                          cod=row.cdLinea,
+                          municipio=row.idMunicipio,
+                          denominacion=format_denominacion(row.denominacion),
+                          municipios=muni
+                )
+
             print("## ESTACIONES")
             for row in read_csv(ROOT + 'csv/estaciones_' + i + '.csv'):
-                id = row.idEstacion
-                cd = row.cdEstacion
-                if len(cd) == 0:
-                    cd = id
-                db.insert("estaciones", red=row.red, id=id, cod=cd,
+                db.insert("estacion",
+                          red=row.red, id=row.idEstacion, cod=(row.cdEstacion or row.idEstacion),
                           direccion=format_direccion(row.direccion),
-                          municipio=format_municipio(db.get_municipio(row)),
+                          municipio=row.idMunicipio,
                           denominacion=format_denominacion(row.denominacion),
-                          cp=row.cp)
+                          cp=row.cp
+                )
 
             print("## ITINERARIOS")
             for row in read_csv(ROOT + 'csv/itinerario_' + i + '.csv'):
-                db.insert("itinerarios",
+                db.insert("itinerario",
                           red=row.red,
-                          itinerario=row.idItinerario,
+                          id=row.idItinerario,
                           sentido=row.sentido,
                           linea=row.idLinea,
                           sublinea=row.sublinea,
                           estacion=row.idEstacion,
                           orden=row.orden
-                          )
+                )
 
         print("# IDS_ITINERARIOS")
 
         db.execute('''
-            INSERT INTO ids_itinerarios (red, id, linea, sublinea, sentido)
+            INSERT INTO ids_itinerario (red, id, linea, sublinea, sentido)
             SELECT distinct
-                red, itinerario, linea, sublinea, sentido
-            FROM itinerarios
+                red, id, linea, sublinea, sentido
+            FROM itinerario
         ''')
 
 
 def update_tablas():
     print("# UPDATE LINEAS")
     with DBData(reload=False) as db:
-        lineas = db.to_list("select red, id from lineas")
+        lineas = db.to_list("select red, id from linea")
         for red, id in iterprogress(lineas):
             munis = db.to_list('''
                 select distinct 
-                    municipio 
+                    m.label
                 from 
-                    estaciones
+                    estacion e 
+                    join itinerario i on e.red=i.red and e.id=i.estacion 
+                    join municipio m on e.municipio=m.id
                 where 
-                    red || '--' || id in (
-                        select
-                            red || '--' || estacion 
-                        from
-                            itinerarios
-                        where
-                            red=? and linea=?
-                    )
+                    i.red=? and i.linea=?
                 order by municipio
                 ''',
-                               red, id
-                               )
+                red, id
+            )
             if len(munis) > 0:
-                muni = ", ".join(munis)
-                db.execute("UPDATE lineas set municipio=? where red=? and id=?", muni, red, id)
+                muni = yjoin(munis)
+                db.execute("UPDATE linea set municipios=? where red=? and id=?", muni, red, id)
 
 
 if __name__ == "__main__":

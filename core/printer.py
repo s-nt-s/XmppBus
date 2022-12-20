@@ -8,7 +8,7 @@ from munch import Munch
 
 from .api import Api
 from .dbbus import DBBus
-from .util import tmap
+from .util import tmap, yjoin
 
 db = DBBus()
 
@@ -61,15 +61,6 @@ def get_width(arr):
                 wdth[k] = max(v, len(str(a[k])))
     return Munch.fromDict(wdth)
 
-
-def yjoin(arr, singular='', plural=''):
-    if len(arr) == 0:
-        return ''
-    if len(arr) == 1:
-        return (singular + ' ' + arr[0]).strip()
-    if len(arr) == 2:
-        return (plural + ' ' + (" y ".join(arr))).strip()
-    return (plural + ' ' + (", ".join(arr[:-1]) + " y " + arr[-1])).strip()
 
 
 def parse_route_name(s):
@@ -198,14 +189,14 @@ class Printer:
         rd, li, su = m.groups()
         sent = 2 if len(args) > 0 and args[0] == "+" else 1
 
-        idlineas = db.get_linea(li, rd)
+        idlineas = db.get_linea_con_itinerario(li, rd)
         if len(idlineas) == 0:
             print("No hay datos para la linea " + linea)
             return
         if len(idlineas) > 1:
             print("Exiten varias líneas {}, por favor, concreta escribiendo:".format(li))
             for lin in idlineas:
-                print("{red}_{id} para la linea de {municipio}".format(**lin))
+                print("{red}_{id} para la linea de {municipios}".format(**lin))
             return
 
         lin = idlineas[0]
@@ -214,6 +205,7 @@ class Printer:
 
         if len(itinerario) == 0:
             print("No hay datos para la línea " + linea)
+            return
 
         variantes = len(db.get_id_itinerario(lin.red, lin.id, sent, su))
         reply = "Itinerario "

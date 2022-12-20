@@ -86,3 +86,12 @@ def notnull(*args, sep=None):
     if sep:
         return sep.join(arr)
     return tuple(arr)
+
+def yjoin(arr, singular='', plural=''):
+    if len(arr) == 0:
+        return ''
+    if len(arr) == 1:
+        return (singular + ' ' + arr[0]).strip()
+    if len(arr) == 2:
+        return (plural + ' ' + (" y ".join(arr))).strip()
+    return (plural + ' ' + (", ".join(arr[:-1]) + " y " + arr[-1])).strip()

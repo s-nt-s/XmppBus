@@ -2,7 +2,6 @@ from os.path import dirname, join, realpath
 from munch import Munch
 
 from .dblite import DBLite
-from .dblite import dict_factory
 
 ROOT = join(dirname(realpath(__file__)), '../')
 
@@ -60,33 +59,80 @@ class DBBus:
             db.execute(
                 "delete from marcadores where user=? and marcador=?", user, marcador)
 
-    def get_linea(self, cod, red=None):
+    def get_linea_con_itinerario(self, cod, red=None):
         with DBLite(DBBus.DATA, readonly=True) as db:
+            sql = '''
+                select distinct
+                    l.red,
+                    l.id,
+                    l.cod,
+                    l.denominacion
+                from
+                    linea l join itinerario i on
+                        l.red = i.red and
+                        l.id = i.linea
+                where
+            '''.strip()+' '
             if red:
-                return db.to_list("select id, red, municipio, cod from lineas where id=? and red=?", cod, red,
+                return db.to_list(sql+"l.id=? and l.red=?", cod, red,
                                   row_factory=munch_factory)
-            return db.to_list("select id, red, municipio, cod from lineas where cod=?", cod, row_factory=munch_factory)
+            return db.to_list(sql+"l.cod=?", cod, row_factory=munch_factory)
 
     def get_id_itinerario(self, red, linea, sentido=1, sublinea=None):
         with DBLite(DBBus.DATA, readonly=True) as db:
+            sql = '''
+            select 
+                id, 
+                sublinea
+            from 
+                ids_itinerario
+            where
+                red=? and
+                linea=? and
+                sentido=? 
+            '''.strip()+' '
             if sublinea:
-                return db.to_list(
-                    "select id, sublinea from ids_itinerarios where red=? and linea=? and sentido=? and sublinea=? order by sublinea",
-                    red, linea, sentido, sublinea)
-            return db.to_list(
-                "select id, sublinea from ids_itinerarios where red=? and linea=? and sentido=? order by sublinea", red,
-                linea, sentido)
+                return db.to_list(sql+"and sublinea=? order by sublinea", red, linea, sentido, sublinea)
+            return db.to_list(sql+"order by sublinea", red, linea, sentido)
 
     def get_itinerario(self, red, itinerario, sentido=1):
         with DBLite(DBBus.DATA, readonly=True) as db:
-            return db.to_list(
-                "select estaciones.cod estacion, direccion, municipio, denominacion, cp from itinerarios join estaciones on itinerarios.estacion=estaciones.id and itinerarios.red=estaciones.red where itinerarios.red=? and itinerario=? and sentido=? order by orden",
+            return db.to_list('''
+                select 
+                    e.cod estacion, 
+                    e.direccion, 
+                    e.municipio, 
+                    e.denominacion
+                from 
+                    itinerario i join estacion e on 
+                        i.estacion=e.id and 
+                        i.red=e.red
+                where 
+                    i.red=? and 
+                    i.id=? and 
+                    i.sentido=? 
+                order by orden
+                ''',
                 red, itinerario, sentido, row_factory=munch_factory)
 
     def get_itinerario_mixto(self, red, linea, sentido=1):
         with DBLite(DBBus.DATA, readonly=True) as db:
-            r = db.to_list(
-                "select estaciones.cod estacion, direccion, municipio, denominacion, cp variantes from itinerarios join estaciones on itinerarios.estacion=estaciones.id and itinerarios.red=estaciones.red where itinerarios.red=? and linea=? and sentido=? order by orden",
+            r = db.to_list('''
+                select 
+                    e.cod estacion, 
+                    e.direccion, 
+                    e.municipio, 
+                    e.denominacion
+                from
+                    itinerario i join estacion e on 
+                        i.estacion=e.id and 
+                        i.red=e.red
+                where 
+                    i.red=? and 
+                    i.linea=? and 
+                    i.sentido=?
+                order by orden
+                ''',
                 red, linea, sentido, row_factory=munch_factory)
 
         visto = []
@@ -100,4 +146,4 @@ class DBBus:
 
     def get_direccion(self, estacion):
         with DBLite(DBBus.DATA, readonly=True) as db:
-            return db.one("select distinct direccion from estaciones where cod=?", estacion)
+            return db.one("select distinct direccion from estacion where cod=?", estacion)

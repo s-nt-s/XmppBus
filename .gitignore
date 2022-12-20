@@ -1,3 +1,5 @@
+schemaspy/*.jar
+.~lock.*
 data/data.db
 .idea/
 env.txt
