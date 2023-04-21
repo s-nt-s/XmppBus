@@ -11,6 +11,7 @@ re_sp = re.compile(r"\s+")
 re_largefloat = re.compile("(\d+\.\d+e-\d+)")
 re_bl = re.compile(r"\n\s*\n", re.IGNORECASE)
 
+logger = logging.getLogger(__name__)
 
 def save(file, content):
     if file and content:
@@ -85,7 +86,7 @@ class CaseInsensitiveDict(dict):
 
 
 def get_db(file, *extensions, readonly=False):
-    logging.info("sqlite: " + file)
+    logger.info("sqlite: " + file)
     if readonly:
         file = "file:" + file + "?mode=ro"
         con = sqlite3.connect(file, uri=True)

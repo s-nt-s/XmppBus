@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import logging
 import re
 import traceback
 from os import chdir
@@ -11,7 +12,6 @@ from xmppbot.basebot import Message
 
 from core.dbbus import DBBus
 from core.printer import Printer, StrPrinter
-import logging
 
 chdir(dirname(realpath(__file__)))
 
