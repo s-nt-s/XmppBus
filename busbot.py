@@ -11,6 +11,7 @@ from xmppbot.basebot import Message
 
 from core.dbbus import DBBus
 from core.printer import Printer, StrPrinter
+import logging
 
 chdir(dirname(realpath(__file__)))
 
@@ -118,5 +119,6 @@ class BusBot(XmppBot):
 
 
 if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
     xmpp = BusBot("config.yml")
     xmpp.run()
