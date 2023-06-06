@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from core.dbbus import DBBus
 from core.printer import StrPrinter
 from xmppbot import XmppMsg
