@@ -1,7 +1,7 @@
 import inspect
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, date
 from io import StringIO
 
 from munch import Munch
@@ -129,6 +129,10 @@ class Printer:
         for r in routes:
             print(fln.format(**r))
 
+    def card(self, *args, **kvargs):
+        self._card(*args, **kvargs)
+        print("\n(*) Función beta, puede dar datos erroneos o tardar en actualizar")
+
     def _card(self, card):
         d = Api().get_card(card)
         if d.get('error') is True:
@@ -136,14 +140,7 @@ class Printer:
             print("¿Seguro que ha introducido bien el número? Fijese en el ejemplo:")
             print(Printer.IMG_CARD)
             return
-        tickets = []
-        for t in d.tickets:
-            expires = tuple(v.lastUseDate for k, v in t.items()
-                            if isinstance(v, dict) and v.get('lastUseDate'))
-            tickets.append(Munch(
-                name=t.name,
-                expires=max(expires) if len(expires) > 0 else None
-            ))
+        tickets = self._get_tickets(card)
         if len(tickets) == 0:
             if d.isActive:
                 print("La tarjeta {} esta ACTIVA pero no contiene ningún ticket".format(card))
@@ -175,9 +172,55 @@ class Printer:
                 print(" {:%Y-%m-%d}".format(t.expires), end="")
             print("")
 
-    def card(self, *args, **kvargs):
-        self._card(*args, **kvargs)
-        print("\n(*) Función beta, puede dar datos erroneos o tardar en actualizar")
+    def _get_tickets(self, d):
+        if isinstance(d, str):
+            d = Api().get_card(d)
+        if d.get('error') is True:
+            return []
+        tickets = []
+        for t in d.tickets:
+            expires = tuple(v.lastUseDate for k, v in t.items()
+                            if isinstance(v, dict) and v.get('lastUseDate'))
+            tickets.append(Munch(
+                isActive=d.isActive,
+                name=t.name,
+                expires=max(expires) if len(expires) > 0 else None
+            ))
+        return tickets
+    
+    def card_aviso(self, card, umbral=4):
+        if not self._card_aviso(card, umbral=umbral):
+            return
+        print("\n(*) Función beta, puede dar falsos positivos")
+    
+    def _card_aviso(self, card, umbral=4):
+        tickets = self._get_tickets(card)
+
+        tdy = date.today()
+        def do_filter(t):
+            days = (t.expires.date()-tdy).days
+            return not(days<0 or days>umbral)
+
+        tickets = tuple(filter(do_filter, tickets))
+        if not tickets:
+            return False
+        
+        print("¡AVISO!")
+        for t in tickets:
+            days = (t.expires.date()-tdy).days
+            print(f"Tu tarjeta {card} ({t.name}) caduca", end=" ")
+            if days == 0:
+                print("HOY")
+            elif days == 1:
+                print("MAÑANA")
+            else:
+                print(f"en {days} días")
+
+        return True
+
+    def paradas(self, *args, **kvargs):
+        self._paradas(*args, **kvargs)
+        print("\n(*) Función beta, puede dar datos erroneos o desactualizados")
 
     def _paradas(self, linea, *args):
         linea = str(linea).upper()
@@ -228,10 +271,6 @@ class Printer:
             print("Para ver el sentido contrario escribe: paradas %s +" % linea)
         if variantes > 1:
             print("Antes de desplazarte consulta tu parada para confirmar que el bus va a pasar por ella")
-
-    def paradas(self, *args, **kvargs):
-        self._paradas(*args, **kvargs)
-        print("\n(*) Función beta, puede dar datos erroneos o desactualizados")
 
     def marcadores(self, user):
         marcadores = db.get_marcadores(user)
