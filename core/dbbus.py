@@ -2,6 +2,7 @@ from os.path import dirname, join, realpath
 from munch import Munch
 
 from .dblite import DBLite
+from datetime import datetime
 
 ROOT = join(dirname(realpath(__file__)), '../')
 
@@ -10,6 +11,10 @@ def munch_factory(cursor, row):
     d = {}
     for idx, col in enumerate(cursor.description):
         d[col[0]] = row[idx]
+    for dt_field in ("caducado", "consultado"):
+        val = d.get(dt_field)
+        if val is not None:
+            d[dt_field] = datetime.strptime(d[dt_field], "%Y-%m-%d").date()
     return Munch.fromDict(d)
 
 
@@ -25,6 +30,10 @@ class DBBus:
             if len(db.tables) == 0:
                 db.execute(ROOT + "sql/schema/data.sql")
 
+    def get_tarjetas(self):
+        with DBLite(DBBus.USER, readonly=True) as db:
+            return db.to_list("select * from tarjetas", row_factory=munch_factory)
+        
     def get_tarjeta(self, user):
         with DBLite(DBBus.USER, readonly=True) as db:
             return db.one("select tarjeta from tarjetas where user=?", user)
