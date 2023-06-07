@@ -2,18 +2,20 @@
 
 from core.dbbus import DBBus
 from core.printer import StrPrinter
-from xmppbot import XmppMsg
 import logging
 
 from os import chdir
 from os.path import dirname, realpath
+
+logging.basicConfig(level=logging.CRITICAL)
+logging.getLogger("slixmpp.stringprep").setLevel(logging.CRITICAL)
+
+from xmppbot import XmppMsg
+
 chdir(dirname(realpath(__file__)))
 
 db = DBBus()
 prnt = StrPrinter()
-
-
-logging.basicConfig(level=logging.INFO)
 xmpp = XmppMsg("config.yml")
 
 for t in db.get_tarjetas():
