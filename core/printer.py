@@ -147,9 +147,10 @@ class Printer:
             else:
                 print("La tarjeta {} esta INACTIVA y no contiene ningún ticket".format(card))
             return
+        tdy = date.today()
         if len(tickets) == 1:
             t = tickets[0]
-            if d.isActive:
+            if d.isActive and (t.expires is None or t.expires.date() > tdy):
                 print("La tarjeta {} ({}) esta ACTIVA".format(card, t.name), end="")
                 if t.expires is not None:
                     print(" hasta {:%Y-%m-%d}".format(t.expires), end="")

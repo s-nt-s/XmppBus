@@ -43,5 +43,6 @@ class Api:
 
 
 if __name__ == "__main__":
+    import sys
     a = Api()
-    print(a.get_times(443))
+    print(a.get_card(sys.argv[1]))
