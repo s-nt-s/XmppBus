@@ -8,7 +8,7 @@ from textwrap import dedent
 
 re_select = re.compile(r"^\s*select\b")
 re_sp = re.compile(r"\s+")
-re_largefloat = re.compile("(\d+\.\d+e-\d+)")
+re_largefloat = re.compile(r"(\d+\.\d+e-\d+)")
 re_bl = re.compile(r"\n\s*\n", re.IGNORECASE)
 
 logger = logging.getLogger(__name__)

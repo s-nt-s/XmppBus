@@ -14,8 +14,7 @@ db = DBBus()
 
 re_rtrim = re.compile(r"^\s*\n")
 re_sp = re.compile(r"\s+")
-red_linea_sub = re.compile(
-    "^(?:([689])_)?([\dA-Z]+)(?:-(\d+))?$", re.IGNORECASE)
+red_linea_sub = re.compile(r"^(?:([689])_)?([\dA-Z]+)(?:-(\d+))?$", re.IGNORECASE)
 
 PRNT = Munch(
     func=print,
